@@ -1,0 +1,80 @@
+:root {
+    /* Color variables */
+    --color-b6: #265ED4;
+    --color-b7: #1A4CAE;
+    --color-b8: #1B4596;
+    --color-b10: #223367;
+    --color-n2: #F8F9FA;
+    /* semantic palette */
+    --color-palette-primary-default: var(--color-b6);
+    --color-palette-primary-dark: var(--color-b7);
+    --color-palette-primary-veryDark: var(--color-b8);
+
+    --color-palette-background-light: var(--color-n2);
+    --color-palette-background-dark: var(--color-b10);
+
+    /* Breakpoints */
+    --breakpoint-md: 768px;
+
+    /* Z indices */
+    /* Note this value was observed in their calendar component popover and is not officially documented anywhere.
+     * We are assuming that everything above this will appear over their popovers.
+    */
+    --z-index-streamlit-popover: 1000040;
+    /* semantic z indices */
+    /* Place the header just under popovers but above all other content */
+    --z-index-header: calc(var(--z-index-streamlit-popover) - 1);
+}
+
+/* Hide default streamlit header */
+header {
+    visibility: hidden;
+}
+
+/* Custom AI2 header */
+.header{
+    background: var(--color-palette-background-dark);
+    color: var(--color-palette-background-light);
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: .25em 0;
+    z-index: var(--z-index-header);
+}
+.header > * {
+    margin-left: calc(18rem);
+}
+@media only screen and (max-width: var(--breakpoint-md)) {
+    .header > * {
+        margin-left: 1em;
+    }
+  }
+
+/* Pushing streamlit controls below the custom AI2 banner */
+#MainMenu {
+    visibility: visible;
+    /* moving menu button below our custom header */
+    margin-top: 4rem;
+}
+section[data-testid="stSidebar"]{
+    margin-top:calc(2rem + 2px);
+}
+section[data-testid="stSidebar"] > div:nth-child(2){
+    top:calc(2.5rem);
+}
+
+/* Button styling */
+button[kind="primary"]{
+    background-color: var(--color-palette-primary-dark);
+    color: var(--color-palette-background-light);
+}
+button[kind="primary"]:hover,
+button[kind="primary"]:active,
+button[kind="primary"]:focus,
+button[kind="primary"]:focus:not(:active){
+    color: #fff;
+    text-decoration: none;
+    border-color: #3a69ba;
+    background: #3a69ba;
+}

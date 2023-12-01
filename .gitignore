@@ -1,0 +1,5 @@
+# Python cache files
+__pycache__
+**/*.pyc
+
+.skiff/webapp.yaml

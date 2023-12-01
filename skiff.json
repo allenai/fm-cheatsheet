@@ -1,0 +1,6 @@
+{
+    "appName": "skiff-template-streamlit",
+    "contact": "reviz",
+    "team": "reviz",
+    "replicas": { "prod": 1 }
+}

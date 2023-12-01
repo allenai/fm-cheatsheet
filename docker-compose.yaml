@@ -1,0 +1,45 @@
+version: '3'
+services:
+    sonar:
+        build: ./sonar
+        depends_on:
+            - app
+            - proxy
+    app:
+        build: ./app
+        volumes:
+            - ./app:/app
+        environment:
+            # This ensures that errors are printed as they occur, which
+            # makes debugging easier.
+            - PYTHONUNBUFFERED=1
+            - LOG_LEVEL=DEBUG
+    proxy:
+        build: ./proxy
+        ports:
+            - 8080:8080
+        depends_on:
+            - app
+    it:
+        build: ./it
+        # This tells Docker to run our entrypoint in a way that ensures
+        # signals are handled properly and that zombie processes are killed.
+        # The main outcome being that it makes it faster to shut down the
+        # stack.
+        init: true
+        # We override the default command so that the integration tests don't
+        # run on startup, and so that the container stays alive. This makes
+        # it faster when a developer wants to run the integration tests.
+        entrypoint:
+            - tail
+        command:
+            - -f
+            - /dev/null
+        volumes:
+            - ./it/src:/it/src
+            - ./it/package.json:/it/package.json
+            - ./it/yarn.lock:/it/yarn.lock
+            - ./it/tsconfig.json:/it/tsconfig.json
+        depends_on:
+            - proxy
+            - app
