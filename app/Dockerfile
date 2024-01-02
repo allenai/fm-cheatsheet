@@ -1,4 +1,4 @@
-FROM python:3.8.6
+FROM python:3.8.18
 
 # Uncomment the following lines to make PyTorch available to your application.
 # See https://skiff.allenai.org/gpu.html for more details.
