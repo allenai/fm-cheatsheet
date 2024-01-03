@@ -1,6 +1,6 @@
 {
-    "appName": "skiff-template-streamlit",
-    "contact": "reviz",
-    "team": "reviz",
+    "appName": "openfm",
+    "contact": "lucas",
+    "team": "s2research",
     "replicas": { "prod": 1 }
 }
