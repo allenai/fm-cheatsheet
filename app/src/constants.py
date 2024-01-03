@@ -1,3 +1,5 @@
+from pathlib import Path
+
 ORDERED_SECTION_HEADERS = {
     "Pretraining Data": "Testing paragraph.",
     "Finetuning Data": "Testing paragraph.",
@@ -15,3 +17,5 @@ ORDERED_SECTION_HEADERS = {
     "License Selection": "Testing paragraph.",
     "Usage Monitoring": "Testing paragraph.",
 }
+
+BASE_DIR = Path(__file__).resolve().parent.parent

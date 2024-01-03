@@ -1,5 +1,11 @@
 [server]
 port = 8000
+enableCORS = false
+enableXsrfProtection = false
+headless = true
+
+[browser]
+gatherUsageStats = false
 
 [theme]
 primaryColor="#1A4CAE"

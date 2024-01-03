@@ -4,10 +4,12 @@ import os
 import pandas as pd
 import streamlit as st
 
+from .constants import BASE_DIR
+
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("resources.csv").fillna("")
+    return pd.read_csv(BASE_DIR / "resources" / "resources.csv").fillna("")
 
 
 def load_logos():
@@ -16,13 +18,13 @@ def load_logos():
             return base64.b64encode(image_file.read()).decode()
 
     return {
-        "hf": get_image_base64("logos/hf.png"),
-        "web": get_image_base64("logos/web.png"),
-        "arxiv": get_image_base64("logos/arxiv.png"),
-        "github": get_image_base64("logos/github.png"),
-        "text": get_image_base64("logos/text.png"),
-        "vision": get_image_base64("logos/vision.png"),
-        "speech": get_image_base64("logos/speech.png"),
+        "hf": get_image_base64(BASE_DIR / "resources" / "logos/hf.png"),
+        "web": get_image_base64(BASE_DIR / "resources" / "logos/web.png"),
+        "arxiv": get_image_base64(BASE_DIR / "resources" / "logos/arxiv.png"),
+        "github": get_image_base64(BASE_DIR / "resources" / "logos/github.png"),
+        "text": get_image_base64(BASE_DIR / "resources" / "logos/text.png"),
+        "vision": get_image_base64(BASE_DIR / "resources" / "logos/vision.png"),
+        "speech": get_image_base64(BASE_DIR / "resources" / "logos/speech.png"),
     }
 
 

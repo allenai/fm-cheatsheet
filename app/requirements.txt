@@ -5,3 +5,5 @@ streamlit==1.27.0
 streamlit-aggrid==0.3.4
 jsonlines
 awesome-streamlit==20200728.1
+beautifulsoup4==4.12.2
+lxml==5.0.0

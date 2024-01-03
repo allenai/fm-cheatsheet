@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image
 from src.api.api import filter_resources
 from src.components.goat_counter import add_goat_counter_tracker
-from src.constants import ORDERED_SECTION_HEADERS
+from src.constants import BASE_DIR, ORDERED_SECTION_HEADERS
 from src.theme import theme
 from src.utils import create_markdown_img, load_data, load_logos
 
@@ -84,7 +84,7 @@ def streamlit_app():
     # SIDEBAR STARTS HERE
 
     with st.sidebar:
-        image = Image.open("logos/logo.png")
+        image = Image.open(BASE_DIR / "resources" / "logos/logo.png")
         # new_size = (width, height)  # Replace 'width' and 'height' with desired values
         # resized_image = image.resize((240,300))
         st.image(image)
