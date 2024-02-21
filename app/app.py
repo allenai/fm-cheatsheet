@@ -22,7 +22,10 @@ def streamlit_app():
     # add custom AI2 branded CSS theme and header banner
     theme.add_theme()
 
-    st.title("Open Foundation Model Cheatsheet")
+    st.markdown(
+        "<h1 style='text-align: center'>Open Foundation Model Cheatsheet</h1>",
+        unsafe_allow_html=True
+    )
     st.caption(
         "Resources and recommendations for best practices in developing and releasing open models."
     )
@@ -76,10 +79,14 @@ def streamlit_app():
             "https://forms.gle/gNtXsqKcG2jwnT9z9",
             type="primary",
         )
+
+    st.markdown("<br/>", unsafe_allow_html=True)
     st.markdown(
-        """Assembled by open model developers from AI2, EleutherAI, Google, Hugging Face, Masakhane,
-        McGill, MIT, Princeton, Stanford CRFM, UCSB, and UW."""
+        "<p id='maker' style='text-align: center'>Assembled by open model developers from:</p>",
+        unsafe_allow_html=True,
     )
+    st.image("resources/orgs.png", use_column_width=True)
+    st.markdown("<br/>", unsafe_allow_html=True)
 
     # SIDEBAR STARTS HERE
 
