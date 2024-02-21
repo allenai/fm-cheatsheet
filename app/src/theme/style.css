@@ -32,24 +32,26 @@ header {
 }
 
 /* Custom AI2 header */
-.header{
+.header {
     background: var(--color-palette-background-dark);
     color: var(--color-palette-background-light);
-    position:fixed;
-    top:0;
-    left:0;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     padding: .25em 0;
     z-index: var(--z-index-header);
 }
-.header > * {
+
+.header>* {
     margin-left: calc(18rem);
 }
+
 @media only screen and (max-width: var(--breakpoint-md)) {
-    .header > * {
+    .header>* {
         margin-left: 1em;
     }
-  }
+}
 
 /* Pushing streamlit controls below the custom AI2 banner */
 #MainMenu {
@@ -57,24 +59,39 @@ header {
     /* moving menu button below our custom header */
     margin-top: 4rem;
 }
-section[data-testid="stSidebar"]{
-    margin-top:calc(2rem + 2px);
+
+section[data-testid="stSidebar"] {
+    margin-top: calc(2rem + 2px);
 }
-section[data-testid="stSidebar"] > div:nth-child(2){
-    top:calc(2.5rem);
+
+section[data-testid="stSidebar"]>div:nth-child(2) {
+    top: calc(2.5rem);
 }
 
 /* Button styling */
-button[kind="primary"]{
+button[kind="primary"] {
     background-color: var(--color-palette-primary-dark);
     color: var(--color-palette-background-light);
 }
+
 button[kind="primary"]:hover,
 button[kind="primary"]:active,
 button[kind="primary"]:focus,
-button[kind="primary"]:focus:not(:active){
+button[kind="primary"]:focus:not(:active) {
     color: #fff;
     text-decoration: none;
     border-color: #3a69ba;
     background: #3a69ba;
+}
+
+.block-container {
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+/* Hide default streamlit footer */
+footer {
+    visibility: hidden;
 }
