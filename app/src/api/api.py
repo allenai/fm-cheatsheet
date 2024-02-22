@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import warnings
+
 import pandas as pd
 
 
@@ -23,7 +25,8 @@ def is_date_match(release_date, filter_start, filter_end="2030"):
 
         return filter_start_dt <= release_datetime <= filter_end_dt
     except Exception as e:
-        raise ValueError(f"Incorrect date format: {e}")
+        warnings.warn(f"Error in date comparison: {e}")
+        return False
 
 
 # Function to apply the date filter
@@ -45,15 +48,31 @@ def search_resources(df, search_string):
 def filter_resources(
     resources_df, sections, text_mod, vision_mod, speech_mod, time_range
 ):
+    # breakpoint()
+
     # Apply sections filter
     if "All" not in sections:
-        filtered_df = filtered_df[filtered_df["Categories"].isin(sections)]
+        resources_df = resources_df[
+            resources_df["Categories"].apply(
+                lambda x: any(item in sections for item in x)
+            )
+        ]
 
     # Apply combined modality filter
-    allowed_modalities = {m for m, flag in zip(["Text", "Vision", "Speech"], [text_mod, vision_mod, speech_mod]) if flag}
-    filtered_df = filtered_df[filtered_df['Modalities'].apply(lambda mods: any(mod in allowed_modalities for mod in mods))]
+    allowed_modalities = {
+        m
+        for m, flag in zip(
+            ["Text", "Vision", "Speech"], [text_mod, vision_mod, speech_mod]
+        )
+        if flag
+    }
+    resources_df = resources_df[
+        resources_df["Modalities"].apply(
+            lambda mods: any(mod in allowed_modalities for mod in mods)
+        )
+    ]
 
     # Apply date filter
-    filtered_df = apply_date_filter(filtered_df, time_range)
+    resources_df = apply_date_filter(resources_df, time_range)
 
-    return filtered_df
+    return resources_df

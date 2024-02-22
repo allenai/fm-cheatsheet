@@ -1,12 +1,49 @@
 import datetime as dt
+import itertools
 
 import streamlit as st
 from PIL import Image
+
 from src.api.api import filter_resources
 from src.components.goat_counter import add_goat_counter_tracker
 from src.constants import BASE_DIR, ORDERED_SECTION_HEADERS
 from src.theme import theme
 from src.utils import create_markdown_img, load_data, load_logos
+
+
+def write_resource(row, logos: dict) -> None:
+    col1, col2, col3, col4 = st.columns([0.4, 1, 5, 1], gap="small")
+
+    modality_icons = []
+    for mod_img, modality in [
+        (logos["text"], "Text"),
+        (logos["vision"], "Vision"),
+        (logos["speech"], "Speech"),
+    ]:
+        mod_icon = (
+            create_markdown_img(mod_img, None, 20)
+            if modality in row["Modalities"]
+            else "  "
+        )
+        modality_icons.append(mod_icon)
+    col1.markdown(" ".join(modality_icons), unsafe_allow_html=True)
+
+    col2.write(row["Name"])
+    col3.write(row["Description"])
+
+    logo_links = []
+    for logo_img, col in [
+        (logos["arxiv"], "Paper Link"),
+        (logos["hf"], "HuggingFace Link"),
+        (logos["github"], "GitHub Link"),
+        (logos["web"], "Website Link"),
+    ]:
+        logo_link = (
+            create_markdown_img(logo_img, row[col], dim=20) if row[col] else "  "
+        )  # "<div style='width: 30px; height: auto;'></div>"
+        logo_links.append(logo_link)
+        # col4.markdown(logo_link, unsafe_allow_html=True)
+    col4.markdown(" ".join(logo_links), unsafe_allow_html=True)
 
 
 def streamlit_app():
@@ -25,7 +62,7 @@ def streamlit_app():
     # st.title("Foundation Model Development Cheatsheet")
     st.markdown(
         "<h1 style='text-align: center'>Foundation Model Development Cheatsheet</h1>",
-        unsafe_allow_html=True
+        unsafe_allow_html=True,
     )
 
     st.caption(
@@ -34,19 +71,19 @@ def streamlit_app():
     st.markdown(
         """
         This cheatsheet serves as a succinct guide, prepared *by* foundation model developers *for* foundation model developers.
-        As the field of AI foundation model development rapidly expands, welcoming new contributors, scientists, and 
-        applications, we hope to lower the barrier for new community members to become familiar with the variety of 
-        resources, tools, and findings. The focus of this cheatsheet is not only, or even primarily, to support building, 
+        As the field of AI foundation model development rapidly expands, welcoming new contributors, scientists, and
+        applications, we hope to lower the barrier for new community members to become familiar with the variety of
+        resources, tools, and findings. The focus of this cheatsheet is not only, or even primarily, to support building,
         but to inculcate good practices, awareness of limitations, and general responsible habits as community norms.
-        
+
         To add to the cheatsheet please see [Contribute Resources](TODO: Readme Tab)."""
     )
     scope_limitations_text = """
-        We've compiled resources, tools, and papers that have helped guide our own intuitions around model development, 
+        We've compiled resources, tools, and papers that have helped guide our own intuitions around model development,
         and which we believe will be especially helpful to nascent (and sometimes even experienced) developers in the field.
         However, this guide is far from exhaustive---and here's what to consider when using it:
 
-        * We scope these resources to newer foundation model developers, usually releasing models to the community. 
+        * We scope these resources to newer foundation model developers, usually releasing models to the community.
         Larger organizations, with commercial services, have even broader considerations for responsible development and release.
 
         * Foundation model development is a rapidly evolving science. **To keep this cheatsheet up-to-date, we are open to
@@ -54,13 +91,13 @@ def streamlit_app():
 
         * We've scoped our content modalities only to **text, vision, and speech**.
 
-        * A cheatsheet **cannot be comprehensive**. 
-        We prioritize resources we have found helpful, and rely heavily on survey papers and repositories to point out the 
+        * A cheatsheet **cannot be comprehensive**.
+        We prioritize resources we have found helpful, and rely heavily on survey papers and repositories to point out the
         many other awesome works which deserve consideration, especially for developers who plan to dive deeper into a topic.
-        
-        * **We cannot take responsibility for these resources---onus is on the reader to assess their viability, particularly for 
-        their circumstance.** At times we have provided resources with conflicting advice, as it is helpful to be aware of 
-        divided community perspectives. Our notes throughout are designed to contextualize these resources, to help guide 
+
+        * **We cannot take responsibility for these resources---onus is on the reader to assess their viability, particularly for
+        their circumstance.** At times we have provided resources with conflicting advice, as it is helpful to be aware of
+        divided community perspectives. Our notes throughout are designed to contextualize these resources, to help guide
         the readers judgement.
     """
     with st.expander("Scope & Limitations"):
@@ -69,7 +106,7 @@ def streamlit_app():
     # TODO: Replace button links.
     with col1a:
         st.link_button(
-            'FM Development Cheatsheet Paper',
+            "FM Development Cheatsheet Paper",
             "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
             type="primary",
         )
@@ -105,7 +142,7 @@ def streamlit_app():
             unsafe_allow_html=True,
         )
 
-        col1, col2, col3 = st.columns([1,1,1], gap="medium")
+        col1, col2, col3 = st.columns([1, 1, 1], gap="medium")
         # st.markdown("Modality Types:")
         checkbox_text = col1.checkbox("Text", value=True)
         checkbox_vision = col2.checkbox("Vision")
@@ -157,57 +194,25 @@ def streamlit_app():
         filtered_resources = filter_resources(
             RESOURCES,
             sections=category_select,
-            text_modality=checkbox_text,
-            vision_modality=checkbox_vision,
-            speech_modality=checkbox_speech,
+            text_mod=checkbox_text,
+            vision_mod=checkbox_vision,
+            speech_mod=checkbox_speech,
             time_range=time_selection,
         )
-
-        def write_resource(row):
-            col1, col2, col3, col4 = st.columns([0.4, 1, 5, 1], gap="small")
-
-            modality_icons = []
-            for mod_img, modality in [
-                (LOGOS["text"], "Text"),
-                (LOGOS["vision"], "Vision"),
-                (LOGOS["speech"], "Speech"),
-            ]:
-                mod_icon = create_markdown_img(mod_img, None, 20) if modality in row["Modalities"] else "  "
-                modality_icons.append(mod_icon)
-            col1.markdown(" ".join(modality_icons), unsafe_allow_html=True)
-
-            col2.write(row["Name"])
-            col3.write(row["Description"])
-
-            logo_links = []
-            for logo_img, col in [
-                (LOGOS["arxiv"], "Paper Link"),
-                (LOGOS["hf"], "HuggingFace Link"),
-                (LOGOS["github"], "GitHub Link"),
-                (LOGOS["web"], "Website Link"),
-            ]:
-                logo_link = (
-                    create_markdown_img(logo_img, row[col], dim=20)
-                    if row[col]
-                    else "  "
-                )  # "<div style='width: 30px; height: auto;'></div>"
-                logo_links.append(logo_link)
-                # col4.markdown(logo_link, unsafe_allow_html=True)
-            col4.markdown(" ".join(logo_links), unsafe_allow_html=True)
-
-        categories = [
-            x for x in ORDERED_SECTION_HEADERS if x in set(filtered_resources["Categories"])
-        ]
+        filtered_cats = set(
+            itertools.chain.from_iterable(filtered_resources["Categories"].tolist())
+        )
+        categories = [cat for cat in ORDERED_SECTION_HEADERS if cat in filtered_cats]
         for category in categories:
             st.header(category)
             # TODO: show section introductions
-            st.write(constants.ORDERED_SECTION_HEADERS[category])
+            st.write(ORDERED_SECTION_HEADERS[category])
             st.divider()
             category_resources = filtered_resources[
-                filtered_resources["Categories"].contains(category)
+                filtered_resources["Categories"].apply(lambda x: category in x)
             ]
             for i, row in category_resources.iterrows():
-                write_resource(row)
+                write_resource(row, logos=LOGOS)
                 st.divider()
                 # if i > 3:
                 #     break

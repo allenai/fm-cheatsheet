@@ -2,6 +2,7 @@ import pathlib
 
 import streamlit as st
 from bs4 import BeautifulSoup
+
 from src.utils import get_environment
 
 
