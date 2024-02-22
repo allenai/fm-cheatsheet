@@ -1,14 +1,5 @@
 from pathlib import Path
 
-# Update limitations [X]
-# Update resources, categories and how they are read [X]
-# Update menu position and selection criteria (one category) [X]
-# Legend [X]
-# README --> Contributions [X]
-# Best Practices text []
-
-
-
 
 ORDERED_SECTION_HEADERS = {
     "Pretraining Data Sources": """
@@ -69,9 +60,9 @@ ORDERED_SECTION_HEADERS = {
         preprocessing ensures the integrity of model evaluation, ensuring that metrics are reliable and not misleading.
         The following resources aid in proactively protecting test data with canaries, decontaminating data before training, and 
         identifying or proving what data a model was trained on.
-        \citet{jagielski2023note} explains how to interpret canary exposure, including by relating it to membership inference 
+        [A Note on Canary Exposure](https://arxiv.org/abs/2306.00133) explains how to interpret canary exposure, including by relating it to membership inference 
         attacks, and differential privacy.
-        \citet{oren2023proving} provides methods for provable guarantees of test set contamination in language models without 
+        [Proving Test Set Contamination in Black Box Language Models](https://arxiv.org/abs/2310.17623) provides methods for provable guarantees of test set contamination in language models without 
         access to pretraining data or model weights.
         """,
     "Data Auditing": """
@@ -79,19 +70,20 @@ ORDERED_SECTION_HEADERS = {
         time reading through your dataset, ideally at many stages of the dataset design process. Many datasets have 
         problems specifically because the authors did not do sufficient auditing before releasing them.
 
-        At early stages of a project the data search, analysis, \& exploration tools outlined in \cref{sec:search} 
+        At early stages of a project the data search, analysis, & exploration tools, outlined in the Data Search section,
         are typically sufficient to track the evolution of a dataset. However it can also be helpful to do systematic 
         studies of the process.""",
     "Data Documentation": """
         When releasing new data resources with a model, it is important to thoroughly document the 
-        data\citep{bender-friedman-2018-data,holland2020dataset}.
+        data, (see e.g. [Data Statements](https://aclanthology.org/Q18-1041/) or the [Data Nutrition Project](https://datanutrition.org/).
         Documentation allows users to understand its intended uses, legal restrictions, attribution, relevant contents, 
         privacy concerns, and other limitations.
         It is common for datasets to be widely used by practitioners, who may be unaware of undesirable properties 
-        \citep{David2023AIDatasetCSAM}.
+        (such as [CSAM](https://www.theverge.com/2023/12/20/24009418/generative-ai-image-laion-csam-google-stability-stanford)).
         While many data documentation standards have been proposed, their adoption has been uneven, or when 
-        crowdsourced, as with Hugging Face Datasets, they may contain errors and omissions 
-        \citep{lhoest2021datasets, longpre2023data}.""",
+        crowdsourced, as with [Hugging Face Datasets](https://huggingface.co/docs/datasets/index), they may contain 
+        [some errors and omissions](https://arxiv.org/abs/2310.16787).
+        """,
     "Data Governance": """
         Releasing all datasets involved in the development of a Foundation Model, including training, fine-tuning, and 
         evaluation data, can facilitate external scrutiny and support further research. However, releasing and hosting 
@@ -102,7 +94,7 @@ ORDERED_SECTION_HEADERS = {
         In some jurisdictions, projects may be required to start with a Data Management Plan that requires developers to 
         ensure that the data collection has a sufficient legal basis, follows principles of data minimization, and allows 
         data subject to have sufficient visibility into and control over their representation in a dataset 
-        (\href{https://www.cnil.fr/en/ai-how-sheets}{CNIL resource sheet}). Data curation steps to that end can include 
+        ([CNIL resource sheet](https://www.cnil.fr/en/ai-how-sheets)). Data curation steps to that end can include 
         respecting opt-out preference signals (Spawning, HaveIBeenTrained), or applying pseudonymization or PII redaction 
         (BigCode Governance card). 
 
@@ -129,7 +121,7 @@ ORDERED_SECTION_HEADERS = {
     "Model Training: Efficiency & Resource Allocation": """
         Knowledge of training best practices and efficiency techniques can reduce costs to train a desired model significantly. 
         Here, we include a select few readings and resources on effectively using a given resource budget for model training, 
-        such as several canonical papers on fitting \textit{scaling laws}, a common tool for extrapolating findings across 
+        such as several canonical papers on fitting *scaling laws*, a common tool for extrapolating findings across 
         scales of cost. These are used frequently to determine the most efficient allocation of resources, such as allocating 
         compute between model size and dataset size for a given budget.
 
@@ -150,17 +142,19 @@ ORDERED_SECTION_HEADERS = {
         consumed during training or inference and multiplying it by the carbon intensity of the energy source used. 
         While other steps of the model life cycle (e.g. manufacturing hardware, heating/cooling datacenters, storing and 
         transferring data) also come with environmental impacts, we currently lack the information necessary to meaningfully 
-        measure these impacts \citep{luccioni2023estimating}.
+        measure these impacts (see [Estimating the Carbon Footprint of BLOOM](https://arxiv.org/abs/2211.02001)).
         The table below outlines resources for back-of-the-envelope estimations of environmental impact, in-code estimation, 
         as well as dashboard for cloud computing platforms to estimate environmental impact 
-        \citep{anthony2020carbontracker,lacoste2019quantifying}.
+        (see [Carbontracker](https://arxiv.org/abs/2007.03051) and 
+        [Quantifying the Carbon Emissions of Machine Learning](https://arxiv.org/abs/1910.09700)).
 
         For efficient use of resources, several decisions made during or prior to model training can have significant impacts on the upstream and 
         downstream environmental impact of a given model.
-        Use Scaling Laws \citep{kaplan2020scaling} and other methodologies to find the best allocation of your compute budget. 
+        Use [Scaling Laws](https://arxiv.org/abs/2001.08361) and other methodologies to find the best allocation of your compute budget. 
         For models frequently used downstream, consider the inference footprint and inference cost during model creation, 
-        to minimize the environmental impact of inference \citep{muennighoff2023scaling}. For further resources and 
-        discussion, see \ref{sec:efficiency-training}.""",
+        to minimize the environmental impact of inference (see 
+        [Scaling Data-Constrained Language Models](https://arxiv.org/abs/2305.16264)). 
+        For further resources and discussion, see the resources and best practices for training models efficiently.""",
     "Model Evaluation: Capabilities": """
         Many modern foundation models are released with general conversational abilities, such that their use cases are 
         poorly specified and open-ended.
@@ -175,12 +169,13 @@ ORDERED_SECTION_HEADERS = {
         For instance, many multiple choice college knowledge benchmarks are not indicative of real user questions, and can 
         be gamed with pseudo-data contamination.
         Additionally, while leaderboards are exceedingly popular, model responses are often scored by other models, which 
-        have implicit biases to model responses that are longer, and look similar to their own \citep{dubois2023alpacafarm}.""",
+        have implicit biases to model responses that are longer, and look similar to their own 
+        (see [AlpacaFarm](https://arxiv.org/abs/2305.14387)).""",
     "Model Evaluation: Risks & Harms Taxonomies": """
         Taxonomies provide a way of categorising, defining and understanding risks and hazards created through the use and 
         deployment of AI systems. Some taxonomies focus primarily on the types of interactions and uses that 
-        \textit{create} a risk of harm (often called ``hazards'') whereas others focus on the negative effects that 
-        they lead to (often called ``harms''). 
+        *create* a risk of harm (often called "hazards") whereas others focus on the negative effects that 
+        they lead to (often called "harms"). 
         Some taxonomies focus on existing issues, such as models that create hate speech or child abuse material, whereas 
         others are focused on longer term threats related to dangerous weapons development, cybersecurity, and military use. 
         These tend to focus on future model capabilities and their misuse. 
@@ -199,8 +194,9 @@ ORDERED_SECTION_HEADERS = {
         Determining how to evaluate risk is also challenging, as there are risks and modalities with limited evaluation 
         coverage. The sample included below are a starting point for certain key areas, but we encourage developers to 
         browse the evaluation repository (linked below) to see if there is something more suited to their needs.
-        In addition to fixed benchmarks, an emergent approach to evaluation is using one model to evaluate another, as 
-        done by \citet{perez2022red} and in Anthropic's Constitutional AI work \citep{bai_constitutional_2022}.""",
+        In addition to fixed benchmarks, an emergent approach to evaluation is using one model to evaluate another 
+        (see [Red Teaming Language Models with Language Models](https://arxiv.org/abs/2202.03286)) and Anthropic's 
+        [Constitutional AI](https://www.anthropic.com/news/constitutional-ai-harmlessness-from-ai-feedback) work.""",
     "Model Documentation": """
         It is important to document models that are used and released. Even models and code released openly are important 
         to document thoroughly, in order to specify how to use the model, recommended and non-recommended use cases, 
@@ -235,7 +231,9 @@ ORDERED_SECTION_HEADERS = {
         Responsible AI Licenses in particular, including BigScience's Open RAIL and AI2's ImpACT Licenses, have seen 
         growing adoption, but also criticism of the difficulties they may pose even for well-intentioned actors seeking 
         to comply with their requirements---especially in commercial applications---and because their enforceability still 
-        remains an open question\citep{downing2023licensing}. While they can provide a convenient way to help a developer
+        remains an open question 
+        (see [AI Licensing Can't Balance "Open" with "Responsible"](https://katedowninglaw.com/2023/07/13/ai-licensing-cant-balance-open-with-responsible/)). 
+        While they can provide a convenient way to help a developer
         express their understanding of their model's limitations, in conjunction with a model card that outlines 
         in-scope and out-of-scope uses, adopters should also consider unintended consequences in limiting the scope of 
         the follow-up research that may be conducted with the licensed artifacts. Responsible AI licenses can act as a 
