@@ -27,21 +27,25 @@ def add_theme():
 
 
 def add_header():
-    st.write(
-        '<div class="header" role="heading"><a href="https://allenai.org"> '
-        '<img src="https://cdn.jsdelivr.net/npm/@allenai/varnish@3.0.7/shellac/ai2.svg"'
-        ' alt="Allen Institute for AI"> </a></div>',
-        unsafe_allow_html=True,
-    )
+    ...
+    # st.write(
+    #     '<div class="header" role="heading"><a href="https://allenai.org"> '
+    #     '<img src="https://cdn.jsdelivr.net/npm/@allenai/varnish@3.0.7/shellac/ai2.svg"'
+    #     ' alt="Allen Institute for AI"> </a></div>',
+    #     unsafe_allow_html=True,
+    # )
 
 
 def add_footer():
     """
     Please don't edit or remove this footer as we'd like to include these important links on all AI2 applications
     """
-    st.write(
-        "© [Allen Institute for AI](https://allenai.org/) All Rights Reserved | "
-        "[Privacy Policy](https://allenai.org/privacy-policy) | "
-        "[Terms of Use](https://allenai.org/terms) | "
-        "[Business Code of Conduct](https://allenai.org/business-code-of-conduct)"
+    st.markdown(
+        "<p style='text-align:center; font-size:0.8em; color: #808080; margin-top: 50px;'>"
+        "Website hosted by the <a href='https://allenai.org'> Allen Institute for AI</a> | "
+        "<a href='https://allenai.org/privacy-policy'> Privacy Policy</a> | "
+        "<a href='https://allenai.org/terms'> Terms of Use</a> | "
+        "<a href='https://allenai.org/business-code-of-conduct'> Business Code of Conduct</a>"
+        "</p>",
+        unsafe_allow_html=True,
     )

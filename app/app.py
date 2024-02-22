@@ -11,7 +11,7 @@ from src.utils import create_markdown_img, load_data, load_logos
 
 def streamlit_app():
     st.set_page_config(
-        page_title="Open Foundation Model Cheatsheet", layout="wide"
+        page_title="Foundation Model Development Cheatsheet", layout="wide"
     )  # , initial_sidebar_state='collapsed')
 
     RESOURCES = load_data()
@@ -22,7 +22,12 @@ def streamlit_app():
     # add custom AI2 branded CSS theme and header banner
     theme.add_theme()
 
-    st.title("Foundation Model Development Cheatsheet")
+    # st.title("Foundation Model Development Cheatsheet")
+    st.markdown(
+        "<h1 style='text-align: center'>Foundation Model Development Cheatsheet</h1>",
+        unsafe_allow_html=True
+    )
+
     st.caption(
         "Resources and recommendations for best practices in developing and releasing models."
     )
@@ -74,10 +79,16 @@ def streamlit_app():
             "https://forms.gle/gNtXsqKcG2jwnT9z9",
             type="primary",
         )
+
+    st.markdown("<br/>", unsafe_allow_html=True)
+    # st.markdown("""Assembled by open model developers from AI2, EleutherAI, Google, Hugging Face, Masakhane,
+    #     McGill, MIT, MLCommons, Princeton, Stanford CRFM, UCSB, and UW.""")
     st.markdown(
-        """Assembled by open model developers from AI2, EleutherAI, Google, Hugging Face, Masakhane,
-        McGill, MIT, MLCommons, Princeton, Stanford CRFM, UCSB, and UW."""
+        "<p id='maker' style='text-align: center'>Assembled by open model developers from many institutions, including:</p>",
+        unsafe_allow_html=True,
     )
+    st.image("resources/orgs.png", use_column_width=True)
+    st.markdown("<br/>", unsafe_allow_html=True)
 
     #### FILTER MENU STARTS HERE
 
@@ -208,53 +219,3 @@ def streamlit_app():
 
 if __name__ == "__main__":
     streamlit_app()
-
-
-    # SIDEBAR STARTS HERE
-
-    # with st.sidebar:
-    #     image = Image.open(BASE_DIR / "resources" / "logos/logo.png")
-    #     # new_size = (width, height)  # Replace 'width' and 'height' with desired values
-    #     # resized_image = image.resize((240,300))
-    #     st.image(image)
-
-    #     with st.form("data_selection"):
-    #         section_multiselect = st.multiselect(
-    #             label="Resource Types:",
-    #             options=list(ORDERED_SECTION_HEADERS.keys()),
-    #             # default=["All"],
-    #         )
-
-    #         # st.markdown("######")
-    #         # st.divider()
-
-    #         st.markdown(
-    #             '<p style="font-size: 14px;">Modality Types:</p>',
-    #             unsafe_allow_html=True,
-    #         )
-
-    #         # st.markdown("Modality Types:")
-    #         checkbox_text = st.checkbox("Text", value=True)
-    #         checkbox_vision = st.checkbox("Vision")
-    #         checkbox_speech = st.checkbox("Speech")
-
-    #         # st.markdown("####")
-    #         # st.divider()
-
-    #         date_format = "MMM, YYYY"  # format output
-    #         start_date = dt.date(year=2000, month=1, day=1)
-    #         end_date = dt.datetime.now().date()
-    #         # max_days = end_date - start_date
-
-    #         time_selection = st.slider(
-    #             label="Start Date:",
-    #             min_value=start_date,
-    #             value=start_date,
-    #             max_value=end_date,
-    #             format=date_format,
-    #         )
-
-    #         # st.markdown("####")
-
-    #         # Every form must have a submit button.
-    #         submitted = st.form_submit_button("Submit Selection")
