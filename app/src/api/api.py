@@ -28,7 +28,7 @@ def is_date_match(release_date, filter_start, filter_end="2030"):
 
 # Function to apply the date filter
 def apply_date_filter(df, release_date):
-    return df[df["Release MM-YY"].apply(lambda x: is_date_match(x, release_date))]
+    return df[df["Date"].apply(lambda x: is_date_match(x, release_date))]
 
 
 # Function to search for resources
@@ -42,43 +42,16 @@ def search_resources(df, search_string):
     ]
 
 
-def preprocess_modalities(df):
-    df["Text_Modality"] = df["Modalities"].str.contains("Text") | (
-        df["Modalities"] == "All"
-    )
-    df["Vision_Modality"] = df["Modalities"].str.contains("Vision") | (
-        df["Modalities"] == "All"
-    )
-    df["Speech_Modality"] = df["Modalities"].str.contains("Speech") | (
-        df["Modalities"] == "All"
-    )
-    return df
-
-
 def filter_resources(
-    resources_df, sections, text_modality, vision_modality, speech_modality, time_range
+    resources_df, sections, text_mod, vision_mod, speech_mod, time_range
 ):
-    # Preprocess the DataFrame to add modality columns
-    filtered_df = preprocess_modalities(resources_df)
-
     # Apply sections filter
     if "All" not in sections:
-        filtered_df = filtered_df[filtered_df["Type"].isin(sections)]
+        filtered_df = filtered_df[filtered_df["Categories"].isin(sections)]
 
-    # Apply combined modality filter using any
-    modality_conditions = [
-        filtered_df["Text_Modality"]
-        if text_modality
-        else pd.Series([False] * len(filtered_df)),
-        filtered_df["Vision_Modality"]
-        if vision_modality
-        else pd.Series([False] * len(filtered_df)),
-        filtered_df["Speech_Modality"]
-        if speech_modality
-        else pd.Series([False] * len(filtered_df)),
-    ]
-    if any([text_modality, vision_modality, speech_modality]):
-        filtered_df = filtered_df[pd.concat(modality_conditions, axis=1).any(axis=1)]
+    # Apply combined modality filter
+    allowed_modalities = {m for m, flag in zip(["Text", "Vision", "Speech"], [text_mod, vision_mod, speech_mod]) if flag}
+    filtered_df = filtered_df[filtered_df['Modalities'].apply(lambda mods: any(mod in allowed_modalities for mod in mods))]
 
     # Apply date filter
     filtered_df = apply_date_filter(filtered_df, time_range)
