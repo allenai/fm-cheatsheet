@@ -2,6 +2,7 @@ import os
 from os import path
 
 import streamlit as st
+
 from src.utils import get_environment
 
 __location__ = path.realpath(path.join(os.getcwd(), path.dirname(__file__)))

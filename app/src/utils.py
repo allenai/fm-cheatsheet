@@ -1,17 +1,18 @@
 import base64
-import os
-import jsonlines
 import gzip
+import os
+from pathlib import Path
 
+import jsonlines
 import pandas as pd
 import streamlit as st
 
 from .constants import BASE_DIR
 
 
-def read_jsonl(inpath):
-    if inpath[-2:] in ["gz", "gzip"]:
-        with gzip.open(inpath, 'rb') as fp:
+def read_jsonl(inpath: Path):
+    if inpath.suffix in (".gz", ".gzip"):
+        with gzip.open(inpath, "rb") as fp:
             j_reader = jsonlines.Reader(fp)
             return [l for l in j_reader]
     else:
@@ -19,9 +20,12 @@ def read_jsonl(inpath):
             j_reader = jsonlines.Reader(fp)
             return [l for l in j_reader]
 
+
 @st.cache_data
 def load_data():
-    return pd.DataFrame(read_jsonl(BASE_DIR / "resources" / "resources.jsonl")).fillna("")
+    return pd.DataFrame(read_jsonl(BASE_DIR / "resources" / "resources.jsonl")).fillna(
+        ""
+    )
 
 
 def load_logos():

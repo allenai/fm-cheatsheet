@@ -1,6 +1,5 @@
 from pathlib import Path
 
-
 ORDERED_SECTION_HEADERS = {
     "Pretraining Data Sources": """
         Pretraining data consists of thousands, or even millions, of individual documents, often web scraped. 
