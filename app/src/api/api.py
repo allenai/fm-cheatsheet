@@ -47,7 +47,7 @@ def search_resources(df, search_string):
 
 def filter_resources(
     resources_df, sections, text_mod, vision_mod, speech_mod, time_range
-):
+) -> pd.DataFrame:
     # breakpoint()
 
     # Apply sections filter

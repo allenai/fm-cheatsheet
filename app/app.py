@@ -191,31 +191,27 @@ def streamlit_app():
     st.divider()
 
     if submitted:
-        filtered_resources = filter_resources(
-            RESOURCES,
-            sections=category_select,
-            text_mod=checkbox_text,
-            vision_mod=checkbox_vision,
-            speech_mod=checkbox_speech,
-            time_range=time_selection,
-        )
-        filtered_cats = set(
-            itertools.chain.from_iterable(filtered_resources["Categories"].tolist())
-        )
-        categories = [cat for cat in ORDERED_SECTION_HEADERS if cat in filtered_cats]
-        for category in categories:
+        for category in [s for s in ORDERED_SECTION_HEADERS if s in category_select]:
+
+            filtered_resources = filter_resources(
+                RESOURCES,
+                # sections=category_select,
+                sections=[category],
+                text_mod=checkbox_text,
+                vision_mod=checkbox_vision,
+                speech_mod=checkbox_speech,
+                time_range=time_selection,
+            )
+            html_table = filtered_resources.to_html(
+                columns=["Modality", "Name", "Description", "Links"],
+                index=False,
+                header=False,
+                escape=False,
+            )
             st.header(category)
-            # TODO: show section introductions
             st.write(ORDERED_SECTION_HEADERS[category])
+            st.write(html_table, unsafe_allow_html=True)
             st.divider()
-            category_resources = filtered_resources[
-                filtered_resources["Categories"].apply(lambda x: category in x)
-            ]
-            for i, row in category_resources.iterrows():
-                write_resource(row, logos=LOGOS)
-                st.divider()
-                # if i > 3:
-                #     break
 
     # Please don't edit or remove the content of this footer as we'd like to include these important
     # links on all AI2 applications

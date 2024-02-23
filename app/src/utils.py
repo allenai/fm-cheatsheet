@@ -23,9 +23,35 @@ def read_jsonl(inpath: Path):
 
 @st.cache_data
 def load_data():
-    return pd.DataFrame(read_jsonl(BASE_DIR / "resources" / "resources.jsonl")).fillna(
-        ""
-    )
+    df = pd.DataFrame(read_jsonl(BASE_DIR / "resources" / "resources.jsonl")).fillna("")
+    logos = load_logos()
+
+    def add_links(row):
+        links = []
+        if row["Paper Link"]:
+            links.append(create_markdown_img(logos["arxiv"], row["Paper Link"], 20))
+        if row["HuggingFace Link"]:
+            links.append(create_markdown_img(logos["hf"], row["HuggingFace Link"], 20))
+        if row["GitHub Link"]:
+            links.append(create_markdown_img(logos["github"], row["GitHub Link"], 20))
+        if row["Website Link"]:
+            links.append(create_markdown_img(logos["web"], row["Website Link"], 20))
+
+        return "  ".join(links)
+
+    df["Links"] = df.apply(add_links, axis=1)
+
+    def add_modality(row):
+        return " ".join(
+            [
+                create_markdown_img(logos[modality.lower()], None, 20)
+                for modality in row["Modalities"]
+            ]
+        )
+
+    df["Modality"] = df.apply(add_modality, axis=1)
+
+    return df
 
 
 def load_logos():
