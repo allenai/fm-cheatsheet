@@ -95,3 +95,23 @@ button[kind="primary"]:focus:not(:active) {
 footer {
     visibility: hidden;
 }
+
+
+/* Hide borders for the table */
+table {
+    border: none!important;
+    /* Remove borders around the outside of the table */
+}
+
+/* Hide borders for table cells */
+th, td {
+    border: none!important;
+    border-style: none;
+    border-width: 0px;
+    /* Remove borders around table cells */
+}
+
+
+#logo {
+    margin-bottom: 0rem;
+}

@@ -1,6 +1,7 @@
 import datetime as dt
 import itertools
 
+import pandas as pd
 import streamlit as st
 from PIL import Image
 
@@ -9,6 +10,8 @@ from src.components.goat_counter import add_goat_counter_tracker
 from src.constants import BASE_DIR, ORDERED_SECTION_HEADERS
 from src.theme import theme
 from src.utils import create_markdown_img, load_data, load_logos
+
+pd.options.display.html.border = 0
 
 
 def write_resource(row, logos: dict) -> None:
@@ -58,6 +61,13 @@ def streamlit_app():
     add_goat_counter_tracker()
     # add custom AI2 branded CSS theme and header banner
     theme.add_theme()
+
+    st.markdown(
+        "<p id='logo' style='text-align: center'>"
+        + create_markdown_img(LOGOS["cheatsheet"], "/", 200)
+        + "</p>",
+        unsafe_allow_html=True,
+    )
 
     # st.title("Foundation Model Development Cheatsheet")
     st.markdown(
@@ -118,10 +128,8 @@ def streamlit_app():
         )
 
     st.markdown("<br/>", unsafe_allow_html=True)
-    # st.markdown("""Assembled by open model developers from AI2, EleutherAI, Google, Hugging Face, Masakhane,
-    #     McGill, MIT, MLCommons, Princeton, Stanford CRFM, UCSB, and UW.""")
     st.markdown(
-        "<p id='maker' style='text-align: center'>Assembled by open model developers from many institutions, including:</p>",
+        "<p id='maker' style='text-align: center'>Assembled by open model developers from AI2, EleutherAI, Google, Hugging Face, Masakhane, McGill, MIT, MLCommons, Princeton, Stanford CRFM, UCSB, and UW.</p>",
         unsafe_allow_html=True,
     )
     st.image("resources/orgs.png", use_column_width=True)
@@ -202,11 +210,13 @@ def streamlit_app():
                 speech_mod=checkbox_speech,
                 time_range=time_selection,
             )
+
             html_table = filtered_resources.to_html(
                 columns=["Modality", "Name", "Description", "Links"],
                 index=False,
                 header=False,
                 escape=False,
+                border=0,
             )
             st.header(category)
             st.write(ORDERED_SECTION_HEADERS[category])

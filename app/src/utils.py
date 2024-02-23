@@ -67,9 +67,13 @@ def load_logos():
         "text": get_image_base64(BASE_DIR / "resources" / "logos/text.png"),
         "vision": get_image_base64(BASE_DIR / "resources" / "logos/vision.png"),
         "speech": get_image_base64(BASE_DIR / "resources" / "logos/speech.png"),
+        "cheatsheet": get_image_base64(
+            BASE_DIR / "resources" / "logos/cheatsheet-0.png"
+        ),
     }
 
 
+@st.cache_data
 def create_markdown_img(base64_string, link_url=None, dim=15):
     img_tag = f'<img src="data:image/png;base64,{base64_string}" width="{dim}px" height="{dim}px" alt="Image">'
     if link_url:
