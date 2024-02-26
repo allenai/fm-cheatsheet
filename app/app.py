@@ -86,7 +86,7 @@ def streamlit_app():
         resources, tools, and findings. The focus of this cheatsheet is not only, or even primarily, to support building,
         but to inculcate good practices, awareness of limitations, and general responsible habits as community norms.
 
-        To add to the cheatsheet please see [Contribute Resources](TODO: Readme Tab)."""
+        To add to the cheatsheet please see [Contribute Resources](https://github.com/allenai/fm-cheatsheet?tab=readme-ov-file#add-to-cheatsheet)."""
     )
     scope_limitations_text = """
         We've compiled resources, tools, and papers that have helped guide our own intuitions around model development,
@@ -97,7 +97,7 @@ def streamlit_app():
         Larger organizations, with commercial services, have even broader considerations for responsible development and release.
 
         * Foundation model development is a rapidly evolving science. **To keep this cheatsheet up-to-date, we are open to
-        public [contributions](https://forms.gle/aAa2dismSzCpae4p6)**.
+        public [contributions](https://github.com/allenai/fm-cheatsheet?tab=readme-ov-file#add-to-cheatsheet)**.
 
         * We've scoped our content modalities only to **text, vision, and speech**.
 
@@ -123,7 +123,7 @@ def streamlit_app():
     with col1b:
         st.link_button(
             "Contribute Resources!",
-            "https://forms.gle/gNtXsqKcG2jwnT9z9",
+            "https://github.com/allenai/fm-cheatsheet?tab=readme-ov-file#add-to-cheatsheet",
             type="primary",
         )
 
