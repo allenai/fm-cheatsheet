@@ -129,7 +129,7 @@ def streamlit_app():
 
     st.markdown("<br/>", unsafe_allow_html=True)
     st.markdown(
-        "<p id='maker' style='text-align: center'>Assembled by open model developers from AI2, EleutherAI, Google, Hugging Face, Masakhane, McGill, MIT, MLCommons, Princeton, Stanford CRFM, UCSB, and UW.</p>",
+        "<p id='maker' style='text-align: center'>Assembled by open model developers from AI2, EleutherAI, Google, Hugging Face, Masakhane, MIT, MLCommons, Princeton, Stanford CRFM, University of California Santa Barbara (UCSB), Univesity College London (UCL) and University of Washington (UW).</p>",
         unsafe_allow_html=True,
     )
     st.image("resources/orgs.png", use_column_width=True)
