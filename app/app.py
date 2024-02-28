@@ -116,8 +116,8 @@ def streamlit_app():
     # TODO: Replace button links.
     with col1a:
         st.link_button(
-            "FM Development Cheatsheet Paper",
-            "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "FM Dev Cheatsheet Paper",
+            "https://github.com/allenai/fm-cheatsheet/app/resources/paper.pdf",
             type="primary",
         )
     with col1b:
@@ -150,11 +150,11 @@ def streamlit_app():
             unsafe_allow_html=True,
         )
 
-        col1, col2, col3 = st.columns([1, 1, 1], gap="medium")
+        # col1, col2, col3 = st.columns([1, 2, 1], gap="medium")
         # st.markdown("Modality Types:")
-        checkbox_text = col1.checkbox("Text", value=True)
-        checkbox_vision = col2.checkbox("Vision")
-        checkbox_speech = col3.checkbox("Speech")
+        checkbox_text = st.checkbox("Text", value=True)
+        checkbox_vision = st.checkbox("Vision")
+        checkbox_speech = st.checkbox("Speech")
 
         date_format = "MMM, YYYY"  # format output
         start_date = dt.date(year=2000, month=1, day=1)
