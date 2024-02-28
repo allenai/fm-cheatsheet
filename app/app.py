@@ -117,7 +117,7 @@ def streamlit_app():
     with col1a:
         st.link_button(
             "FM Dev Cheatsheet Paper",
-            "https://github.com/allenai/fm-cheatsheet/app/resources/paper.pdf",
+            "https://github.com/allenai/fm-cheatsheet/blob/main/app/resources/paper.pdf",
             type="primary",
         )
     with col1b:
