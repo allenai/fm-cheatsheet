@@ -2,7 +2,7 @@
 
 Resources and recommendations for best practices in developing and releasing models.
 
-[**Cheatsheet**](https://fmcheatsheet.org) | [**Contribute Resources**](#add-to-cheatsheet) | [**Paper**](https://github.com/allenai/fm-cheatsheet/app/resources/paper.pdf) | [**Contact and Citation**](#contact-and-citation)
+[**Cheatsheet**](https://fmcheatsheet.org) | [**Contribute Resources**](#add-to-cheatsheet) | [**Paper**](https://github.com/allenai/fm-cheatsheet/blob/main/app/resources/paper.pdf) | [**Contact and Citation**](#contact-and-citation)
 
 <p align="center">
   <img src="app/resources/logos/cheatsheet-0.png" width="40%" height="40%" alt="The Foundation Model Development Cheatsheet">
