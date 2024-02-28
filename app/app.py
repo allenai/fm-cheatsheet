@@ -64,7 +64,7 @@ def streamlit_app():
 
     st.markdown(
         "<p id='logo' style='text-align: center'>"
-        + create_markdown_img(LOGOS["cheatsheet"], "/", 200)
+        + create_markdown_img(LOGOS["cheatsheet"], "/", 220)
         + "</p>",
         unsafe_allow_html=True,
     )
