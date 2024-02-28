@@ -2,7 +2,7 @@
 
 Resources and recommendations for best practices in developing and releasing models.
 
-[**Cheatsheet**](https://www.fmcheatsheet.org) | [**Contribute Resources**](#add-to-cheatsheet) | **Paper (coming soon)** | [**Contact and Citation**](#contact-and-citation)
+[**Cheatsheet**](https://fmcheatsheet.org) | [**Contribute Resources**](#add-to-cheatsheet) | [**Paper**](https://github.com/allenai/fm-cheatsheet/app/resources/paper.pdf) | [**Contact and Citation**](#contact-and-citation)
 
 <p align="center">
   <img src="app/resources/logos/cheatsheet-0.png" width="40%" height="40%" alt="The Foundation Model Development Cheatsheet">
@@ -29,7 +29,7 @@ and in future work.
 
 * Option 1: Use this [upload form](https://forms.gle/aAa2dismSzCpae4p6) to contribute a resource.
 
-* Option 2: Bulk upload resources by creating a pull request in this repository, extending `app/resources/resources.csv`.
+* Option 2: Bulk upload resources by creating a pull request in this repository, extending `app/resources/resources.jsonl`.
 
 In both cases, it is essential that the requested documentation on each resource is accurate and complete.
 
