@@ -1,0 +1,30 @@
+<div class="bg-theme-light dark:bg-slate-900 rounded p-8">
+  <p class="bg-gray-100 rounded p-2 mb-4">Click on the corresponding development section to view foundation model resources.</p>
+  <ul class="space-y-4">
+    {{ $sections := getJSON "assets/sections.json" }}
+    {{ range $sections.sections }}
+      <li>
+        <h3 class="dark:bg-slate-800 bg-gray-200 mb-2 px-0 py-0 pr-1 rounded text-right">{{ .name }}</h3>
+        <ul class="space-y-4">
+          {{ $section := . }}
+          <!-- Collect matching pages into a slice -->
+          {{ $matchingPages := slice }}
+          {{ range where $.Site.RegularPages "Section" "foundation-model-resources" }}
+            {{ $sectionID := .Params.section_id | int }}
+            {{ $sectionNumber := $section.number | int }}
+            {{ if eq $sectionID $sectionNumber }}
+              {{ $matchingPages = $matchingPages | append . }}
+            {{ end }}
+          {{ end }}
+          <!-- Sort the slice by section_id -->
+          {{ $sortedPages := sort $matchingPages "Params.section_id" "asc" }}
+          {{ range $sortedPages }}
+            <!-- Display content for matching pages -->
+            <li>{{ partial "components/resource-label" . }}</li>
+            <!-- Add more content display as needed -->
+          {{ end }}
+        </ul>
+      </li>
+    {{ end }}
+  </ul>
+</div>

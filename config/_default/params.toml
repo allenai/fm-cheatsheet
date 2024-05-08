@@ -1,0 +1,99 @@
+#################### default parameters ################################
+# favicon
+favicon = "images/favicon.png"
+# logo
+logo = "images/fmcheatsheet-logo-large.png"
+logo_darkmode = "images/fmcheatsheet-logo-dark.png"
+# use `px` or `x` with logo_width, example: "100px".
+# Note: logo_width is not work with .svg file
+logo_width = "371px"
+logo_height = "25px"
+# if logo_webp set false, will not generate WEBP version of logo | default is true
+logo_webp = true
+# logo text will only show when logo is missing.
+logo_text = "Foundation Model Cheatsheet"
+# navbar fixed to top
+navbar_fixed = true
+# theme-mode
+theme_switcher = false
+theme_default = "light" # available options [light/dark/system]
+# Main Sections
+mainSections = ["foundation-model-resources"]
+# contact form action
+contact_form_action = "/formHandle.php" # contact form works with [https://airform.io/] or [https://formspree.io]
+# google tag manager, see https://developers.google.com/tag-manager/
+google_tag_manager = ""# "G-BE3HVN9469" # example: G-XXXXXXXXXX
+google_adsense = "" # ca-pub-7563926680228471"     # example: ca-pub-xxxxxxxxxxxxxxxx
+# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
+custom_script = ""
+# copyright
+copyright = 'Website hosted by the <a href="https://allenai.org" target="_blank" rel="noopener noreferrer"> Allen Institute for AI</a> | Design by <a href="https://aimodels.org" target="_blank" rel="noopener noreferrer">AI Models for Open Source AI</a> | Copyright &copy; 2024'
+
+
+
+# Preloader
+[preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format.
+
+# Navigation button
+[navigation_button]
+enable = true
+label = "Download Cheatsheet (.pdf)"
+link = "foundation-model-development-cheatsheet.pdf"
+
+# search
+[search]
+enable = true
+primary_color = "#121212"
+include_sections = ["foundation-model-resources"]
+show_image = true
+show_description = true
+show_tags = false
+show_categories = false
+
+
+# seo meta data for OpenGraph / Twitter Card
+[metadata]
+keywords = ["Foundation Models", "Open Source AI", "Artificial Intelligence"]
+description = "Foundation Model Cheatsheet is a collection of resources for the AI community to learn about the latest advancements in AI and to contribute to the open source AI ecosystem."
+image = "images/fmcheatsheet.png"
+
+
+# site verifications
+[site_verification]
+google = ""   # Your verification code
+bing = ""     # Your verification code
+baidu = ""    # Your verification code
+facebook = "" # Your verification code
+mastodon = "" # Your verification code
+
+# cookies module: https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
+[cookies]
+enable = true
+expire_days = 60
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+button = "I Accept"
+
+######################## sidebar widgets #########################
+[widgets]
+sidebar = ["categories", "tags"]
+models = ["categories","communities"]
+
+
+# google map
+[google_map]
+enable = false
+map_api_key = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
+map_latitude = "51.5223477"
+map_longitude = "-0.1622023"
+map_marker = "images/marker.png"
+
+
+# Subscription
+[subscription]
+enable = true
+# mailchimp subsciption
+mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
+mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"
+

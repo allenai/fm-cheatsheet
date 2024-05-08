@@ -1,0 +1,59 @@
+<div class="bg-theme-light bg-green-400 rounded p-8">
+  <ul class="space-y-4">
+    {{ $sections := getJSON "assets/sections.json" }}
+    {{ range $sections.sections }}
+    <li>
+      <h2 id="{{ .name | urlize }}" class="mb-4 px-0 py-0 pr-1 font-normal">{{ .name }}</h2>
+      <ul class="space-y-4">
+        {{ $section := . }}
+        <!-- Collect matching pages into a slice -->
+        {{ $matchingPages := slice }}
+        {{ range where $.Site.RegularPages "Section" "foundation-model-resources" }}
+        {{ $sectionID := .Params.section_id | int }}
+        {{ $sectionNumber := $section.number | int }}
+        {{ if eq $sectionID $sectionNumber }}
+        {{ $matchingPages = $matchingPages | append . }}
+        {{ end }}
+        {{ end }}
+        <!-- Sort the slice by section_id -->
+        {{ $sortedPages := sort $matchingPages "Params.section_id" "asc" }}
+        {{ range $sortedPages }}
+        {{ $data := getJSON "assets/resources.json" }}
+        {{ $filteredData := where $data "categories" "intersect" (.Params.short_name | slice) }}
+        {{ $filteredDataVision := where $filteredData "modalities" "intersect" (slice "Vision") }}
+        {{ $filteredDataText := where $filteredData "modalities" "intersect" (slice "Text") }}
+        {{ $filteredDataSpeech := where $filteredData "modalities" "intersect" (slice "Speech") }}
+        {{ $entryCount := len $filteredData }}
+        {{ $filteredDataVision := len $filteredDataVision }}
+        {{ $filteredDataText := len $filteredDataText }}
+        {{ $filteredDataSpeech := len $filteredDataSpeech }}
+        <!-- Display content for matching pages -->
+        <li class="flex items-start justify-between align-text-top">
+<a class="hover:text-primary dark:hover:text-darkmode-primary flex items-start" href="{{ .Permalink }}" style="min-width: 150px;">
+    {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Size" "250x" "Command" "Resize" "Class" "m-0 pl-4 sm:hidden lg:inline") }}
+    <div class="ml-4 flex flex-col justify-center"> <!-- Center text along vertical axis -->
+        <div class="flex justify-between items-center"> <!-- Flex container for title and counters -->
+            <h3 class="font-normal inline-block">{{ .Params.short_name }}</h3>
+            <div class="flex text-right items-start sm:hidden md:block flex-nowrap"> <!-- Flex container for counters -->
+                <span class="mr-3 bg-green-200 rounded px-2 py-1 mb-4" style="text-wrap:nowrap">
+                    <i class="fas fa-file-alt fa-lg pr-2"></i> Text {{ $filteredDataText }}
+                </span>
+                <span class="mr-3 bg-yellow-200 rounded px-2 py-1" style="text-wrap:nowrap">
+                    <i class="fas fa-eye fa-lg pr-2"></i> Vision {{ $filteredDataVision }}
+                </span>
+                <span class="mr-3 bg-fuchsia-200 rounded px-2 py-1" style="text-wrap:nowrap">
+                    <i class="fas fa-microphone fa-lg pr-2"></i> Speech {{ $filteredDataSpeech }}
+                </span>
+            </div>
+        </div>
+        <p>{{ .Description }}</p>
+    </div>
+</a>
+        </li>
+        <!-- Add more content display as needed -->
+        {{ end }}
+      </ul>
+    </li>
+    {{ end }}
+  </ul>
+</div>

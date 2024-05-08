@@ -1,0 +1,86 @@
+<!-- DNS preconnect -->
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="preconnect" href="https://use.fontawesome.com" crossorigin />
+<link rel="preconnect" href="//cdnjs.cloudflare.com" />
+<link rel="preconnect" href="//www.googletagmanager.com" />
+<link rel="preconnect" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="https://use.fontawesome.com" />
+<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//connect.facebook.net" />
+<link rel="dns-prefetch" href="//platform.linkedin.com" />
+<link rel="dns-prefetch" href="//platform.twitter.com" />
+
+<!-- google fonts -->
+{{ $pf:= site.Data.theme.fonts.font_family.primary }}
+{{ $sf:= site.Data.theme.fonts.font_family.secondary }}
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script>
+  (function () {
+    const googleFont = document.createElement("link");
+    googleFont.href = "https://fonts.googleapis.com/css2?family={{$pf | safeURL}}{{with $sf}}&family={{. | safeURL}}{{end}}&display=swap";
+    googleFont.type = "text/css";
+    googleFont.rel = "stylesheet";
+    document.head.appendChild(googleFont);
+  })();
+</script>
+
+<!-- plugins + stylesheet -->
+{{ $styles := slice }}
+{{ range site.Params.plugins.css }}
+  {{ if findRE "^http" .link }}
+    <link
+      crossorigin="anonymous"
+      media="all"
+      rel="stylesheet"
+      href="{{ .link | relURL }}"
+      {{ .attributes | safeHTMLAttr }} />
+  {{ else }}
+    {{ $styles = $styles | append (resources.Get .link) }}
+  {{ end }}
+{{ end }}
+{{ $styles := $styles | append (resources.Get "scss/main.scss" | toCSS) }}
+{{ $styles := $styles | resources.Concat "css/style.css" }}
+{{ $styles = $styles | resources.PostCSS }}
+{{ if hugo.IsProduction }}
+  {{ $styles = $styles | resources.ExecuteAsTemplate "css/style.css" . | minify | fingerprint | resources.PostProcess }}
+{{ else }}
+  {{ $styles = $styles | resources.ExecuteAsTemplate "css/style.css" . }}
+{{ end }}
+<style>
+  a[target='_blank']::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0px 3px 0px 5px;
+  background-size: contain;
+background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAABtQTFRFAAAAl5aWAAAAKSkps7KyDQ0Nbm1tDg4OiYmJOV4XEQAAAAl0Uk5TAE//9SD/kP9kb5xATAAAAFlJREFUeJxNzTsKgDAQhOGpJLVH+IWQa1jYSxp7T+ARQsB7u4/Gafbb2UAkz8oWUwfohkeLATg1HXYp1B6YjN1RaLYRRSALQxaGbsXleEe8RNn/kJF/aqn6ABiVDmAZHw+0AAAAAElFTkSuQmCC');
+}
+
+.dark a[target='_blank']::after {
+background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAABtQTFRFAAAAaGlp////1tbWTE1N8vLykZKS8fHxdnZ2RkLL8wAAAAl0Uk5TAE//9SD/kP9kb5xATAAAAFlJREFUeJxNzTsKgDAQhOGpJLVH+IWQa1jYSxp7T+ARQsB7u4/Gafbb2UAkz8oWUwfohkeLATg1HXYp1B6YjN1RaLYRRSALQxaGbsXleEe8RNn/kJF/aqn6ABiVDmAZHw+0AAAAAElFTkSuQmCC');
+}
+
+a.noicon[target="_blank"]::after {
+  content: none; /* Remove the 'external-link-alt' icon */
+}
+
+.social-icons [target="_blank"]::after {
+  content: none; /* Remove the 'external-link-alt' icon */
+}
+
+.share-icons [target="_blank"]::after {
+  content: none; /* Remove the 'external-link-alt' icon */
+}
+
+</style>
+
+<link
+  href="{{ $styles.RelPermalink }}"
+  integrity="{{ $styles.Data.Integrity }}"
+  rel="stylesheet" />

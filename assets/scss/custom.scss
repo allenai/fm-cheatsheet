@@ -1,0 +1,277 @@
+html,
+body {
+  scroll-padding-top: 120px;
+  a {
+    word-break: break-word;
+  }
+}
+
+.container .social-icons li {
+  padding: 0;
+  margin: 0;
+}
+
+.header-solid {
+  background-color: #6fa8dc;
+}
+
+.dark .header-solid {
+  background-color: #03151f;
+
+}
+.header {
+  padding-top: .5rem !important;
+  padding-bottom: .5rem !important;
+  box-shadow:0 6px 14px rgba(0, 0, 0, 0.5); /* Slight drop shadow */
+  backdrop-filter: blur(20px) invert(0%);
+}
+.header, footer .tail {
+  background-color: rgba(130, 171, 220, 0.51) !important;
+}
+.dark .header, .dark footer .tail {
+    background-color: #008391bf !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-size: 1.6rem !important;
+  font-weight: 550;
+}
+
+h3 {
+  font-size: 1.4rem !important;
+  font-weight: 550;
+}
+.header {
+  .social-icons li a {
+    font-size: 1.1em !important;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+address {
+  display: inline;
+  font-style: normal;
+}
+.katex-display {
+  color: #000;
+}
+
+.dark .katex-display {
+  color: #fff;
+}
+
+#biblio pre {
+  background-color: #e1e9e8 !important;
+  max-height: 300px
+}
+.dark #biblio pre {
+  background-color: #1c1d1d !important;
+}
+#biblio pre code span span a {
+  display: none !important;
+}
+
+.widget a {
+  font-size: 2em !important;
+}
+
+.content {
+  :where(blockquote p:first-of-type):not(
+      :where([class~="not-prose"] *)
+    )::before {
+    content: none !important;
+  }
+
+  ul li,
+  article .content ul li {
+    //font-size: 1.2em !important;
+  }
+
+  :is(:where(p):not(:where([class~="not-prose"] *))) {
+    font-size: 20px !important;
+  }
+
+  :where(figcaption):not(:where([class~="not-prose"] *)) {
+    font-size: 1.05em;
+    line-height: 1.4285714;
+    margin-top: 0.471429em;
+  }
+
+  .social-icons img {
+    margin-bottom: 2em;
+  }
+  .social-icons a {
+    text-decoration: none;
+  }
+}
+
+sup a {
+  text-decoration: none !important;
+}
+
+.toc {
+  position: sticky;
+  top: 8rem;
+  align-self: start;
+}
+
+#tableOfContentContainer {
+  max-height: 40vh; /* Adjust the percentage as needed */
+  overflow-y: auto;
+}
+
+nav#TableOfContents {
+  background-color: transparent !important;
+
+  li.active a {
+    color: #022b4a !important;
+    text-decoration: none !important;
+    font-weight: 550 !important;
+  }
+
+  ol ol li {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 550;
+}
+
+.footer-menu-item {
+  margin-bottom: 10px;
+  font-weight: 550;
+  font-size: 1.3em;
+  line-height: 2em;
+}
+
+.footer-menu-item p,
+.footer-menu-item > a {
+  text-decoration: underline;
+}
+
+.footer-menu-subitem {
+  display: block;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+.dark .faq__answer {
+  color: #fff;
+}
+
+.social-icons li a,
+.share-icon svg {
+  font-size: 1.6em !important;
+}
+
+section:nth-of-type(2) {
+  padding-top: 2rem !important;
+}
+
+.nav-dropdown-list {
+  min-width: 350px;
+  background-color: #FFF;
+}
+
+
+.accordion.active .accordion-content {
+  max-height: 100%;
+}
+
+a {
+  overflow-wrap: break-word;
+}
+
+code {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  //background: #fff;
+}
+
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  //background: #424242 !important;
+  //color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .lg\:content :is(:where(code):not(:where([class~="not-prose"] *))) {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    --tw-text-opacity: 1;
+    color: #000000 !important;
+  }
+}
+
+
+.readable {
+  font-size: 20px;
+}
+
+:is(.dark .content) :is(:where(a):not(:where([class~="not-prose"] *))) {
+  --tw-text-opacity: 1;
+  color: rgb(242, 237, 242);
+}
+
+.accordion {
+  border: 0 !important;
+}
+
+.dark {
+  .nav-dropdown-list {
+    background-color: #000;
+      }
+
+ code {
+    //background-color: #000;
+   color: #ffffff !important;
+  }
+
+  .content :where(figcaption):not(:where([class~="not-prose"] *)) {
+    color: #fff;
+  }
+
+  .lg\:content :where(figcaption):not(:where([class~="not-prose"] *)) {
+    color: #fff;
+  }
+
+  a.btn-primary {
+    color: #000;
+  }
+  .content :where(ol > li):not(:where([class~="not-prose"] *))::marker {
+    font-weight: 400;
+    color: #fff;
+  }
+}
+
+@media (min-width: 240px) {
+    .container {
+        max-width: 100%;
+    }
+}
+@media (min-width: 540px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
