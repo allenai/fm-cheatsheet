@@ -1,0 +1,19 @@
+{{ $entryCount := 0 }}
+{{ if .Params.short_name }}
+  {{ $data := getJSON "assets/resources.json" }}
+  {{ $filteredData := where $data "categories" "intersect" (.Params.short_name | slice) }}
+  {{ $entryCount = len $filteredData }}
+{{ end }}
+
+{{- $relPermalink := .RelPermalink -}}
+{{- $title := .Title -}}
+{{ $urlPathParts := split $relPermalink "/" }}
+{{ if .IsHome }}
+  Resources for Foundation Models - Foundation Model Development Cheatsheet
+{{ else }}
+  {{ if $entryCount }}
+    {{ $entryCount }} {{ $title | title }}
+  {{ else }}
+    {{ $title }}
+  {{ end }}
+{{ end }}
