@@ -1,6 +1,6 @@
 ---
 title: "Resources for Model Evaluation Capabilities"
-short_name: "Model Evaluation: Capabilities"
+short_name: "Capabilities"
 type: "fm-resource-category"
 date: "2024-03-17"
 description: "Explore evaluation capabilities for foundation models. Understand the challenges in evaluating open-ended use cases and discover benchmarks and methodologies for assessing model performance in diverse tasks and applications."
