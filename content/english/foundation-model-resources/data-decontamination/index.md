@@ -7,5 +7,5 @@ section_id: 2.4
 description: "Explore data decontamination techniques for foundation model training datasets. Learn how to protect test data integrity and ensure reliable model evaluation with canaries and proactive decontamination methods."
 highlight: true
 image: data-decontamination.png
-details: "Data decontamination is the process of removing evaluation data from the training dataset. This important step in data preprocessing ensures the integrity of model evaluation, ensuring that metrics are reliable and not misleading. The following resources aid in proactively protecting test data with canaries, decontaminating data before training, and identifying or proving what data a model was trained on."
+details: "Data decontamination is the process of removing evaluation data from the training set. This step ensures the integrity of model evaluation. The following resources aid in proactively protecting test data with canaries, decontaminating data before training, and identifying or proving what data a model was trained on."
 ---
