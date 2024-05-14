@@ -7,5 +7,5 @@ section_id: 1.2
 description: "Discover the breadth of finetuning data sources available for foundation models. From HuggingFace Datasets to specialized catalogs, find resources with strong documentation and diverse data sets."
 highlight: true
 image: finetuning-data-catalogs.png
-details: "Finetuning data is used to hone specific capabilities, orient the model to a certain task format, improve its responses to general instructions, mitigate harmful or unhelpful response patterns, or generally align its responses to human preferences. Developers use a variety of data annotations and loss objectives for finetuning, including traditional supervised finetuning, DPO, or reinforcement learning with human feedback. Explore various data catalogs, their attached documentation, and specialized finetuning data sources."
+details: "Finetuning data is used to hone a model's specific capabilities, orient it to a certain task, improve its responses to instructions, mitigate harmful or unhelpful behaviors, and/or align it to human preferences. Given the thousands of specialized data sources for finetuning, we recommend using data catalogs that provide well documented datasets."
 ---
