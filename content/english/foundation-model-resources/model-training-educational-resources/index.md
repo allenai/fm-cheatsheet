@@ -1,6 +1,6 @@
 ---
 title: "Educational Resources for Foundation Model Training"
-short_name: "Model Training: Educational Resources"
+short_name: "Educational Resources"
 type: "fm-resource-category"
 date: "2024-03-17"
 description: "Discover educational resources for foundation model training. Access materials to learn about the considerations and best practices for successfully training or fine-tuning foundation models."

@@ -1,6 +1,6 @@
 ---
 title: "Pretraining Repositories for Foundation Model Training"
-short_name: "Model Training: Pretraining Repositories"
+short_name: "Pretraining Repositories"
 type: "fm-resource-category"
 date: "2024-03-17"
 description: "Discover pretraining repositories for foundation model development. Explore existing open-source codebases tailored for pretraining to optimize computational resources and enhance accessibility for new practitioners."

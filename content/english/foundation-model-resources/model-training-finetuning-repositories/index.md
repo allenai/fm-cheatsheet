@@ -1,6 +1,6 @@
 ---
 title: "Finetuning Repositories for Foundation Model Training"
-short_name: "Model Training: Finetuning Repositories"
+short_name: "Finetuning Repositories"
 type: "fm-resource-category"
 date: "2024-03-17"
 description: "Explore finetuning repositories for foundation model development. Access resources for adapting foundation models after pretraining to ensure greater ecosystem compatibility and reduce barriers to experimentation."
