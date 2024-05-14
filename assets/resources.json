@@ -6,7 +6,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "10-2022",
     "primary_link": "GitHub",
@@ -24,7 +24,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "Frequently Updated",
     "primary_link": "GitHub",
@@ -43,7 +43,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "4-2022",
     "primary_link": "GitHub",
@@ -62,7 +62,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "4-2023",
     "primary_link": "GitHub",
@@ -81,7 +81,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "11-2023",
     "primary_link": "Webpage",
@@ -98,7 +98,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "11-2022",
     "primary_link": "Webpage",
@@ -118,7 +118,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "Frequently Updated",
     "primary_link": "Hugging Face object",
@@ -135,7 +135,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "8-2023",
     "primary_link": "GitHub",
@@ -153,7 +153,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "Frequently Updated",
     "primary_link": "GitHub",
@@ -171,7 +171,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Capabilities",
+      "Capabilities",
       "Reproducibility"
     ],
     "date": "Frequently Updated",
@@ -190,7 +190,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "Frequently Updated",
     "primary_link": "Hugging Face object",
@@ -209,7 +209,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "7-2023",
     "primary_link": "GitHub",
@@ -228,7 +228,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "6-2023",
     "primary_link": "GitHub",
@@ -246,7 +246,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "10-2022",
     "primary_link": "GitHub",
@@ -264,7 +264,7 @@
       "Speech"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "Frequently Updated",
     "primary_link": "Hugging Face object",
@@ -283,7 +283,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "8-2023",
     "primary_link": "GitHub",
@@ -301,7 +301,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "Frequently Updated",
     "primary_link": "Hugging Face object",
@@ -318,7 +318,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "10-2023",
     "primary_link": "Webpage",
@@ -336,7 +336,7 @@
       "Speech"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "3-2023",
     "primary_link": "Webpage",
@@ -353,7 +353,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "12-2023",
     "primary_link": "Webpage",
@@ -372,7 +372,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "11-2023",
     "primary_link": "Webpage",
@@ -665,7 +665,7 @@
       "Text"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "12-2023",
     "primary_link": "Paper",
@@ -684,7 +684,7 @@
       "Vision"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "4-2023",
     "primary_link": "Webpage",
@@ -703,7 +703,7 @@
       "Vision"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "4-2023",
     "primary_link": "Webpage",
@@ -721,7 +721,7 @@
       "Text"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "",
     "primary_link": "GitHub",
@@ -739,7 +739,7 @@
       "Text"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "8-2023",
     "primary_link": "Hugging Face object",
@@ -757,7 +757,7 @@
       "Text"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "5-2023",
     "primary_link": "Paper",
@@ -775,7 +775,7 @@
       "Text"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "5-2023",
     "primary_link": "Hugging Face object",
@@ -792,7 +792,7 @@
       "Text"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "9-2023",
     "primary_link": "GitHub",
@@ -810,7 +810,7 @@
       "Text"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "",
     "primary_link": "GitHub",
@@ -828,7 +828,7 @@
       "Text"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "5-2021",
     "primary_link": "GitHub",
@@ -846,7 +846,7 @@
       "Text"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "9-2023",
     "primary_link": "GitHub",
@@ -864,7 +864,7 @@
       "Text"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "12-2023",
     "primary_link": "Paper",
@@ -882,7 +882,7 @@
       "Text"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "",
     "primary_link": "GitHub",
@@ -900,7 +900,7 @@
       "Text"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "10-2022",
     "primary_link": "GitHub",
@@ -918,7 +918,7 @@
       "Speech"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "6-2021",
     "primary_link": "Hugging Face object",
@@ -935,7 +935,7 @@
       "Text"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "12-2020",
     "primary_link": "GitHub",
@@ -1391,7 +1391,7 @@
       "Text"
     ],
     "categories": [
-      "Data Search, Analysis, & Exploration"
+      "Data Exploration"
     ],
     "date": "7-1905",
     "primary_link": "Webpage",
@@ -1408,7 +1408,7 @@
       "Text"
     ],
     "categories": [
-      "Data Search, Analysis, & Exploration"
+      "Data Exploration"
     ],
     "date": "5-2023",
     "primary_link": "GitHub",
@@ -1426,7 +1426,7 @@
       "Text"
     ],
     "categories": [
-      "Data Search, Analysis, & Exploration"
+      "Data Exploration"
     ],
     "date": "Frequently Updated",
     "primary_link": "Webpage",
@@ -1444,7 +1444,7 @@
       "Text"
     ],
     "categories": [
-      "Data Search, Analysis, & Exploration"
+      "Data Exploration"
     ],
     "date": "6-2023",
     "primary_link": "Hugging Face object",
@@ -1461,7 +1461,7 @@
       "Text"
     ],
     "categories": [
-      "Data Search, Analysis, & Exploration"
+      "Data Exploration"
     ],
     "date": "7-1905",
     "primary_link": "Hugging Face object",
@@ -1478,7 +1478,7 @@
       "Vision"
     ],
     "categories": [
-      "Data Search, Analysis, & Exploration"
+      "Data Exploration"
     ],
     "date": "5-2021",
     "primary_link": "Webpage",
@@ -1497,7 +1497,7 @@
       "Vision"
     ],
     "categories": [
-      "Data Search, Analysis, & Exploration"
+      "Data Exploration"
     ],
     "date": "3-2022",
     "primary_link": "Webpage",
@@ -1515,7 +1515,7 @@
       "Speech"
     ],
     "categories": [
-      "Data Search, Analysis, & Exploration"
+      "Data Exploration"
     ],
     "date": "Frequently Updated",
     "primary_link": "Webpage",
@@ -1532,7 +1532,7 @@
       "Text"
     ],
     "categories": [
-      "Data Search, Analysis, & Exploration"
+      "Data Exploration"
     ],
     "date": "7-1905",
     "primary_link": "Hugging Face object",
@@ -1549,7 +1549,7 @@
       "Text"
     ],
     "categories": [
-      "Data Search, Analysis, & Exploration"
+      "Data Exploration"
     ],
     "date": "10-2023",
     "primary_link": "Webpage",
@@ -1566,7 +1566,7 @@
       "Text"
     ],
     "categories": [
-      "Data Search, Analysis, & Exploration"
+      "Data Exploration"
     ],
     "date": "11-2023",
     "primary_link": "Webpage",
@@ -1584,7 +1584,7 @@
       "Text"
     ],
     "categories": [
-      "Model Training: Educational Resources"
+      "Educational Resources"
     ],
     "date": "10-2023",
     "primary_link": "Webpage",
@@ -1603,7 +1603,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Educational Resources"
+      "Educational Resources"
     ],
     "date": "Frequently Updated",
     "primary_link": "GitHub",
@@ -1621,7 +1621,7 @@
       "Text"
     ],
     "categories": [
-      "Model Training: Educational Resources"
+      "Educational Resources"
     ],
     "date": "12-2022",
     "primary_link": "GitHub",
@@ -1641,7 +1641,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Educational Resources"
+      "Educational Resources"
     ],
     "date": "12-2023",
     "primary_link": "GitHub",
@@ -1659,7 +1659,7 @@
       "Text"
     ],
     "categories": [
-      "Model Training: Educational Resources"
+      "Educational Resources"
     ],
     "date": "3-2022",
     "primary_link": "Webpage",
@@ -1676,7 +1676,7 @@
       "Text"
     ],
     "categories": [
-      "Model Training: Educational Resources"
+      "Educational Resources"
     ],
     "date": "4-2023",
     "primary_link": "Webpage",
@@ -1848,7 +1848,7 @@
     ],
     "categories": [
       "Environmental Impact",
-      "Model Training: Efficiency & Resource Allocation"
+      "Efficiency & Resource Allocation"
     ],
     "date": "1-2020",
     "primary_link": "Paper",
@@ -2134,7 +2134,7 @@
       "Text"
     ],
     "categories": [
-      "Model Training: Finetuning Repositories"
+      "Finetuning Repositories"
     ],
     "date": "Frequently Updated",
     "primary_link": "GitHub",
@@ -2153,7 +2153,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Finetuning Repositories"
+      "Finetuning Repositories"
     ],
     "date": "1-2023",
     "primary_link": "GitHub",
@@ -2172,7 +2172,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Finetuning Repositories"
+      "Finetuning Repositories"
     ],
     "date": "3-2023",
     "primary_link": "GitHub",
@@ -2190,7 +2190,7 @@
       "Text"
     ],
     "categories": [
-      "Model Training: Finetuning Repositories"
+      "Finetuning Repositories"
     ],
     "date": "Frequently Updated",
     "primary_link": "GitHub",
@@ -2208,7 +2208,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Finetuning Repositories"
+      "Finetuning Repositories"
     ],
     "date": "4-2023",
     "primary_link": "Webpage",
@@ -2227,7 +2227,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Finetuning Repositories"
+      "Finetuning Repositories"
     ],
     "date": "4-2023",
     "primary_link": "Webpage",
@@ -2246,7 +2246,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Finetuning Repositories"
+      "Finetuning Repositories"
     ],
     "date": "3-2023",
     "primary_link": "GitHub",
@@ -2265,7 +2265,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Finetuning Repositories"
+      "Finetuning Repositories"
     ],
     "date": "4-2023",
     "primary_link": "GitHub",
@@ -2285,7 +2285,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Finetuning Repositories"
+      "Finetuning Repositories"
     ],
     "date": "Frequently Updated",
     "primary_link": "GitHub",
@@ -2305,7 +2305,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Finetuning Repositories"
+      "Finetuning Repositories"
     ],
     "date": "Frequently Updated",
     "primary_link": "GitHub",
@@ -2325,7 +2325,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Finetuning Repositories"
+      "Finetuning Repositories"
     ],
     "date": "Frequently Updated",
     "primary_link": "GitHub",
@@ -2343,8 +2343,8 @@
       "Text"
     ],
     "categories": [
-      "Model Training: Finetuning Repositories",
-      "Model Training: Pretraining Repositories"
+      "Finetuning Repositories",
+      "Pretraining Repositories"
     ],
     "date": "6-2023",
     "primary_link": "GitHub",
@@ -3418,7 +3418,7 @@
       "Text"
     ],
     "categories": [
-      "Model Training: Pretraining Repositories"
+      "Pretraining Repositories"
     ],
     "date": "Frequently Updated",
     "primary_link": "GitHub",
@@ -3437,7 +3437,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Pretraining Repositories"
+      "Pretraining Repositories"
     ],
     "date": "6-2023",
     "primary_link": "GitHub",
@@ -3455,7 +3455,7 @@
       "Speech"
     ],
     "categories": [
-      "Model Training: Pretraining Repositories"
+      "Pretraining Repositories"
     ],
     "date": "10-2023",
     "primary_link": "GitHub",
@@ -3472,7 +3472,7 @@
       "Text"
     ],
     "categories": [
-      "Model Training: Pretraining Repositories"
+      "Pretraining Repositories"
     ],
     "date": "Frequently Updated",
     "primary_link": "GitHub",
@@ -3490,7 +3490,7 @@
       "Text"
     ],
     "categories": [
-      "Model Training: Pretraining Repositories"
+      "Pretraining Repositories"
     ],
     "date": "",
     "primary_link": "GitHub",
@@ -3509,7 +3509,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Pretraining Repositories"
+      "Pretraining Repositories"
     ],
     "date": "9-2021",
     "primary_link": "GitHub",
@@ -3527,7 +3527,7 @@
       "Text"
     ],
     "categories": [
-      "Model Training: Pretraining Repositories"
+      "Pretraining Repositories"
     ],
     "date": "Frequently Updated",
     "primary_link": "GitHub",
@@ -3545,7 +3545,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Pretraining Repositories"
+      "Pretraining Repositories"
     ],
     "date": "5-2019",
     "primary_link": "GitHub",
@@ -3563,7 +3563,7 @@
       "Speech"
     ],
     "categories": [
-      "Model Training: Pretraining Repositories"
+      "Pretraining Repositories"
     ],
     "date": "Frequently Updated",
     "primary_link": "GitHub",
@@ -3581,7 +3581,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "10-2021",
     "primary_link": "GitHub",
@@ -3600,7 +3600,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "5-2022",
     "primary_link": "GitHub",
@@ -3617,7 +3617,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "6-2022",
     "primary_link": "GitHub",
@@ -3635,7 +3635,7 @@
       "Speech"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "5-2022",
     "primary_link": "Paper",
@@ -3652,7 +3652,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "10-2023",
     "primary_link": "GitHub",
@@ -3669,7 +3669,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "10-2022",
     "primary_link": "GitHub",
@@ -3687,7 +3687,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "12-2023",
     "primary_link": "Webpage",
@@ -3705,7 +3705,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "12-2023",
     "primary_link": "Webpage",
@@ -3723,7 +3723,7 @@
       "Speech"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "3-2020",
     "primary_link": "Paper",
@@ -3740,7 +3740,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "9-2020",
     "primary_link": "GitHub",
@@ -3758,7 +3758,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "2-2022",
     "primary_link": "Paper",
@@ -3777,7 +3777,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "10-2023",
     "primary_link": "Webpage",
@@ -3794,7 +3794,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "11-2023",
     "primary_link": "GitHub",
@@ -3812,7 +3812,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "5-2023",
     "primary_link": "GitHub",
@@ -3830,7 +3830,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "3-2023",
     "primary_link": "Hugging Face object",
@@ -3849,7 +3849,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Efficiency & Resource Allocation"
+      "Efficiency & Resource Allocation"
     ],
     "date": "5-2023",
     "primary_link": "Webpage",
@@ -3868,7 +3868,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Training: Efficiency & Resource Allocation"
+      "Efficiency & Resource Allocation"
     ],
     "date": "5-2023",
     "primary_link": "Paper",
@@ -3886,7 +3886,7 @@
       "Text"
     ],
     "categories": [
-      "Model Training: Efficiency & Resource Allocation"
+      "Efficiency & Resource Allocation"
     ],
     "date": "5-2023",
     "primary_link": "Paper",
@@ -3904,7 +3904,7 @@
       "Text"
     ],
     "categories": [
-      "Model Training: Efficiency & Resource Allocation"
+      "Efficiency & Resource Allocation"
     ],
     "date": "3-2022",
     "primary_link": "Paper",
@@ -4053,7 +4053,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "2-2023",
     "primary_link": "Paper",
@@ -4071,7 +4071,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "8-2022",
     "primary_link": "Paper",
@@ -4088,7 +4088,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "10-2023",
     "primary_link": "Paper",
@@ -4105,7 +4105,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "12-2023",
     "primary_link": "Webpage",
@@ -4122,7 +4122,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "3-2023",
     "primary_link": "Webpage",
@@ -4141,7 +4141,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "07-2023",
     "primary_link": "Paper",
@@ -4160,7 +4160,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "12-2023",
     "primary_link": "Webpage",
@@ -4179,7 +4179,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "10-2022",
     "primary_link": "Paper",
@@ -4198,7 +4198,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "10-2023",
     "primary_link": "Paper",
@@ -4217,7 +4217,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "4-2023",
     "primary_link": "Paper",
@@ -4237,7 +4237,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "1-2024",
     "primary_link": "Paper",
@@ -4256,7 +4256,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "Taxonomy of harmful online content. There are 4 primary categories, which each have subcategories: (1) Hate and harassment (Doxxing, Identity attack, Identity misrepresentation, Insult, Sexual aggression, Threat of violence; (2) Self-inflicted harm (Eating disorder promotion, self-harm), (3) Ideological harm (Extremism Terrorism & Organized crime, Misinformation), (4) Exploitation (Adult sexual services, Child sexual abuse material, Scams).",
     "primary_link": "Paper",
@@ -4275,7 +4275,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "11-2023",
     "primary_link": "Paper",
@@ -4292,7 +4292,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "7-2023",
     "primary_link": "Paper",
@@ -4311,7 +4311,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "12-2021",
     "primary_link": "Paper",
@@ -4330,7 +4330,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "10-2023",
     "primary_link": "Paper",
@@ -4349,7 +4349,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "8-2023",
     "primary_link": "Paper",
@@ -4368,7 +4368,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "6-2021",
     "primary_link": "Paper",
@@ -4387,7 +4387,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "7-2023",
     "primary_link": "Paper",
@@ -4406,7 +4406,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "10-2023",
     "primary_link": "Paper",
@@ -4423,7 +4423,7 @@
       "Speech"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "7-2023",
     "primary_link": "Paper",
@@ -4442,7 +4442,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "9-2023",
     "primary_link": "Paper",
@@ -4461,7 +4461,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "2-2018",
     "primary_link": "Paper",
@@ -4480,7 +4480,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "9-2023",
     "primary_link": "Paper",
@@ -4499,7 +4499,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "12-2023",
     "primary_link": "Paper",
@@ -4518,7 +4518,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "12-2023",
     "primary_link": "Paper",
@@ -4537,7 +4537,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "9-2023",
     "primary_link": "Paper",
@@ -4556,7 +4556,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "9-2023",
     "primary_link": "Paper",
@@ -4575,7 +4575,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "11-2023",
     "primary_link": "Paper",
@@ -4594,7 +4594,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "7-2022",
     "primary_link": "Paper",
@@ -4613,7 +4613,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms Taxonomies"
+      "Risks & Harms Taxonomies"
     ],
     "date": "6-2023",
     "primary_link": "Paper",
@@ -4630,7 +4630,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "12-2023",
     "primary_link": "Webpage",
@@ -4647,7 +4647,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "4-2023",
     "primary_link": "Paper",
@@ -4665,7 +4665,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "1-2024",
     "primary_link": "Webpage",
@@ -4684,7 +4684,7 @@
       "Vision"
     ],
     "categories": [
-      "Model Evaluation: Risks & Harms"
+      "Risks & Harms"
     ],
     "date": "3-2023",
     "primary_link": "Paper",
@@ -4738,7 +4738,7 @@
       "Text"
     ],
     "categories": [
-      "Model Evaluation: Capabilities"
+      "Capabilities"
     ],
     "date": "9-2023",
     "primary_link": "GitHub",
@@ -4773,7 +4773,7 @@
       "Text"
     ],
     "categories": [
-      "Data Cleaning, Filtering, & Mixing"
+      "Data Cleaning"
     ],
     "date": "12-2023",
     "primary_link": "GitHub",
@@ -4791,7 +4791,7 @@
       "Text"
     ],
     "categories": [
-      "Data Search, Analysis, & Exploration"
+      "Data Exploration"
     ],
     "date": "Frequently Updated",
     "primary_link": "Webpage",

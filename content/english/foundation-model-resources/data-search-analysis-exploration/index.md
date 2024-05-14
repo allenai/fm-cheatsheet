@@ -1,6 +1,6 @@
 ---
 title: "Data Search, Analysis, & Exploration Resources for Foundation Models"
-short_name: "Data Search, Analysis, & Exploration"
+short_name: "Data Exploration"
 type: "fm-resource-category"
 date: "2024-03-17"
 section_id: 2.1

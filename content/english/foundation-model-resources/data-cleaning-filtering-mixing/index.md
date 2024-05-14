@@ -1,6 +1,6 @@
 ---
 title: "Data Cleaning, Filtering, & Mixing Resources for Foundation Models"
-short_name: "Data Cleaning, Filtering, & Mixing"
+short_name: "Data Cleaning"
 type: "fm-resource-category"
 date: "2024-03-17"
 section_id: 2.2
