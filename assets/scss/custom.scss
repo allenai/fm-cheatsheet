@@ -12,7 +12,7 @@ body {
 }
 
 .header-solid {
-  background-color: #6fa8dc;
+  //background-color: #6fa8dc;
 }
 
 .dark .header-solid {
@@ -22,11 +22,11 @@ body {
 .header {
   padding-top: .5rem !important;
   padding-bottom: .5rem !important;
-  box-shadow:0 6px 14px rgba(0, 0, 0, 0.5); /* Slight drop shadow */
+  box-shadow:0 6px 14px rgba(0, 0, 0, 0.32); /* Slight drop shadow */
   backdrop-filter: blur(20px) invert(0%);
 }
 .header, footer .tail {
-  background-color: rgba(130, 171, 220, 0.51) !important;
+  background-color: rgb(239, 243, 247) !important;
 }
 .dark .header, .dark footer .tail {
     background-color: #008391bf !important;
