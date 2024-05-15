@@ -103,16 +103,16 @@
             {{ range $modality := $entry.modalities }}
               <span class="inline-grid sm:pt-3">
     {{ if eq $modality "Text" }}
-      <span class="mr-3 bg-green-200 dark:bg-green-900 rounded px-3">
-      <i class="fas fa-file-alt fa-lg pr-2"></i> Text
+      <span class="mr-3 text-green-700 dark:bg-green-900 rounded px-3">
+      <i class="fas fa-file-alt fa-lg"></i> Text
     </span>
     {{ else if eq $modality "Vision" }}
-      <span class="mr-3 bg-yellow-200 dark:bg-yellow-900 rounded px-2">
-      <i class="fas fa-eye fa-lg pr-2"></i> Vision
+      <span class="mr-3 text-yellow-800 dark:bg-yellow-900 rounded px-2">
+      <i class="fas fa-eye fa-lg"></i> Vision
     </span>
     {{ else if eq $modality "Speech" }}
-      <span class="mr-3 bg-fuchsia-200 dark:bg-fuchsia-900 rounded px-2">
-      <i class="fas fa-microphone fa-lg pr-2"></i> Speech
+      <span class="mr-3 text-fuchsia-800 dark:bg-fuchsia-900 rounded px-2">
+      <i class="fas fa-microphone fa-lg"></i> Speech
     </span>
     {{ end }}
   </span>
