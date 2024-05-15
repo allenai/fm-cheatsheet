@@ -7,5 +7,5 @@ description: "Understand the significance of data documentation for foundation m
 section_id: 3.1
 highlight: true
 image: data-documentation.png
-details: "When releasing new data resources with a model, it is important to thoroughly document the data. Documentation allows users to understand its intended uses, legal restrictions, attribution, relevant contents, privacy concerns, and other limitations. Many data documentation standards have been proposed, but their adoption has been uneven. Crowdsourced documentation may contain errors and omissions."
+details: "Data documentation allows users to understand their intended uses, legal restrictions, attribution, relevant contents, privacy concerns, and other limitations. Many data documentation standards have been proposed, but their adoption has been uneven. It is important to recognize that crowdsourced documentation may contain errors and omissions."
 ---
