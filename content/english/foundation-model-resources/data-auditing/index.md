@@ -7,5 +7,5 @@ description: "Discover the importance of auditing datasets in foundation model d
 section_id: 2.5
 highlight: true
 image: data-auditing.png
-details: "Auditing datasets is an essential component of dataset design. Spend a substantial amount of time reading through your dataset, ideally at many stages of the dataset design process. Many datasets have problems specifically because the authors did not do sufficient auditing before releasing them. Use systematic studies of the process in addition to data search, analysis, & exploration tools to track the dataset's evolution."
+details: "Auditing datasets is essential, spend a substantial amount of time inspecting your dataset at multiple stages of the dataset design process. Many datasets have problems specifically because the authors did not do sufficient auditing before releasing them. Use systematic studies of the process in addition to data search, analysis, & exploration tools to track the dataset's evolution."
 ---
