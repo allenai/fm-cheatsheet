@@ -1,6 +1,6 @@
 ---
 title: "Risk & Harms Evaluation Resources for Foundation Models"
-short_name: "Risks & Harms"
+short_name: "Risks & Harms Evaluation"
 type: "fm-resource-category"
 date: "2024-03-17"
 description: "Explore evaluations of risks and harms in foundation models. Understand the importance of assessing risks and harms, and discover methodologies and taxonomies for evaluating potential risks, mitigations, and decision-making in model development and deployment."
