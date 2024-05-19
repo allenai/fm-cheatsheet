@@ -1,8 +1,4 @@
 <a class="hover:text-primary dark:hover:text-darkmode-primary flex justify-between items-center"
    href="{{ .Permalink }}" style="min-width: 150px;">
-  <p class="text-lg">{{ .Params.short_name }}</p>
-  {{ $data := getJSON "assets/resources.json" }}
-  {{ $filteredData := where $data "categories" "intersect" (.Params.short_name | slice) }}
-  {{ $entryCount := len $filteredData }}
-  <span class="dark:bg-slate-700 dark:text-white bg-gray-300 font-bold text-center text-black px-2 py-1 rounded-lg" style="min-width: 40px">{{ $entryCount }}</span>
+  <p class="pl-text-lg">{{ .Params.short_name }}</p>
 </a>
