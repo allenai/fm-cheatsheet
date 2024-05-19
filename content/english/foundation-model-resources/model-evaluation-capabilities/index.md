@@ -7,5 +7,5 @@ description: "Explore evaluation capabilities for foundation models. Understand 
 highlight: true
 section_id: 6.1
 image: model-evaluation-capabilities.png
-details: "Many modern foundation models are released with general conversational abilities, such that their use cases are poorly specified and open-ended. This poses significant challenges to evaluation benchmarks which are unable to critically evaluate so many tasks, applications, and risks systematically or fairly. As a result, it is important to carefully scope the original intentions for the model, and the evaluations to those intentions."
+details: "Many modern foundation models are released with general abilities, such that their use cases are poorly specified and open-ended, posing significant challenges to evaluation benchmarks which are unable to critically evaluate so many tasks, applications, and risks systematically or fairly. It is important to carefully scope the original intentions for the model, and the evaluations to those intentions."
 ---
