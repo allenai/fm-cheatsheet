@@ -7,5 +7,5 @@ description: "Learn about efficiency and resource allocation in foundation model
 highlight: true
 section_id: 4.3
 image: model-training-efficiency-resource-allocation.png
-details: "Knowledge of training best practices and efficiency techniques can reduce costs to train a desired model significantly. Here, we include a select few readings and resources on effectively using a given resource budget for model training, such as several canonical papers on fitting scaling laws."
+details: "Knowledge of training best practices can reduce the cost of training a desired model significantly. Here, we link to readings and resources on effectively using a given resource budget for model training, including canonical papers on fitting scaling laws."
 ---
