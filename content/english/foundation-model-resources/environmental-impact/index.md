@@ -7,5 +7,5 @@ description: "Explore resources for estimating and mitigating the environmental 
 highlight: true
 section_id: 5.1
 image: environmental-impact.png
-details: "Current tools focus on measuring the energy consumed during training or inference and multiplying it by the carbon intensity of the energy source used. For efficient use of resources, several decisions made during or prior to model training can have significant impacts on the upstream and downstream environmental impact of a given model."
+details: "Foundation model development is often resource intensive. The following tools help one to measure energy consumption and estimate the carbon intensity of the energy source used. Decisions made during or prior to model training can have a significant effect on the upstream and downstream environmental impact of a given model."
 ---
