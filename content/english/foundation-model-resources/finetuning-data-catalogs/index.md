@@ -7,5 +7,5 @@ section_id: 1.2
 description: "Discover the breadth of finetuning data sources available for foundation models. From HuggingFace Datasets to specialized catalogs, find resources with strong documentation and diverse data sets."
 highlight: true
 image: finetuning-data-catalogs.png
-details: "Finetuning data is used to hone a model's specific capabilities, orient it to a certain task, improve its responses to instructions, mitigate harmful or unhelpful behaviors, and/or align it to human preferences. Given the thousands of specialized data sources for finetuning, we recommend using data catalogs that provide well documented datasets."
+details: "Finetuning or adaptation of foundation models is a complex step in model development. These models are more frequently deployed than base models. Here, we link to some useful and widely-used resources for finetuning."
 ---
