@@ -7,5 +7,5 @@ description: "Discover taxonomies for evaluating risks and harms in foundation m
 highlight: true
 section_id: 6.2
 image: model-evaluation-risks-harms-taxonomies.png
-details: "Taxonomies provide a way of categorising, defining and understanding risks and hazards created through the use and deployment of AI systems. Some taxonomies focus primarily on the types of interactions and uses that create a risk of harm whereas others focus on the negative effects that they lead to."
+details: "Taxonomies provide a way of categorising, defining and understanding risks and hazards created through the use and deployment of AI systems. The following taxonomies focus on the types of interactions and uses that create a risk of harm as well as the negative effects that they lead to."
 ---
