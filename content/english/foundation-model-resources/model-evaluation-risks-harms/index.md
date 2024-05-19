@@ -7,5 +7,5 @@ description: "Explore evaluations of risks and harms in foundation models. Under
 highlight: true
 section_id: 6.3
 image: model-evaluation-risks-harms.png
-details: "Evaluations of risk serve multiple purposes: to identify if there are issues which need mitigation, to track the success of any such mitigations, to document for other users of the model what risks are still present, and to help make decisions related to model access and release."
+details: "The following tools for evaluating risk serve multiple purposes: to identify if there are issues which need mitigation, to track the success of any such mitigations, to document for other users of the model what risks are still present, and to help make decisions related to model access and release."
 ---
