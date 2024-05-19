@@ -7,5 +7,5 @@ description: "Discover educational resources for foundation model training. Acce
 highlight: true
 section_id: 4.4
 image: model-training-educational-resources.png
-details: "Training models at any scale can be quite daunting to newer practitioners. Here, we include several educational resources that may be useful in learning about the considerations required for successfully and effectively training or fine-tuning foundation models."
+details: "Training models at any scale can be quite daunting to newer practitioners. The following educational resources may be useful in learning about the considerations required for successfully and effectively training or fine-tuning foundation models."
 ---
