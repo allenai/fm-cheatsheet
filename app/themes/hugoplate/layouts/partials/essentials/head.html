@@ -1,0 +1,25 @@
+<meta charset="utf-8" />
+<title>{{ partial "essentials/title-header" . }} {{ if not .IsHome }} - Foundation Models Cheatsheet{{ end }}</title>
+<!-- responsive meta -->
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=5" />
+<!-- canonical link -->
+<link rel="canonical" href="{{ .Permalink }}" />
+{{ if .Params.nofollow }}<meta name="robots" content="nofollow" />{{ end }}
+{{ if .Params.noindex }}<meta name="robots" content="noindex" />{{ end }}
+
+<!-- markup -->
+{{ partial "essentials/markup.html" . }}
+<!-- favicon -->
+
+{{ partialCached "favicon" . }}
+<!-- site verifications -->
+{{ partialCached "site-verifications.html" . }}
+<!-- opengraph and twitter card -->
+<!--<meta name="twitter:card" content="summary" />-->
+{{ partial "basic-seo.html" . }}
+<!-- custom script -->
+{{ partialCached "custom-script.html" . }}
+<!-- search index -->
+{{ partial "search-index.html" . }}

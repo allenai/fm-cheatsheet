@@ -1,0 +1,69 @@
+{{ define "main" }}
+{{ partial "page-header" . }}
+
+<section class="section pt-7 pb-2">
+  <div class="container">
+    <div class="row justify-center">
+      <article class="lg:col-12">
+        <div class="row">
+          <div class="content lg:col-7 mb-10 text-xl">
+            {{ .Content }}
+          </div>
+          <div class="lg:col-5 pb-6">
+            {{ if .Params.image }}
+            {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "w-full rounded-xl sm:hidden lg:block"
+            "Size" "736x" "Command" "Resize") }}
+            {{ end }}
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="section pt-0 mt-0">
+  <div class="container">
+    <div class="row gx-5">
+      <div class="lg:col-12">
+        {{ partial "components/categories-list-big" .  }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark:bg-neutral-900 bg-slate-200">
+  <div class="container">
+    <div class="row gx-5">
+      <div class="lg:col-12">
+        <h2 class="mb-8 text-3xl font-semibold">Frequently Asked Questions (FAQ)</h2>
+      </div>
+      <div class="lg:col-12">
+          {{ if eq .Paginator.PageNumber 1 }}
+          {{ with .File }}
+          {{ $jsonFile := printf "%s.json" (path.Join .Dir .BaseFileName) }}
+          {{ if (fileExists $jsonFile) }}
+          {{ $jsonData := readFile $jsonFile | transform.Unmarshal }}
+          {{ range $index, $faq := $jsonData.mainEntity }}
+                <div class="accordion">
+
+          <button class="accordion-header" data-accordion>
+            {{ $faq.name }}
+            <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+              <path fill="currentColor"
+                    d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p class="px-5 pb-5">{{ $faq.acceptedAnswer.text | markdownify }}</p>
+          </div>
+                  </div>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

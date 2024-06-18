@@ -1,0 +1,139 @@
+<footer class="bg-theme-light dark:bg-darkmode-theme-light">
+  <div class="container">
+    <div class="row pt-10">
+      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
+        <a
+          class="navbar-brand inline-block"
+          href="{{ site.BaseURL | relLangURL }}">
+          {{ partial "logo" }} </a
+        ><br />
+      </div>
+      <div class="lg:col-5 mb-8 text-left mb-0"></div>
+      <div class="lg:col-4 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
+        <ul class="social-icons">
+          {{ range site.Data.social.main }}
+            <li>
+              <a
+                target="_blank"
+                aria-label="{{ .name }}"
+                rel="nofollow noopener"
+                href="{{ .link | safeURL }}">
+                <i class="{{ .icon }}"></i>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+    <div class="row pt-5">
+      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
+        <a href="https://allenai.org/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a><br>
+        <a href="https://allenai.org/terms" target="_blank" rel="noopener noreferrer">Terms of Use</a><br>
+        <a href="https://allenai.org/business-code-of-conduct" target="_blank" rel="noopener noreferrer">Business Code of Conduct</a></p>
+      </div>
+      <div class="lg:col-3 mb-8 text-right mb-0">
+        <ul class="footer-menu">
+          {{ range site.Menus.footer }}
+            {{ if not .Parent }}
+              <!-- ensure we're only looping over top level items -->
+              <li class="footer-menu-item">
+                <a
+                  {{ if findRE `^http` .URL }}
+                    target="_blank" rel="noopener"
+                  {{ end }}
+                  href="{{ if findRE `^#` .URL }}
+                    {{ if not $.IsHome }}
+                      {{ site.BaseURL | relLangURL }}
+                    {{ end }}{{ .URL }}
+                  {{ else }}
+                    {{ .URL | relLangURL }}
+                  {{ end }}"
+                  >{{ .Name }}</a
+                >
+                {{ if .HasChildren }}
+                  <!-- check for child items -->
+                  <ul>
+                    {{ range .Children }}
+                      <!-- loop over child items -->
+                      <li class="footer-menu-subitem">
+                        <a
+                          {{ if findRE `^http` .URL }}
+                            target="_blank" rel="noopener"
+                          {{ end }}
+                          href="{{ if findRE `^#` .URL }}
+                            {{ if not $.IsHome }}
+                              {{ site.BaseURL | relLangURL }}
+                            {{ end }}{{ .URL }}
+                          {{ else }}
+                            {{ .URL | relLangURL }}
+                          {{ end }}"
+                          >{{ .Name }}</a
+                        >
+                      </li>
+                    {{ end }}
+                  </ul>
+                {{ end }}
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+      <div class="lg:col-5 mb-8 text-right lg:text-right">
+
+          <ul class="footer-menu">
+          {{ range site.Menus.footer_right }}
+            {{ if not .Parent }}
+              <!-- ensure we're only looping over top level items -->
+              <li class="footer-menu-item">
+                <a
+                  {{ if findRE `^http` .URL }}
+                    target="_blank" rel="noopener"
+                  {{ end }}
+                  href="{{ if findRE `^#` .URL }}
+                    {{ if not $.IsHome }}
+                      {{ site.BaseURL | relLangURL }}
+                    {{ end }}{{ .URL }}
+                  {{ else }}
+                    {{ .URL | relLangURL }}
+                  {{ end }}"
+                  >{{ .Name }}</a
+                >
+                {{ if .HasChildren }}
+                  <!-- check for child items -->
+                  <ul>
+                    {{ range .Children }}
+                      <!-- loop over child items -->
+                      <li class="footer-menu-subitem">
+                        <a
+                          {{ if findRE `^http` .URL }}
+                            target="_blank" rel="noopener"
+                          {{ end }}
+                          href="{{ if findRE `^#` .URL }}
+                            {{ if not $.IsHome }}
+                              {{ site.BaseURL | relLangURL }}
+                            {{ end }}{{ .URL }}
+                          {{ else }}
+                            {{ .URL | relLangURL }}
+                          {{ end }}"
+                          >{{ .Name }}</a
+                        >
+                      </li>
+                    {{ end }}
+                  </ul>
+                {{ end }}
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+      <div class="lg:col-1 mb-8 bg-gradient text-right lg:text-right"></div>
+    </div>
+  </div>
+  <div class="tail py-7">
+    <div class="container text-center">
+      <p>
+        {{ site.Params.copyright | markdownify }}
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,23 @@
+{{ $permalink := .Permalink }}
+{{ if .File }}
+  {{ with .File }}
+    {{ $jsonFile := printf "%s.json" (path.Join .Dir .BaseFileName) }}
+    {{ if (fileExists $jsonFile) }}
+      {{ $jsonData := readFile $jsonFile | transform.Unmarshal }}
+      <script type="application/ld+json">
+          {{ $jsonData }}
+      </script>
+    {{ end }}
+  {{ end }}
+{{ else }}
+  {{ if .IsHome }}
+  {{ $jsonFile := printf "%s.json" ("index") }}
+  <meta debug="jsonFile" content="{{ $jsonFile }}">
+  {{ if (fileExists $jsonFile) }}
+    {{ $jsonData := readFile $jsonFile | transform.Unmarshal }}
+    <script type="application/ld+json">
+        {{ $jsonData }}
+    </script>
+  {{ end }}
+  {{ end }}
+{{ end }}

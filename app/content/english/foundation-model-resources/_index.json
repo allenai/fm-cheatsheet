@@ -1,0 +1,54 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the foundation model cheatsheet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The foundation model cheatsheet is a curated collection of tools, datasets, code examples, and papers that guide the development of foundation models (large language models, image generators, etc.). It's designed for newer developers who want to build and release these models responsibly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why was this cheatsheet created?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This cheatsheet was created to: 1) Help developers navigate the complex landscape of responsible foundation model development. 2) Provide guidance on mitigating potential misuses or harms of these models. 3) Highlight helpful resources that might not be widely known."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kinds of resources are included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cheatsheet includes: data catalogs (especially for less common languages), tools for searching and analyzing data, repositories for evaluating models, and papers that summarize key development decisions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I contribute to the cheatsheet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cheatsheet is a living document! You can contribute new resources by following the instructions given on the website. Your contributions will be reviewed for relevance and quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this cheatsheet suitable for everyone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's primarily aimed at newer foundation model developers. Larger organizations that build commercial AI products have additional factors to consider."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the cheatsheet cover all foundation model types?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Currently, it's focused on text, vision, and speech models. The creators acknowledge that this is just a starting point."
+      }
+    }
+  ]
+}

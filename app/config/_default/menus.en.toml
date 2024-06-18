@@ -1,0 +1,237 @@
+############# English navigation ##############
+
+[[main]]
+name = "Browse Resources"
+url = "/foundation-model-resources/"
+weight = 2
+
+[[main]]
+parent = "Browse Resources"
+name = "Data Sources"
+url = "/foundation-model-resources/#data-sources"
+weight = 1
+
+[[main]]
+parent = "Browse Resources"
+name = "Data Preparation"
+url = "/foundation-model-resources/#data-preparation"
+weight = 2
+
+[[main]]
+parent = "Browse Resources"
+name = "Model Training"
+url = "/foundation-model-resources/#model-training"
+weight = 4
+
+[[main]]
+parent = "Browse Resources"
+name = "Data Documentation & Release"
+url = "/foundation-model-resources/#data-documentation-and-release"
+weight = 3
+
+
+
+[[main]]
+parent = "Browse Resources"
+name = "Environmental Impact"
+url = "/foundation-model-resources/#environmental-impact"
+weight = 5
+
+[[main]]
+parent = "Browse Resources"
+name = "Model Evaluation"
+url = "/foundation-model-resources/#model-evaluation"
+weight = 6
+
+[[main]]
+parent = "Browse Resources"
+name = "Model Release & Evaluation"
+url = "/foundation-model-resources/#model-release-and-evaluation"
+weight = 7
+
+
+
+
+
+[[main]]
+name = "Get Involved"
+
+[[main]]
+parent = "Get Involved"
+name = "Contribute"
+url = "/contribute/"
+weight = 1
+
+[[main]]
+parent = "Get Involved"
+name = "View Contributors"
+url = "/contributors/"
+weight = 2
+
+
+# footer menu
+[[footer]]
+name = "Get Involved"
+haschildren = true
+weight = 1
+
+[[footer]]
+parent = "Get Involved"
+name = "Contribute"
+url = "/contribute/"
+
+[[footer]]
+parent = "Get Involved"
+name = "Contributors"
+url = "/contributors/"
+#
+#[[footer]]
+#name = "Data Sources"
+#weight = 2
+#
+#[[footer]]
+#parent = "Data Sources"
+#name = "Pretraining Data Sources"
+#url = "/foundation-model-resources/pretraining-data-sources/"
+#weight = 1
+#
+#[[footer]]
+#parent = "Data Sources"
+#name = "Fine-tuning Data Catalogs"
+#url = "/foundation-model-resources/finetuning-data-catalogs/"
+#weight = 2
+#
+#
+#[[footer]]
+#name = "Data Preparation"
+#weight = 3
+#
+#[[footer]]
+#parent = "Data Preparation"
+#name = "Data Search Analysis Exploration"
+#url = "/foundation-model-resources/data-search-analysis-exploration/"
+#weight = 1
+#
+#[[footer]]
+#parent = "Data Preparation"
+#name = "Data Cleaning, Filtering & Mixing"
+#url = "/foundation-model-resources/data-cleaning-filtering-mixing/"
+#weight = 2
+#
+#[[footer]]
+#parent = "Data Preparation"
+#name = "Data Deduplication"
+#url = "/foundation-model-resources/data-deduplication/"
+#weogjt = 3
+#
+#[[footer]]
+#parent = "Data Preparation"
+#name = "Data Decontamination"
+#url = "/foundation-model-resources/data-decontamination/"
+#weight = 4
+#
+#[[footer]]
+#parent = "Data Preparation"
+#name = "Data Auditing"
+#url = "/foundation-model-resources/data-auditing/"
+#weight = 5
+#
+#[[footer]]
+#name = "Data Documentation and Release"
+#weight = 4
+#
+#[[footer]]
+#parent = "Data Documentation and Release"
+#name = "Data Documentation"
+#url = "/foundation-model-resources/data-documentation/"
+#weight = 1
+#
+#[[footer]]
+#parent = "Data Documentation and Release"
+#name = "Data Governance"
+#url = "/foundation-model-resources/data-governance/"
+#weight = 2
+#
+#
+#[[footer_right]]
+#name = "Model Training"
+#weight = 1
+#
+#[[footer_right]]
+#parent = "Model Training"
+#name = "Pretraining Repositories"
+#url = "/foundation-model-resources/model-training-pretraining-repositories/"
+#weight = 1
+#
+#[[footer_right]]
+#parent = "Model Training"
+#name = "Finetuning Repositories"
+#url = "/foundation-model-resources/model-training-finetuning-repositories/"
+#weight = 2
+#
+#[[footer_right]]
+#parent = "Model Training"
+#name = "Efficiency Resource Allocation"
+#url = "/foundation-model-resources/model-training-efficiency-resource-allocation/"
+#weight = 3
+#
+#[[footer_right]]
+#parent = "Model Training"
+#name = "Educational Resources"
+#url = "/foundation-model-resources/model-training-educational-resources/"
+#weight = 4
+#
+#[[footer_right]]
+#name = "Environmental Impact"
+#weight = 2
+#
+#[[footer_right]]
+#parent = "Environmental Impact"
+#name = "Estimating Environmental Impact"
+#url = "/foundation-model-resources/environmental-impact/"
+#weight = 1
+#
+#[[footer_right]]
+#name = "Models Evaluation"
+#weight = 3
+#
+#[[footer_right]]
+#parent = "Models Evaluation"
+#name = "Capabilities"
+#url = "/foundation-model-resources/model-evaluation-capabilities/"
+#
+#[[footer_right]]
+#parent = "Models Evaluation"
+#name = "Rosks & Harm Taxonomies"
+#url = "/foundation-model-resources/model-evaluation-risks-harms-taxonomies/"
+#
+#[[footer_right]]
+#parent = "Models Evaluation"
+#name = "Model Evaluation Risks Harms"
+#url = "/foundation-model-resources/model-evaluation-risks-harms/"
+#
+#
+#[[footer_right]]
+#name = "Model Release & Monitoring"
+#weight = 4
+#
+#[[footer_right]]
+#parent = "Model Release & Monitoring"
+#name = "Model Documentation"
+#url = "/foundation-model-resources/model-documentation/"
+#
+#[[footer_right]]
+#parent = "Model Release & Monitoring"
+#name = "Reproducibility"
+#url = "/foundation-model-resources/reproducibility/"
+#
+#[[footer_right]]
+#parent = "Model Release & Monitoring"
+#name = "License Selection"
+#url = "/foundation-model-resources/license-selection/"
+#
+#[[footer_right]]
+#parent = "Model Release & Monitoring"
+#name = "Usage Monitoring"
+#url = "/foundation-model-resources/usage-monitoring/"
+#

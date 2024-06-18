@@ -1,0 +1,211 @@
+{{ define "main" }}
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="md:col-3 mb-6">
+        <center>
+          <div class="rounded-l-full p-4" style="background-color:rgba(255,255,255,0.67); ">
+            {{ partial "image" (dict "Src" "/images/foundation-model-cheatsheet.png" "Class" "" "Loading" "eager" "Alt"
+            "feature image" "Size" "200x" "Command" "Scale" "Webp" "True") }}
+          </div>
+        </center>
+      </div>
+      <div class="md:col-8">
+        <h1 class="mb-8 mt-4 text-3xl font-normal">Foundation Model Development Cheatsheet</h1>
+        <p class="mb-4 text-lg">
+          This cheatsheet aims to make it easier for new community members to understand our resources, tools, and
+          findings. We emphasize good practices, understanding limitations, and responsible use of these resources. </p>
+      </div>
+    </div>
+    <div class="row pt-6 gx-5">
+
+      <div class="lg:col-8">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="pb-6 pt-0 font-normal">Foundation Model Training Overview</h2>
+            <div class="rounded bg-white p-4">
+              {{ partial "gallery.html" (dict "Dir" "images/home/" "Size" "300x" "Class" "p-4 pb-0" "Webp" "True")}}
+              Discover our curated list of resources covering every stage of the AI lifecycle, from data preparation to
+              model evaluation and release. Explore comprehensive catalogs of data sources, tools for data preparation,
+              strategies for model training, insights on environmental impact, and frameworks for model evaluation and
+              release.<br>
+              <div class="flex justify-end mr-2"> <!-- Use Tailwind's flex utilities -->
+                <a class="btn btn-primary mt-6 mb-2 ml-4" href="/foundation-model-resources/"><i
+                  class="fa fa-square-caret-right pr-2 text-xl"></i>
+                  Browse Resources</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <h2 class="pb-6 pt-6 font-normal">Download Foundation Model Development Cheatsheet</h2>
+            <div class="rounded bg-white p-4">
+              <h3 class="font-normal pb-3">A Review of Tools & Resources</h3>
+              [Authors]<br>
+              [Arxiv ID]<br><br>
+              This cheatsheet serves as a succinct guide, prepared by foundation model developers for foundation model
+              developers.
+              <div class="flex justify-end mr-2"> <!-- Use Tailwind's flex utilities -->
+                <a class="btn btn-primary mt-6 mb-2" style="text-transform: none"
+                   href="foundation-model-development-cheatsheet.pdf">
+                  <i class="fa fa-file pr-2"></i>
+                  Download Cheatsheet (.pdf)</a>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="pb-4 pt-6 font-normal">Development Insights & Best Practices</h2>
+          <div>
+            <div class="bg-white p-4 mt-2 mb-6">
+              <div class="notice-head">
+                <i class="fas fa-exclamation-circle pr-1"></i>
+                <p> Note </p>
+              </div>
+              <div class="notice-body">
+                <p>These are the different parts of the AI development process, and we have a corresponding cheatsheet
+                  section on each.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>{{ partial "components/section-details.html" . }}</div>
+        </div>
+      </div>
+
+      <div class="lg:col-4 pl-3">
+        {{ partial "components/categories-list" . }}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Credits -->
+<section class="section pt-0 pb-0 bg-white dark:bg-slate-900">
+  <div class="container">
+    <div class="row justify-center">
+      <div class="lg:col-12">
+        <div class="content mb-10 px-0 mx-0">
+          {{ partial "image" (dict "Src" "images/supporters/supporters.png" "Alt" .Title "Class" "mx-auto bg-white"
+          "Size" "1200x") }}
+          <p class="mt-0 pt-0 text-sm text-center">Assembled by open model developers from AI2, EleutherAI, Google,
+            Hugging Face, Masakhane, MIT, MLCommons, Princeton, Stanford CRFM, University of California Santa Barbara
+            (UCSB), Univesity College London (UCL) and University of Washington (UW).</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FAQ Section with Multiple Accordions -->
+<section class="section">
+  <div class="container">
+    <div class="row gx-5">
+      <div class="lg:col-12">
+        <h2 class="mb-8 text-3xl font-semibold">Frequently Asked Questions (FAQ) About Foundation Models</h2>
+      </div>
+      <div class="lg:col-12">
+        <!-- FAQ Item 1 -->
+        <div class="accordion">
+          <button class="accordion-header" data-accordion>
+            What exactly is a foundation model?
+            <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+              <path fill="currentColor"
+                    d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p class="px-5 pb-5">A foundation model is a type of large language model (LLM) or other AI model that has
+              been trained on a massive amount of data. These models have a wide range of capabilities, from generating
+              realistic text to translating languages and creating different forms of creative content.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="accordion">
+          <button class="accordion-header" data-accordion>
+            How do I get started with training my own foundation model?
+            <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+              <path fill="currentColor"
+                    d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p class="px-5 pb-5">Building a foundation model is a complex task. The cheatsheet has sections on "Data
+              Search, Analysis, & Exploration" tools to help you find and understand training data, as well as "Model
+              Training" sections on repositories and efficiency techniques.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="accordion">
+          <button class="accordion-header" data-accordion>
+            What should I look for in training data?
+            <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+              <path fill="currentColor"
+                    d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p class="px-5 pb-5">The quality and diversity of your data greatly impact your model. "Pretraining Data
+              Sources" and "Finetuning Data Catalogs" sections of the cheatsheet explain factors to consider like
+              language coverage, data source mixes, and the importance of clear documentation.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="accordion">
+          <button class="accordion-header" data-accordion>
+            Are there environmental impacts from large model training?
+            <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+              <path fill="currentColor"
+                    d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p class="px-5 pb-5">Yes, the computational power needed for training foundation models has a significant
+              carbon footprint. The cheatsheet includes an "Environmental Impact" section with tools and methodologies
+              to estimate and responsibly manage this impact.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="accordion">
+          <button class="accordion-header" data-accordion>
+            How do I make sure my foundation model is being used responsibly?
+            <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+              <path fill="currentColor"
+                    d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p class="px-5 pb-5">The cheatsheet covers responsible AI practices extensively. Key points include:
+              Thorough model documentation ("Model Documentation" section), Evaluating risks and potential harms ("Model
+              Evaluation" sections), Careful license selection for your model ("License Selection" section), and
+              Potentially monitoring model usage ("Usage Monitoring" section).</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="accordion">
+          <button class="accordion-header" data-accordion>
+            Where can I find more information and keep up with this field?
+            <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+              <path fill="currentColor"
+                    d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p class="px-5 pb-5">The cheatsheet is actively maintained and encourages community contributions. It's
+              designed to be a starting point, with many sections linking to in-depth resources and repositories.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- /FAQ Section with Multiple Accordions -->
+
+
+{{ end }}
