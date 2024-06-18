@@ -1,0 +1,4823 @@
+[
+  {
+    "name": "BigBench Hard",
+    "description": "A challenging subset of 23 BigBench tasks where at time of release models did not outperform annotator performance.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "10-2022",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2210.09261",
+    "website_link": "",
+    "github_link": "https://github.com/suzgunmirac/BIG-Bench-Hard",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "suzgunmirac_logo.png"
+  },
+  {
+    "name": "BigCode Evaluation Harness",
+    "description": "A framework for the evaluation of code generation models, compiling many evaluation sets.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/bigcode-project/bigcode-evaluation-harness/tree/main",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "bigcode-project_logo.png"
+  },
+  {
+    "name": "CLIP benchmark",
+    "description": "Image classification, retrieval and captioning",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "4-2022",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/LAION-AI/CLIP_benchmark",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "LAION-AI_logo.png"
+  },
+  {
+    "name": "DataComp eval suite",
+    "description": "38 image classification and retrieval downstream tasks",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "4-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2304.14108",
+    "website_link": "https://www.datacomp.ai/",
+    "github_link": "https://github.com/mlfoundations/datacomp#evaluation",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
+  },
+  {
+    "name": "HEIM",
+    "description": "A large suite of text-to-image evaluations. Useful for thorough capability analysis of these model types.",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "11-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://crfm.stanford.edu/heim/v1.1.0/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "HELM classic",
+    "description": "A large suite of benchmarks and metric types, to holistically evaluate many model qualities aside from performance on general tasks. Useful for a thorough comparison against other well known models.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "11-2022",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2211.09110",
+    "website_link": "https://crfm.stanford.edu/helm/latest/",
+    "github_link": "https://github.com/stanford-crfm/helm",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "stanford-crfm_logo.png"
+  },
+  {
+    "name": "Hugging Face Leaderboards Collection",
+    "description": "A collection of unique leaderboards on Hugging Face for ranking models across modalities and tasks.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Hugging Face object",
+    "paper_link": "",
+    "website_link": "https://huggingface.co/blog?tag=leaderboard",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/collections/clefourrier/leaderboards-and-benchmarks-64f99d2e11e92ca5568a7cce",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "HumanEvalPack",
+    "description": "HumanEvalPack is a code evaluation benchmark across 6 languages and 3 tasks, extending OpenAI's HumanEval.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "8-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2308.07124",
+    "website_link": "",
+    "github_link": "https://github.com/bigcode-project/octopack",
+    "huggingface_link": "https://huggingface.co/datasets/bigcode/humanevalpack",
+    "added_by": "Original Authors",
+    "logo": "bigcode-project_logo.png"
+  },
+  {
+    "name": "Lighteval",
+    "description": "Small, highly configurable LLM evaluation library, for fast experimentation and iteration.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/huggingface/lighteval",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
+  },
+  {
+    "name": "LM Evaluation Harness",
+    "description": "Orchestration framework for standardizing LM prompted evaluation, supporting hundreds of subtasks.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Capabilities",
+      "Reproducibility"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/EleutherAI/lm-evaluation-harness",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "EleutherAI_logo.png"
+  },
+  {
+    "name": "LMSys Chatbot Arena",
+    "description": "A leaderboard of models based on Elo ratings where humans or models select their preferred response between two anonymous models. Chatbot Arena, MT-Bench, and 5-shot MMLU are used as benchmarks. This resource provides a general purpose, and GPT-4 biased perspective into model capabilities.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/2306.05685",
+    "website_link": "",
+    "github_link": "https://github.com/lm-sys/FastChat/blob/main/docs/dataset_release.md",
+    "huggingface_link": "https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard",
+    "added_by": "Original Authors",
+    "logo": "lm-sys_logo.png"
+  },
+  {
+    "name": "MMBench",
+    "description": "A joint vision and text benchmark evaluating dozens of capabilities, using curated datasets and ChatGPT in the loop.",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "7-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2307.06281",
+    "website_link": "https://opencompass.org.cn/mmbench",
+    "github_link": "https://github.com/open-compass/MMBench",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "open-compass_logo.png"
+  },
+  {
+    "name": "MME",
+    "description": "An evaluation benchmark for multimodal large language models with 14 manually curated subtasks, to avoid data leakage.",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "6-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2306.13394",
+    "website_link": "",
+    "github_link": "https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "BradyFU_logo.png"
+  },
+  {
+    "name": "MTEB",
+    "description": "The Massive Text Embedding Benchmark measures the quality of embeddings across 58 datasets and 112 languages for tasks related to retrieval, classification, clustering or semantic similarity.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "10-2022",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2210.07316",
+    "website_link": "",
+    "github_link": "https://github.com/embeddings-benchmark/mteb",
+    "huggingface_link": "https://huggingface.co/spaces/mteb/leaderboard",
+    "added_by": "Original Authors",
+    "logo": "embeddings-benchmark_logo.png"
+  },
+  {
+    "name": "OpenASR Leaderboard",
+    "description": "An automatic leaderboard ranking and evaluating speech recognition models on common benchmarks.",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Hugging Face object",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/huggingface/open_asr_leaderboard",
+    "huggingface_link": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard",
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
+  },
+  {
+    "name": "OpenFlamingo eval suite",
+    "description": "VQA, captioning, classification",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "8-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2308.01390",
+    "website_link": "",
+    "github_link": "https://github.com/mlfoundations/open_flamingo/tree/main/open_flamingo/eval",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
+  },
+  {
+    "name": "Open LLM Leaderboard",
+    "description": "A popular leaderboard on Hugging Face for ranking open LLMs on their knowledge, reasoning and math capabilities.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Hugging Face object",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/open-llm-leaderboard",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "SWE Bench",
+    "description": "SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub. Given a codebase and an issue, a language model is tasked with generating a patch that resolves the described problem.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "10-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2310.06770",
+    "website_link": "https://www.swebench.com/",
+    "github_link": "https://github.com/princeton-nlp/SWE-bench",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "princeton-nlp_logo.png"
+  },
+  {
+    "name": "The Edinburgh International Accents of English Corpus",
+    "description": "Benchmark dataset of diverse English varieties for evaluating automatic speech recognition models (typically trained and tested only on US English)",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "3-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2303.18110",
+    "website_link": "https://groups.inf.ed.ac.uk/edacc/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "HELM lite",
+    "description": "A lightweight subset of capability-centric benchmarks within HELM with comparisons to many prominent open and closed models.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "12-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://crfm.stanford.edu/2023/12/19/helm-lite.html",
+    "website_link": "https://crfm.stanford.edu/helm/lite/latest/#/",
+    "github_link": "https://github.com/stanford-crfm/helm",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "stanford-crfm_logo.png"
+  },
+  {
+    "name": "MMMU",
+    "description": "A benchmark to evaluate joint text and vision models on 11k examples spanning 30 college-level subject domains.",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "11-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2311.16502",
+    "website_link": "https://mmmu-benchmark.github.io/",
+    "github_link": "https://github.com/MMMU-Benchmark/MMMU",
+    "huggingface_link": "https://huggingface.co/datasets/MMMU/MMMU",
+    "added_by": "Original Authors",
+    "logo": "MMMU-Benchmark_logo.png"
+  },
+  {
+    "name": "Anaconda",
+    "description": "An environment and dependency management tool.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Reproducibility"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://www.anaconda.com/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Colab Notebooks",
+    "description": "A tool to execute and share reproducible code snippets.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Reproducibility"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://colab.research.google.com/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Docker",
+    "description": "An environment and dependency management tool.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Reproducibility"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://docker-curriculum.com/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Jupyter Notebooks",
+    "description": "A tool to execute and share reproducible code snippets.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Reproducibility"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://jupyter.org/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Semver",
+    "description": "A widely used protcol for versioning to software, to ensure easy reproducibility.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Reproducibility"
+    ],
+    "date": "",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://semver.org/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Reforms",
+    "description": "Reporting Standards for ML-based Science.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Reproducibility"
+    ],
+    "date": "8-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2308.07832",
+    "website_link": "https://reforms.cs.princeton.edu/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "A Retrospective Datasheet for BookCorpus",
+    "description": "A third party datasheet for BookCorpus",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Auditing"
+    ],
+    "date": "5-2021",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2105.05241",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Data Provenance Initiative",
+    "description": "A large scale audit of 2000+ popular datasets in AI.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Auditing"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2310.16787",
+    "website_link": "https://www.dataprovenance.org/",
+    "github_link": "https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection",
+    "huggingface_link": "https://huggingface.co/DataProvenanceInitiative",
+    "added_by": "Original Authors",
+    "logo": "Data-Provenance-Initiative_logo.png"
+  },
+  {
+    "name": "Datasheet for the Pile",
+    "description": "A datasheet for the Pile",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Auditing"
+    ],
+    "date": "1-2022",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2201.07311",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "HaveIBeenTrained",
+    "description": "A combination search tool / opt out tool for LAION",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Data Auditing",
+      "Data Governance"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://haveibeentrained.com/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Into the LAIONs Den",
+    "description": "Auditing hateful content in text-to-vision datasets.",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Data Auditing"
+    ],
+    "date": "9-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2311.03449",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Multimodal datasets: misogyny, pornography, and malignant stereotypes",
+    "description": "Auditing vision datasets for sensitive content.",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Data Auditing"
+    ],
+    "date": "10-2021",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2110.01963",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "On Hate Scaling Laws For Data-Swamps",
+    "description": "Auditing text and vision datasets for systemic biases and hate.",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Data Auditing"
+    ],
+    "date": "6-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2306.13141",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Quality at a Glance",
+    "description": "An audit of allegedly multilingual parallel text corpora.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Auditing"
+    ],
+    "date": "3-2021",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2103.12028",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Training Data Transparency Blog",
+    "description": "A blog on transparency for training data in AI.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Data Auditing"
+    ],
+    "date": "12-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://huggingface.co/blog/yjernite/data-transparency",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Data Selection via Importance Resampling (DSIR)",
+    "description": "A tool for selecting data with a similar distribution to a target dataset",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "12-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2302.03169",
+    "website_link": "",
+    "github_link": "https://github.com/p-lambda/dsir",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "p-lambda_logo.png"
+  },
+  {
+    "name": "DataComp filtering",
+    "description": "Various quality filters",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "4-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2304.14108",
+    "website_link": "https://www.datacomp.ai/",
+    "github_link": "https://github.com/mlfoundations/datacomp/tree/main#baselines",
+    "huggingface_link": "https://huggingface.co/datasets/mlfoundations/datacomp_1b",
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
+  },
+  {
+    "name": "DataComp pre-filtering",
+    "description": "NSFW detection, dedup with eval datasets",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "4-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2304.14108",
+    "website_link": "https://www.datacomp.ai/",
+    "github_link": "https://github.com/mlfoundations/dataset2metadata",
+    "huggingface_link": "https://huggingface.co/datasets/mlfoundations/datacomp_1b",
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
+  },
+  {
+    "name": "Detoxify",
+    "description": "A python library designed to identify toxic language in comments. Functions in seven languages: English, Italian, French, Russian, Portuguese, Spanish, Turking.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/unitaryai/detoxify",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "unitaryai_logo.png"
+  },
+  {
+    "name": "Dolma's Toolkit",
+    "description": "A Python framework for defining Taggers that identify non-language text, language ID, PII, toxic text, and \"quality\" text. Includes reimplementation of heuristics used by Gopher and C4 for non-natural language.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "8-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/allenai/dolma",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "allenai_logo.png"
+  },
+  {
+    "name": "DoReMi",
+    "description": "A github repository for Domain Reweighting with Minimax Optimization",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "5-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2305.10429",
+    "website_link": "",
+    "github_link": "https://github.com/sangmichaelxie/doremi",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "sangmichaelxie_logo.png"
+  },
+  {
+    "name": "fastText language classifier",
+    "description": "A tool for classifying the language of text",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "5-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/facebook/fasttext-language-identification",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "FUN-LangID",
+    "description": "Frequently Used N-grams Language ID model, a character 4-gram model trained to recognize up to 1633 languages.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "9-2023",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/google-research/url-nlp/tree/main/fun-langid",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "google-research_logo.png"
+  },
+  {
+    "name": "GlotLID",
+    "description": "A model for identifying languages, with support for more than 1600 languages.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2310.16248",
+    "website_link": "",
+    "github_link": "https://github.com/cisnlp/GlotLID",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "cisnlp_logo.png"
+  },
+  {
+    "name": "Langdetect",
+    "description": "A tool to predict the language of text, used to filter out/in data from the desired languages",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "5-2021",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "https://pypi.org/project/langdetect/",
+    "github_link": "https://github.com/Mimino666/langdetect",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "Mimino666_logo.png"
+  },
+  {
+    "name": "Lilac",
+    "description": "A python package for better understanding your data. Includes keyword and semantic search, as well as detection for PII, duplicates, and language.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "9-2023",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "https://www.lilacml.com/",
+    "github_link": "https://github.com/lilacai/lilac",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "lilacai_logo.png"
+  },
+  {
+    "name": "Online Data Mixing",
+    "description": "A github repository for efficient online data mixing",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "12-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2312.02406",
+    "website_link": "",
+    "github_link": "https://github.com/alon-albalak/online-data-mixing",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "alon-albalak_logo.png"
+  },
+  {
+    "name": "OpenLID",
+    "description": "A model (and data used to train the model) for identifying 200+ languages.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2305.13820",
+    "website_link": "",
+    "github_link": "https://github.com/laurieburchell/open-lid-dataset",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "laurieburchell_logo.png"
+  },
+  {
+    "name": "Roots data cleaning pipeline",
+    "description": "A pipeline for processing and improving quality of crowdsourced datasets",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "10-2022",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/bigscience-workshop/data-preparation/tree/main/preprocessing/training/01a_catalogue_cleaning_and_filtering",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "bigscience-workshop_logo.png"
+  },
+  {
+    "name": "SpeechBrain\u2019s Spoken language ID model",
+    "description": "Pre-trained spoken language identification model trained on VoxLingua107, dataset of audio sourced from YouTube for 107 languages",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "6-2021",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/2106.04624",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "The Pile processing scripts",
+    "description": "A series of scripts to replicate the Pile dataset. Includes filtering and cleaning for: language, profanity, deduplication, and test set decontamination.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "12-2020",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/EleutherAI/the-pile/tree/master/processing_scripts",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "EleutherAI_logo.png"
+  },
+  {
+    "name": "BigBench Canaries",
+    "description": "BigBench's \"Training on the Test Set\" Task provies guidance on using canaries to check if an evaluation set was trained on.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Decontamination"
+    ],
+    "date": "10-2021",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/google/BIG-bench/blob/main/bigbench/benchmark_tasks/training_on_test_set/README.md#training-on-the-test-set",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "google_logo.png"
+  },
+  {
+    "name": "Carper AI Decontamination Tool",
+    "description": "A repository, heavily based by the BigCode repository, to decontaminate evaluation sets from a text training set.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Decontamination"
+    ],
+    "date": "1-2023",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/CarperAI/decontamination/tree/main",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "CarperAI_logo.png"
+  },
+  {
+    "name": "Data Portraits",
+    "description": "A tool to test for membership inference of popular datasets, like The Pile or The Stack, i.e. whether a model has seen certain data.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Decontamination"
+    ],
+    "date": "3-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2303.03919",
+    "website_link": "https://dataportraits.org/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Detect Pretrain Data (Min-K Prob)",
+    "description": "Detect Pretrain Data (Min-K Prob)",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Decontamination"
+    ],
+    "date": "11-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2310.16789",
+    "website_link": "https://swj0419.github.io/detect-pretrain.github.io/",
+    "github_link": "https://github.com/swj0419/detect-pretrain-code",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "swj0419_logo.png"
+  },
+  {
+    "name": "Interpreting Canary Exposure",
+    "description": "An explanation on how to interpret canary exposure, including by relating it to membership inference attacks, and differential privacy.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Decontamination"
+    ],
+    "date": "5-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2306.00133",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Proving Test Set Contamination in Black Box Language Models",
+    "description": "A paper that provides methods for provable guarantees of test set contamination in language models without access to pretraining data or model weights.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Decontamination"
+    ],
+    "date": "10-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2310.17623",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Apricot",
+    "description": "apricot implements submodular optimization for the purpose of summarizing massive data sets into minimally redundant subsets that are still representative of the original data. These subsets are useful for both visualizing the modalities in the data (such as in the two data sets below) and for training accurate machine learning models with just a fraction of the examples and compute.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Data Deduplication"
+    ],
+    "date": "7-1905",
+    "primary_link": "GitHub",
+    "paper_link": "https://dl.acm.org/doi/abs/10.5555/3455716.3455877",
+    "website_link": "",
+    "github_link": "https://github.com/jmschrei/apricot",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "jmschrei_logo.png"
+  },
+  {
+    "name": "Datacomp image dedup",
+    "description": "Data to deduplicate vision datasets for the Datacomp challenge.",
+    "modalities": [
+      "Vision"
+    ],
+    "categories": [
+      "Data Deduplication"
+    ],
+    "date": "8-2023",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "https://www.datacomp.ai/",
+    "github_link": "https://github.com/mlfoundations/dataset2metadata",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
+  },
+  {
+    "name": "Dolma Dedupe Tool",
+    "description": "Dolma's text deduplication tool for pretraining data",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Deduplication"
+    ],
+    "date": "10-2023",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/allenai/dolma",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "allenai_logo.png"
+  },
+  {
+    "name": "Google Text Deduplication",
+    "description": "A repository to deduplicate language model datasets. They release the ExactSubstr deduplication implementation (written in Rust) along with scripts to perform ExactSubstr deduplication and inspect the results (written in Python). They also release the document clusters resulting from running NearDup deduplication on C4, RealNews, LM1B, and Wiki-4B-en.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Deduplication"
+    ],
+    "date": "7-2021",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2107.06499",
+    "website_link": "",
+    "github_link": "https://github.com/google-research/deduplicate-text-datasets",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "google-research_logo.png"
+  },
+  {
+    "name": "RedPajama-Data",
+    "description": "Tools for: exact deduplication with bloom filter, fuzzy deduplication with LSH, calculating quality scores",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Deduplication"
+    ],
+    "date": "10-2023",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/togethercomputer/RedPajama-Data",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "togethercomputer_logo.png"
+  },
+  {
+    "name": "Pile",
+    "description": "A set of tools for deduplication with MinHashLSH",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Deduplication"
+    ],
+    "date": "5-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2101.00027",
+    "website_link": "",
+    "github_link": "https://huggingface.co/datasets/EleutherAI/pile-standard-pythia-preshuffled",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "datasets_logo.png"
+  },
+  {
+    "name": "Data Cards Playbook",
+    "description": "A tool to create a Data Card that thoroughly documents a new dataset.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Data Documentation"
+    ],
+    "date": "6-2022",
+    "primary_link": "Webpage",
+    "paper_link": "https://dl.acm.org/doi/fullHtml/10.1145/3531146.3533231",
+    "website_link": "https://sites.research.google/datacardsplaybook/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Data Nutrition Labels",
+    "description": "A generic but thorough form of dataset documentation.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Data Documentation"
+    ],
+    "date": "2020",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/1805.03677",
+    "website_link": "https://datanutrition.org/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Data Provenance Attribution Card",
+    "description": "A repository to select datasets and generate a summary. It can also generate a bibtex to attribute all developers of the datasets.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Data Documentation"
+    ],
+    "date": "10-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2310.16787",
+    "website_link": "https://www.dataprovenance.org/",
+    "github_link": "https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "Data-Provenance-Initiative_logo.png"
+  },
+  {
+    "name": "Data Statements",
+    "description": "A data statement to thoroughly document a new dataset.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Data Documentation"
+    ],
+    "date": "2018",
+    "primary_link": "Paper",
+    "paper_link": "https://aclanthology.org/Q18-1041/",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Datasheets for Datasets",
+    "description": "A datasheet to thoroughly document a new dataset.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Data Documentation"
+    ],
+    "date": "3-2018",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/1803.09010",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Datasheets for Digital Cultural Heritage Datasets",
+    "description": "A datasheet specifically designed for digital cultural heritage datasets and their considerations.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Data Documentation"
+    ],
+    "date": "2023",
+    "primary_link": "Paper",
+    "paper_link": "https://cris.unibo.it/handle/11585/947893",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Data Governance in the Age of Large-Scale Data-Driven Language Technology",
+    "description": "A paper detailing the data governance decisions undertaken during BigScience's BLOOM project. ",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Data Governance"
+    ],
+    "date": "5-2022",
+    "primary_link": "Paper",
+    "paper_link": "https://dl.acm.org/doi/abs/10.1145/3531146.3534637",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/spaces/bigscience-data/roots-search",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Reclaiming the Digital Commons: A Public Data Trust for Training Data",
+    "description": "A paper that argues for the creation of a public data trust for collective input into the creation of AI systems and analyzes the feasibility of such a data trust.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Data Governance"
+    ],
+    "date": "3-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2303.09001",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "BigCode Governance Card",
+    "description": "A report outlining governance questions, approaches, and tooling in the BigCode project, with a focus on Data governance",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Governance"
+    ],
+    "date": "11-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2312.03872",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "AmIinTheStack",
+    "description": "A tool to let software developers check whether their code was included in TheStack dataset and opt out of inclusion in future versions",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Governance"
+    ],
+    "date": "9-2022",
+    "primary_link": "Hugging Face object",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/spaces/bigcode/in-the-stack",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "StarPII: BigCode Pseudonymization Model",
+    "description": "A model trained on a new dataset of PII in code used for pseudonymization of a dataset prior to training",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Governance"
+    ],
+    "date": "4-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/bigcode/starpii",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "French DPA Resource sheets on AI and GDPR",
+    "description": "A set of resource sheets focused on GDPR compliance covering legal basis for data collection, sharing, and best practices for handling personal data",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Data Governance"
+    ],
+    "date": "10-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://www.cnil.fr/en/ai-how-sheets",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "AI2 C4 Search Tool",
+    "description": "A search tool that lets users to execute full-text queries to search Google's C4 Dataset.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Exploration"
+    ],
+    "date": "7-1905",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://c4-search.apps.allenai.org/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Data Finder",
+    "description": "A tool to help build search over academic datasets given a natural language description of the idea.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Exploration"
+    ],
+    "date": "5-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2305.16636",
+    "website_link": "",
+    "github_link": "https://github.com/viswavi/datafinder",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "viswavi_logo.png"
+  },
+  {
+    "name": "Data Provenance Explorer",
+    "description": "An explorer tool for selecting, filtering, and visualizing popular finetuning, instruction, and alignment training datasets from Hugging Face, based on their metadata such as source, license, languages, tasks, topics, among other properties.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Exploration"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2310.16787",
+    "website_link": "https://www.dataprovenance.org/",
+    "github_link": "https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection",
+    "huggingface_link": "https://huggingface.co/DataProvenanceInitiative",
+    "added_by": "Original Authors",
+    "logo": "Data-Provenance-Initiative_logo.png"
+  },
+  {
+    "name": "GAIA Search Tool",
+    "description": "A search tool over C4, the Pile, ROOTS, and the text captions of LAION, developed with Pyserini (https://github.com/castorini/pyserini).",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Exploration"
+    ],
+    "date": "6-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/2306.01481",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/spaces/spacerini/gaia",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Hugging Face Data Measurements Tool",
+    "description": "A tool to analyze, measure, and compare properties of text finetuning data, including their distributional statistics, lengths, and vocabularies.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Exploration"
+    ],
+    "date": "7-1905",
+    "primary_link": "Hugging Face object",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/spaces/huggingface/data-measurements-tool",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Know your data",
+    "description": "A tool for exploring over 70 vision datasets",
+    "modalities": [
+      "Vision"
+    ],
+    "categories": [
+      "Data Exploration"
+    ],
+    "date": "5-2021",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://knowyourdata-tfds.withgoogle.com/",
+    "github_link": "https://github.com/PAIR-code/knowyourdata",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "PAIR-code_logo.png"
+  },
+  {
+    "name": "LAION search",
+    "description": "Nearest neighbor search based on CLIP embeddings",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Data Exploration"
+    ],
+    "date": "3-2022",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://rom1504.github.io/clip-retrieval/",
+    "github_link": "https://github.com/rom1504/clip-retrieval",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "rom1504_logo.png"
+  },
+  {
+    "name": "NVIDIA Speech Data Explorer",
+    "description": "Tool for exploring speech data",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Data Exploration"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/stable/tools/speech_data_explorer.html",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "ROOTS Search Tool",
+    "description": "A tool, based on a BM25 index, to search over text for each language or group of languages included in the ROOTS pretraining dataset.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Exploration"
+    ],
+    "date": "7-1905",
+    "primary_link": "Hugging Face object",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/spaces/bigscience-data/roots-search",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "What's In My Big Data?",
+    "description": "A platform for analyzing large text datasets at scale",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Exploration"
+    ],
+    "date": "10-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2310.20707",
+    "website_link": "https://wimbd.apps.allenai.org/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "WIMBD",
+    "description": "A dataset analysis tool to count, search, and compare attributes across several massive pretraining corpora at scale, including C4, The Pile, and RedPajama.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Exploration"
+    ],
+    "date": "11-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2310.20707",
+    "website_link": "https://wimbd.apps.allenai.org/",
+    "github_link": "https://github.com/allenai/wimbd",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "allenai_logo.png"
+  },
+  {
+    "name": "Everything about Distributed Training and Efficient Finetuning",
+    "description": "A rundown and crash course in distributed training for deep learning, with an eye toward LLM finetuning and current useful tools and resources. Provides a good overview of the various (distributed) training strategies for efficient and scalable training.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Additional Educational Resources"
+    ],
+    "date": "10-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://sumanthrh.com/post/distributed-and-efficient-finetuning/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Machine Learning Engineering Online Book",
+    "description": "An \"online textbook\" and resource collection on ML engineering at scale, ranging from debugging distributed systems, parallelism strategies, effective use of large HPC clusters, and chronicles of past large-scale training runs with lessons learned.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Additional Educational Resources"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/stas00/ml-engineering",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "stas00_logo.png"
+  },
+  {
+    "name": "nanoGPT",
+    "description": "A minimal, stripped-down training codebase for teaching purposes and easily-hackable yet performant small-scale training.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Additional Educational Resources"
+    ],
+    "date": "12-2022",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/karpathy/nanoGPT",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "karpathy_logo.png"
+  },
+  {
+    "name": "The EleutherAI Model Training Cookbook",
+    "description": "A set of resources on how to train large scale AI systems",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Additional Educational Resources"
+    ],
+    "date": "12-2023",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/EleutherAI/cookbook",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "EleutherAI_logo.png"
+  },
+  {
+    "name": "Transformer Inference Arithmetic",
+    "description": "A blog post on the inference costs of transformer-based LMs. Useful for providing more insight into deep learning accelerators and inference-relevant decisions to make when training a model.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Additional Educational Resources"
+    ],
+    "date": "3-2022",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://kipp.ly/transformer-inference-arithmetic/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Transformer Math 101",
+    "description": "An introductory blog post on training costs of LLMs, going over useful formulas and considerations from a high to low level",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Additional Educational Resources"
+    ],
+    "date": "4-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://blog.eleuther.ai/transformer-math/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Azure Emissions Impact Dashboard",
+    "description": "Monitoring the environmental impact of training machine learning models on Azure",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Environmental Impact"
+    ],
+    "date": "10-2021",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://www.microsoft.com/en-us/sustainability/emissions-impact-dashboard",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Carbontracker",
+    "description": "carbontracker is a tool for tracking and predicting the energy consumption and carbon footprint of training deep learning models as described in Anthony et al. (2020).",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Environmental Impact"
+    ],
+    "date": "7-2020",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2007.03051",
+    "website_link": "",
+    "github_link": "https://github.com/lfwa/carbontracker",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "lfwa_logo.png"
+  },
+  {
+    "name": "CodeCarbon",
+    "description": "Estimate and track carbon emissions from your computer, quantify and analyze their impact.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Environmental Impact"
+    ],
+    "date": "11-2020",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "https://mlco2.github.io/codecarbon/",
+    "github_link": "https://github.com/mlco2/codecarbon",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "mlco2_logo.png"
+  },
+  {
+    "name": "Estimating the Carbon Footprint of BLOOM, a 176B Parameter Language Model",
+    "description": "A comprehensive account of the broader environmental impact of the BLOOM language model.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Environmental Impact"
+    ],
+    "date": "6-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://jmlr.org/papers/v24/23-0069.html",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Experiment Impact Tracker",
+    "description": "The experiment-impact-tracker is meant to be a simple drop-in method to track energy usage, carbon emissions, and compute utilization of your system. Currently, on Linux systems with Intel chips (that support the RAPL or powergadget interfaces) and NVIDIA GPUs, we record: power draw from CPU and GPU, hardware information, python package versions, estimated carbon emissions information, etc. In California we even support realtime carbon emission information by querying caiso.com!",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Environmental Impact"
+    ],
+    "date": "1-2020",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2002.05651",
+    "website_link": "",
+    "github_link": "https://github.com/Breakend/experiment-impact-tracker",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "Breakend_logo.png"
+  },
+  {
+    "name": "Google Cloud Carbon Footprint Measurement",
+    "description": "Tracking the emissions of using Google's cloud compute resources",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Environmental Impact"
+    ],
+    "date": "10-2021",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://cloud.google.com/carbon-footprint?hl=en",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Making AI Less \"Thirsty\"",
+    "description": "Uncovering and Addressing the Secret Water Footprint of AI Models, and estimating water usage for training and deploying LLMs.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Environmental Impact"
+    ],
+    "date": "4-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2304.03271",
+    "website_link": "",
+    "github_link": "https://github.com/Ren-Research/Making-AI-Less-Thirsty",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "Ren-Research_logo.png"
+  },
+  {
+    "name": "ML CO2 Impact",
+    "description": "A tool for estimating carbon impacts of ML training",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Environmental Impact"
+    ],
+    "date": "10-2019",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/1910.09700",
+    "website_link": "https://mlco2.github.io/impact/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Scaling Laws for Neural Language Models",
+    "description": "Provide scaling laws to determine the optimal allocation of a fixed compute budget.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Environmental Impact",
+      "Efficiency & Resource Allocation"
+    ],
+    "date": "1-2020",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2001.08361",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Training Compute-Optimal Large Language Models",
+    "description": "Provides details on the optimal model size and number of tokens for training a transformer-based language model in a given computational budget.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Environmental Impact"
+    ],
+    "date": "3-2022",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2203.15556",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "AI4Bh\u0101rat Indic NLP",
+    "description": "A repository of Indian language text and speech resources, including datasets.",
+    "modalities": [
+      "Text",
+      "Speech"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "https://ai4bharat.iitm.ac.in/",
+    "github_link": "https://github.com/AI4Bharat",
+    "huggingface_link": "https://huggingface.co/ai4bharat",
+    "added_by": "Original Authors",
+    "logo": "AI4Bharat_logo.png"
+  },
+  {
+    "name": "Arabic NLP Data Catalogue",
+    "description": "A catalogue of hundreds of Arabic text and speech finetuning datasets, regularly updated.",
+    "modalities": [
+      "Text",
+      "Speech"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://arbml.github.io/masader/",
+    "github_link": "https://github.com/ARBML",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "ARBML_logo.png"
+  },
+  {
+    "name": "CHiME-5",
+    "description": "Speaker Diarization dataset comprising over 50 hours of conversational speech recordings collected from twenty real dinner parties that have taken place in real homes",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs"
+    ],
+    "date": "7-1905",
+    "primary_link": "Webpage",
+    "paper_link": "https://licensing.sheffield.ac.uk/product/chime5/print",
+    "website_link": "https://licensing.sheffield.ac.uk/product/chime5",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Data Provenance Collection",
+    "description": "A repository and explorer tool for selecting popular finetuning, instruction, and alignment training datasets from Hugging Face, based on data provenance and characteristics criteria.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2310.16787",
+    "website_link": "https://www.dataprovenance.org/",
+    "github_link": "https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection",
+    "huggingface_link": "https://huggingface.co/DataProvenanceInitiative",
+    "added_by": "Original Authors",
+    "logo": "Data-Provenance-Initiative_logo.png"
+  },
+  {
+    "name": "ImageNet",
+    "description": "An image classification dataset with 1.3M samples and 1000 classes",
+    "modalities": [
+      "Vision"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs"
+    ],
+    "date": "6-2009",
+    "primary_link": "Webpage",
+    "paper_link": "https://ieeexplore.ieee.org/abstract/document/5206848",
+    "website_link": "https://www.image-net.org/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Indonesian NLP Data Catalogue",
+    "description": "A respository of hundreds of Indonesian language datasets.",
+    "modalities": [
+      "Text",
+      "Speech"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://indonlp.github.io/nusa-catalogue/",
+    "github_link": "https://github.com/IndoNLP/nusa-crowd",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "IndoNLP_logo.png"
+  },
+  {
+    "name": "Lanfrica",
+    "description": "An online catalogue that provides links to African language resources (papers and datasets) in both texts and speech",
+    "modalities": [
+      "Text",
+      "Speech"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://lanfrica.com/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Masakhane NLP",
+    "description": "A repository of African language text and speech resources, including datasets.",
+    "modalities": [
+      "Text",
+      "Speech"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "https://www.masakhane.io/",
+    "github_link": "https://github.com/masakhane-io",
+    "huggingface_link": "https://huggingface.co/masakhane",
+    "added_by": "Original Authors",
+    "logo": "masakhane-io_logo.png"
+  },
+  {
+    "name": "MS COCO",
+    "description": "Object detection, segmentation, captioning and retrieval dataset",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs"
+    ],
+    "date": "5-2014",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/1405.0312",
+    "website_link": "https://cocodataset.org/#home",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "OpenSLR",
+    "description": "A collection of user-contributed datasets for various speech processing tasks",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://www.openslr.org/resources.php",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "SEACrowd",
+    "description": "A repository of hundreds of South East Asian language datasets.",
+    "modalities": [
+      "Text",
+      "Speech"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://seacrowd.github.io/seacrowd-catalogue/",
+    "github_link": "https://github.com/SEACrowd",
+    "huggingface_link": "https://huggingface.co/NusaCrowd",
+    "added_by": "Original Authors",
+    "logo": "SEACrowd_logo.png"
+  },
+  {
+    "name": "VoxCeleb",
+    "description": "Speaker Identification dataset comprising of YouTube interviews from thousands of celebrities",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs"
+    ],
+    "date": "6-2017",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/1706.08612",
+    "website_link": "https://www.robots.ox.ac.uk/~vgg/data/voxceleb/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "VoxLingua107",
+    "description": "Spoken language identification dataset created using audio extracted from YouTube videos retrieved using language-specific search phrases",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs"
+    ],
+    "date": "11-2020",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2011.12998",
+    "website_link": "https://bark.phon.ioc.ee/voxlingua107/",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Zenodo AfricaNLP Community",
+    "description": "An online catalogue that provides African language resources (data and models) in both texts and speech",
+    "modalities": [
+      "Text",
+      "Speech"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://zenodo.org/communities/africanlp",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Axolotl",
+    "description": "A repository for chat- or instruction-tuning language models, including through full fine-tuning, LoRA, QLoRA, and GPTQ.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Finetuning Repositories"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/OpenAccess-AI-Collective/axolotl",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "OpenAccess-AI-Collective_logo.png"
+  },
+  {
+    "name": "BLIP-2",
+    "description": "Fine-tuned LLMs on multimodal data using a projection layer",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Finetuning Repositories"
+    ],
+    "date": "1-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2301.12597",
+    "website_link": "",
+    "github_link": "https://github.com/salesforce/LAVIS/tree/main/projects/blip2",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "salesforce_logo.png"
+  },
+  {
+    "name": "LLaMA-Adapter",
+    "description": "Fine-tuned LLMs on multimodal data using adapters",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Finetuning Repositories"
+    ],
+    "date": "3-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2304.15010",
+    "website_link": "",
+    "github_link": "https://github.com/OpenGVLab/LLaMA-Adapter",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "OpenGVLab_logo.png"
+  },
+  {
+    "name": "LLaMA-Factory",
+    "description": "A framework for efficiently fine-tuning LLMs using cutting-edge algorithms with a user-friendly web UI",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Finetuning Repositories"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2403.13372",
+    "website_link": "",
+    "github_link": "https://github.com/hiyouga/LLaMA-Factory",
+    "huggingFace_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "LLaVA",
+    "description": "Fine-tuned LLMs on multimodal data using a projection layer",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Finetuning Repositories"
+    ],
+    "date": "4-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2310.03744",
+    "website_link": "https://llava-vl.github.io/",
+    "github_link": "https://github.com/haotian-liu/LLaVA",
+    "huggingface_link": "https://huggingface.co/spaces/badayvedat/LLaVA",
+    "added_by": "Original Authors",
+    "logo": "haotian-liu_logo.png"
+  },
+  {
+    "name": "MiniGPT4",
+    "description": "Fine-tuned LLMs on multimodal data using a projection layer",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Finetuning Repositories"
+    ],
+    "date": "4-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2304.10592",
+    "website_link": "https://minigpt-4.github.io/",
+    "github_link": "https://github.com/Vision-CAIR/MiniGPT-4",
+    "huggingface_link": "https://huggingface.co/spaces/Vision-CAIR/minigpt4",
+    "added_by": "Original Authors",
+    "logo": "Vision-CAIR_logo.png"
+  },
+  {
+    "name": "OpenFlamingo",
+    "description": "Open source implementation of Flamingo",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Finetuning Repositories"
+    ],
+    "date": "3-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2308.01390",
+    "website_link": "https://laion.ai/blog/open-flamingo-v2/",
+    "github_link": "https://github.com/mlfoundations/open_flamingo",
+    "huggingface_link": "https://huggingface.co/openflamingo",
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
+  },
+  {
+    "name": "Otter",
+    "description": "Multimodal models with Flamingo architecture",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Finetuning Repositories"
+    ],
+    "date": "4-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2311.04219",
+    "website_link": "",
+    "github_link": "https://github.com/Luodian/Otter",
+    "huggingface_link": "https://huggingface.co/spaces/Otter-AI/OtterHD-Demo",
+    "added_by": "Original Authors",
+    "logo": "Luodian_logo.png"
+  },
+  {
+    "name": "peft",
+    "description": "A library for doing parameter efficient finetuning",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Finetuning Repositories"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/huggingface/peft",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
+  },
+  {
+    "name": "trl",
+    "description": "A library for doing RLHF on LLMs.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Finetuning Repositories"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/huggingface/trl",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
+  },
+  {
+    "name": "trlX",
+    "description": "A library for doing RLHF on LLMs.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Finetuning Repositories"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "https://aclanthology.org/2023.emnlp-main.530/",
+    "website_link": "https://trlx.readthedocs.io/en/latest/",
+    "github_link": "https://github.com/CarperAI/trlx",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "CarperAI_logo.png"
+  },
+  {
+    "name": "Levanter",
+    "description": "Levanter is a framework for training large language models (LLMs) and other foundation models that strives for legibility, scalability, and reproducibility:",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Finetuning Repositories",
+      "Pretraining Repositories"
+    ],
+    "date": "6-2023",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "https://crfm.stanford.edu/2023/06/16/levanter-1_0-release.html",
+    "github_link": "https://github.com/stanford-crfm/levanter",
+    "huggingface_link": "https://huggingface.co/stanford-crfm",
+    "added_by": "Original Authors",
+    "logo": "stanford-crfm_logo.png"
+  },
+  {
+    "name": "AI Licensing Can\u2019t Balance \u201cOpen\u201d with \u201cResponsible\u201d",
+    "description": "A blog post by an IP lawyer arguing against responsible use licensing",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "7-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://katedowninglaw.com/2023/07/13/ai-licensing-cant-balance-open-with-responsible/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "AI Pubs Open RAIL-M License",
+    "description": "Template for a responsible AI model license where the model is intended for research use. Use restrictions relate to discrimination, transparency, and violating the law",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "3-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://www.licenses.ai/ai-pubs-open-railm-vz1",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "AI2 ImpACT-LR License",
+    "description": "License for low risk AI artifacts (data and models) that allows for distribution of the artifact and its derivatives. Use restrictions include weapons development and military surveillance",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "7-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://allenai.org/licenses/impact-lr",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "AI2 ImpACT-MR License",
+    "description": "License for medium risk AI artifacts (data and models) that does not allows for distribution of the artifact but does allow for distribution of its derivatives. Use restrictions include weapons development and military surveillance",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "7-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://allenai.org/licenses/impact-mr",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Apache 2.0 License",
+    "description": "The most common open-source license for model weights",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "1-2004",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://www.apache.org/licenses/LICENSE-2.0",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Behavioral Use Licensing for Responsible AI",
+    "description": "A paper that provides a theoretical framework for licenses inteded for open models with use restrictions",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "6-2022",
+    "primary_link": "Paper",
+    "paper_link": "https://dl.acm.org/doi/10.1145/3531146.3533143",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "BigCode Open RAIL-M License",
+    "description": "Template for a responsible AI model license. Use restrictions include generation and dissemination of malware",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "5-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "BigScience Open RAIL-M License",
+    "description": "Template for a responsible AI model license. Use restrictions include defamation, disinformation, and discrimination",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "8-2022",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://static1.squarespace.com/static/5c2a6d5c45776e85d1482a7e/t/6308bb4bba3a2a045b72a4b0/1661516619868/BigScience+Open+RAIL-M+License.pdf",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Choose an open source license",
+    "description": "A guide for choosing among open source licenses that includes general selection criteria and explanations for software licenses",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "https://choosealicense.com/",
+    "github_link": "https://github.com/github/choosealicense.com/tree/gh-pages",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "github_logo.png"
+  },
+  {
+    "name": "Create Commons License Chooser",
+    "description": "A guide for choosing among Creative Commons licenses with an explanation of how they function",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://chooser-beta.creativecommons.org/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Legal Playbook For Natural Language Processing Researchers",
+    "description": "This playbook is a legal research resource for various activities related to data gathering, data governance, and disposition of an AI model available as a public resource.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "7-1905",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://bigscience.huggingface.co/blog/legal-playbook-for-natural-language-processing-researchers",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Licensing is neither feasible nor effective for addressing AI risks",
+    "description": "Argues that licensing is not the correct way to address risks with AI systems",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "6-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://www.aisnakeoil.com/p/licensing-is-neither-feasible-nor",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Open RAIL-S License",
+    "description": "Template for a responsible AI source code license. Use restrictions relate to surveillance, synthetic media, healthcare and the criminal legal system",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "11-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://www.licenses.ai/source-code-license",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Primer on AI2 ImpACT Licenses",
+    "description": "A post by AI2 describing when and why an organization should use a specific ImpACT license",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "7-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://allenai.org/impact-license",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "The Open Source Definition",
+    "description": "The definition of an \"open source\" license",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "2-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://opensource.org/osd/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "The Turning Way, Licensing",
+    "description": "A guide to reproducible research and licensing",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://the-turing-way.netlify.app/reproducible-research/licensing",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "What is Free Software?",
+    "description": "A philosophical argument for why free software licenses are important",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "License Selection"
+    ],
+    "date": "2-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://www.gnu.org/philosophy/free-sw.en.html",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Ecosystem Cards",
+    "description": "Ecosystem Graphs centralize information about models and their impact in the broader ecosystem. ",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Model Documentation"
+    ],
+    "date": "3-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2303.15772",
+    "website_link": "https://hai.stanford.edu/news/ecosystem-graphs-social-footprint-foundation-models",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Foundation Model Transparency Index",
+    "description": "An index to measure the transparency of a foundation model with respect to its inputs, development, and downstream uses or policies.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Model Documentation"
+    ],
+    "date": "10-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2310.12941",
+    "website_link": "https://crfm.stanford.edu/fmti/",
+    "github_link": "https://github.com/stanford-crfm/fmti",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "stanford-crfm_logo.png"
+  },
+  {
+    "name": "Model Card Resources",
+    "description": "A release of several resources surrounding model cards, including templates and tools for easy documentation creation, and how these are frequently used in practice.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Model Documentation"
+    ],
+    "date": "12-2022",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://huggingface.co/blog/model-cards",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Model Cards",
+    "description": "A standard for reporting and documenting machine learning models, for promoting and easing transparent and open model development or reporting.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Model Documentation"
+    ],
+    "date": "10-2018",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/1810.03993",
+    "website_link": "https://huggingface.co/spaces/huggingface/Model_Cards_Writing_Tool",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Hugging Face ML Research Release Toolkit ",
+    "description": "A new researcher guide to releasing model or data resources, documenting the research and Hugging Face objects.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Model Documentation"
+    ],
+    "date": "12-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://docs.google.com/document/d/1EOxyZ11piIIRLDlhofX8nfnU0mHCU-TZ3EU4tx5g9aE/edit#heading=h.8zrjwmlee7ge",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "C4",
+    "description": "An English, cleaned version of Common Crawl's web crawl corpus (https://commoncrawl.org).",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "4-2019",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/1910.10683",
+    "website_link": "https://commoncrawl.org",
+    "github_link": "https://github.com/google-research/text-to-text-transfer-transformer#c4",
+    "huggingface_link": "https://huggingface.co/datasets/allenai/c4",
+    "added_by": "Original Authors",
+    "logo": "google-research_logo.png"
+  },
+  {
+    "name": "Common Voice",
+    "description": "28k hours [as of 11/2023] of crowd-sourced read speech from 100+ languages",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "11-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://commonvoice.mozilla.org/en/datasets",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "CulturaX",
+    "description": "A pertaining dataset of 16T tokens, covering 167 languages, cleaned, deduplicated, and refined. Combines mC4 into 2020, with OSCAR project data up to 2023.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "9-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/2309.09400",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/datasets/uonlp/CulturaX",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "DataComp-1B and CommonPool-13B",
+    "description": "A large pool of 13B image-text pairs from CommonCrawl and a curated 1B subset",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "4-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2304.14108",
+    "website_link": "https://www.datacomp.ai/",
+    "github_link": "https://github.com/mlfoundations/datacomp",
+    "huggingface_link": "https://huggingface.co/datasets/mlfoundations/datacomp_1b",
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
+  },
+  {
+    "name": "Dolma",
+    "description": "A pretraining dataset of 3 trillion tokens from a diverse mix of web content, academic publications, code, books, and encyclopedic materials.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "8-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/2402.00159",
+    "website_link": "",
+    "github_link": "https://github.com/allenai/dolma",
+    "huggingface_link": "https://huggingface.co/datasets/allenai/dolma",
+    "added_by": "Original Authors",
+    "logo": "allenai_logo.png"
+  },
+  {
+    "name": "GigaSpeech",
+    "description": "40k hours (10k transcribed) multi-domain English speech corpus",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "7-1905",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2106.06909",
+    "website_link": "",
+    "github_link": "https://github.com/SpeechColab/GigaSpeech",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "SpeechColab_logo.png"
+  },
+  {
+    "name": "Golos",
+    "description": "1,240 hours of crowd-sourced Russian speech",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "6-2021",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2106.10161",
+    "website_link": "https://www.openslr.org/114/",
+    "github_link": "https://github.com/sberdevices/golos",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "sberdevices_logo.png"
+  },
+  {
+    "name": "IndicCorp v2",
+    "description": "A multilingual pre-training corpus  for 24 Indian languages",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "5-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://aclanthology.org/2023.acl-long.693/",
+    "website_link": "",
+    "github_link": "https://github.com/AI4Bharat/IndicBERT/tree/main#indiccorp-v2",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "AI4Bharat_logo.png"
+  },
+  {
+    "name": "IndicSUPERB",
+    "description": "1,684 hour crowd-sourced corpus of 12 Indian languages",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "8-2022",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2208.11761",
+    "website_link": "https://ai4bharat.iitm.ac.in/indicsuperb/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Libri-Light",
+    "description": "60k hour read English speech from LibriVox audiobooks",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "12-2019",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/1912.07875",
+    "website_link": "",
+    "github_link": "https://github.com/facebookresearch/libri-light",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "facebookresearch_logo.png"
+  },
+  {
+    "name": "LibriSpeech",
+    "description": "960 hour read English speech from LibriVox audiobooks",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "7-1905",
+    "primary_link": "Webpage",
+    "paper_link": "http://www.danielpovey.com/files/2015_icassp_librispeech.pdf",
+    "website_link": "https://www.openslr.org/12/",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/datasets/librispeech_asr",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "MADLAD-400",
+    "description": "A manually audited, general domain 3T token monolingual dataset based on CommonCrawl, spanning 419 languages.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "9-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/2309.04662",
+    "website_link": "",
+    "github_link": "https://github.com/google-research/google-research/tree/master/madlad_400",
+    "huggingface_link": "https://huggingface.co/datasets/allenai/MADLAD-400",
+    "added_by": "Original Authors",
+    "logo": "google-research_logo.png"
+  },
+  {
+    "name": "mC4",
+    "description": "The fully multilingual, cleaned version of Common Crawl's web crawl corpus (https://commoncrawl.org).",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "4-2019",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/1910.10683",
+    "website_link": "https://commoncrawl.org",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/datasets/mc4",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "MMC4",
+    "description": "Interleaved image-text data from Common Crawl (570M images, 43B tokens)",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "4-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2304.06939",
+    "website_link": "",
+    "github_link": "https://github.com/allenai/mmc4",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "allenai_logo.png"
+  },
+  {
+    "name": "OBELICS",
+    "description": "Interleaved image-text data from Common Crawl (353 M images, 115B tokens)",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "6-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2306.16527",
+    "website_link": "https://huggingface.co/blog/idefics",
+    "github_link": "https://github.com/huggingface/OBELICS",
+    "huggingface_link": "https://huggingface.co/datasets/HuggingFaceM4/OBELICS",
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
+  },
+  {
+    "name": "OLC",
+    "description": "The Open License Corpus is a 228B token corpus of permissively-licensed, primarily English text data for pretraining.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "8-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2308.04430",
+    "website_link": "",
+    "github_link": "https://github.com/kernelmachine/silo-lm#download-data",
+    "huggingface_link": "https://huggingface.co/datasets/kernelmachine/open-license-corpus",
+    "added_by": "Original Authors",
+    "logo": "kernelmachine_logo.png"
+  },
+  {
+    "name": "OpenWebMath",
+    "description": "A dataset containing the majority of the high-quality, mathematical text from the internet. It is filtered and extracted from over 200B HTML files on Common Crawl down to a set of 6.3 million documents containing a total of 14.7B tokens.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "10-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/2310.06786",
+    "website_link": "",
+    "github_link": "https://github.com/keirp/OpenWebMath",
+    "huggingface_link": "https://huggingface.co/datasets/open-web-math/open-web-math",
+    "added_by": "Original Authors",
+    "logo": "keirp_logo.png"
+  },
+  {
+    "name": "OPUS",
+    "description": "The Open Parallel Corpus is a massive collection of translated text pairs from the web.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://opus.nlpl.eu/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "OSCAR",
+    "description": "The Open Super-large Crawled Aggregated coRpus provides web-based multilingual datasets across 166 languages.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "https://aclanthology.org/2022.wnut-1.23/",
+    "website_link": "https://oscar-project.org/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "peS2o",
+    "description": "A collection of ~40M creative open-access academic papers, cleaned, filtered, and formatted for pre-training of language models, originally derived from the Semantic Scholar Open Research Corpus (S2ORC).",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "1-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/1911.02782",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/datasets/allenai/peS2o",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Pile of Law",
+    "description": "An open-source, English dataset with \u223c256GB of legal and administrative data, covering court opinions, contracts, administrative rules, and legislative records.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "11-2022",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/2207.00220",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/datasets/pile-of-law/pile-of-law",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "RedPajama v2",
+    "description": "A pretraining dataset of 30 trillion filtered and deduplicated tokens (100+ trillions raw) from 84 CommonCrawl dumps covering 5 languages, along with 40+ pre-computed data quality annotations that can be used for further filtering and weighting.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "10-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "",
+    "website_link": "https://www.together.ai/blog/redpajama-data-v2",
+    "github_link": "https://github.com/togethercomputer/RedPajama-Data",
+    "huggingface_link": "https://huggingface.co/datasets/togethercomputer/RedPajama-Data-V2",
+    "added_by": "Original Authors",
+    "logo": "togethercomputer_logo.png"
+  },
+  {
+    "name": "ROOTS",
+    "description": "A massive multilingual pretraining corpus from BigScience, comprised of 1.6TB of text spanning 59 languages. It is a mix of OSCAR (https://oscar-project.org/) and the datasets found in the BigScience Catalogue (https://huggingface.co/spaces/bigscience/SourcingCatalog).",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "5-2022",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/2303.03915",
+    "website_link": "https://bigscience.huggingface.co/",
+    "github_link": "https://github.com/bigscience-workshop/bigscience/tree/master/data",
+    "huggingface_link": "https://huggingface.co/bigscience-data",
+    "added_by": "Original Authors",
+    "logo": "bigscience-workshop_logo.png"
+  },
+  {
+    "name": "Samr\u00f3mur",
+    "description": "2,200 hour crowd-sourced corpus of Icelandic speech",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "7-1905",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://www.openslr.org/128/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Shrutilipi",
+    "description": "6,400 hour corpus of TV/Radio broadcasts from 12 Indian languages",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "8-2022",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2208.12666",
+    "website_link": "https://ai4bharat.iitm.ac.in/shrutilipi/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "The People\u2019s Speech",
+    "description": "30k hour conversational English dataset",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "11-2021",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/2111.09344",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/datasets/MLCommons/peoples_speech",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "The Pile",
+    "description": "An 825GB English pretraining corpus that mixes portions of common crawl with 22 smaller, high-quality datasets combined together.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "12-2020",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2101.00027",
+    "website_link": "https://pile.eleuther.ai/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "The Proof Pile 2",
+    "description": "The Proof-Pile-2 is a 55 billion token dataset of mathematical and scientific documents.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "9-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/2310.10631",
+    "website_link": "https://blog.eleuther.ai/llemma/",
+    "github_link": "https://github.com/EleutherAI/math-lm",
+    "huggingface_link": "https://huggingface.co/datasets/EleutherAI/proof-pile-2",
+    "added_by": "Original Authors",
+    "logo": "EleutherAI_logo.png"
+  },
+  {
+    "name": "The RefinedWeb",
+    "description": "An English-only,  web-only, deduplicated pretraining dataset of five trillion tokens.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "6-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/2306.01116",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/datasets/tiiuae/falcon-refinedweb",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "The Stack",
+    "description": "The Stack is a 6TB, permissively-licensed pretraining dataset from active GitHub repositories covering 358 programming languages.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "11-2022",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/2211.15533",
+    "website_link": "https://www.bigcode-project.org/docs/about/the-stack/#datasets-and-data-governance-tools-released-by-bigcode",
+    "github_link": "https://github.com/bigcode-project/bigcode-dataset",
+    "huggingface_link": "https://huggingface.co/datasets/bigcode/the-stack",
+    "added_by": "Original Authors",
+    "logo": "bigcode-project_logo.png"
+  },
+  {
+    "name": "VoxPopuli",
+    "description": "400k hours of unlabelled speech from 23 languages of the European parliament",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "1-2021",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2101.00390",
+    "website_link": "",
+    "github_link": "https://github.com/facebookresearch/voxpopuli",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "facebookresearch_logo.png"
+  },
+  {
+    "name": "WebVid-10M",
+    "description": "10M videos with captions",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "4-2021",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2104.00650",
+    "website_link": "https://maxbain.com/webvid-dataset/",
+    "github_link": "https://github.com/m-bain/webvid",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "m-bain_logo.png"
+  },
+  {
+    "name": "WenetSpeech",
+    "description": "22.4k hour multi-domain corpus of Mandarin",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "10-2021",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2110.03370",
+    "website_link": "https://www.openslr.org/121/",
+    "github_link": "https://github.com/wenet-e2e/WenetSpeech",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "wenet-e2e_logo.png"
+  },
+  {
+    "name": "WURA",
+    "description": "A manually audited multilingual pre-training corpus (document-level dataset) for 16 African languages and four  high-resource languages widely spoken in Africa (English, French, Arabic and Portuguese)",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "11-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://aclanthology.org/2023.emnlp-main.11/",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/datasets/castorini/wura",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "WebDatasets",
+    "description": "A dataset format for high-performance streaming of data. Especially useful for modalities other than language that are more I/O intensive for training', such as images, video, or audio.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/webdataset/webdataset",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "webdataset_logo.png"
+  },
+  {
+    "name": "Multi Legal Pile",
+    "description": "A large-scale multilingual legal dataset and superset of the Pile of Law, suited for pretraining language models. It spans over 24 languages and five legal text types.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "6-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "https://arxiv.org/abs/2306.02069",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/datasets/joelniklaus/Multi_Legal_Pile",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "GPT-NeoX",
+    "description": "A library for training large language models, built off Megatron-DeepSpeed and Megatron-LM with an easier user interface. Used at massive scale on a variety of clusters and hardware setups.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Repositories"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/EleutherAI/gpt-neox",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "EleutherAI_logo.png"
+  },
+  {
+    "name": "Kosmos-2",
+    "description": "For training multimodal models with CLIP backbones.",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Pretraining Repositories"
+    ],
+    "date": "6-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2306.14824",
+    "website_link": "",
+    "github_link": "https://github.com/microsoft/unilm/tree/master/kosmos-2",
+    "huggingface_link": "https://huggingface.co/spaces/ydshieh/Kosmos-2",
+    "added_by": "Original Authors",
+    "logo": "microsoft_logo.png"
+  },
+  {
+    "name": "Lhotse",
+    "description": "Python library for handling speech data in machine learning projects",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Pretraining Repositories"
+    ],
+    "date": "10-2023",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "https://github.com/lhotse-speech/lhotse",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Megatron-DeepSpeed",
+    "description": "A library for training large language models, built off of Megatron-LM but extended by Microsoft to support features of their DeepSpeed library.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Repositories"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/microsoft/Megatron-DeepSpeed",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "microsoft_logo.png"
+  },
+  {
+    "name": "Megatron-LM",
+    "description": "One of the earliest open-source pretraining codebases for large language models. Still updated and has been used for a number of landmark distributed training and parallelism research papers by NVIDIA.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Repositories"
+    ],
+    "date": "",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/NVIDIA/Megatron-LM",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "NVIDIA_logo.png"
+  },
+  {
+    "name": "OpenCLIP",
+    "description": "Supports training and inference for over 100 CLIP models",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Pretraining Repositories"
+    ],
+    "date": "9-2021",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/mlfoundations/open_clip",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
+  },
+  {
+    "name": "OpenLM",
+    "description": "OpenLM is a minimal language modeling repository, aimed to facilitate research on medium sized LMs. They have verified the performance of OpenLM up to 7B parameters and 256 GPUs. They only depend only on PyTorch, XFormers, or Triton.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Repositories"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/mlfoundations/open_lm",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
+  },
+  {
+    "name": "Pytorch Image Models (timm)",
+    "description": "Hub for models, scripts and pre-trained weights for image classification models.",
+    "modalities": [
+      "Vision"
+    ],
+    "categories": [
+      "Pretraining Repositories"
+    ],
+    "date": "5-2019",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/huggingface/pytorch-image-models",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
+  },
+  {
+    "name": "Stable Audio Tools",
+    "description": "A codebase for distributed training of generative audio models.",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Pretraining Repositories"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/Stability-AI/stable-audio-tools",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "Stability-AI_logo.png"
+  },
+  {
+    "name": "Bias Benchmark for QA (BBQ)",
+    "description": "A dataset of question-sets constructed by the authors that highlight attested social biases against people belonging to protected classes along nine different social dimensions relevant for U.S. English-speaking contexts.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "10-2021",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2110.08193",
+    "website_link": "",
+    "github_link": "https://github.com/nyu-mll/BBQ",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "nyu-mll_logo.png"
+  },
+  {
+    "name": "Crossmodal-3600",
+    "description": "Image captioning evaluation with geographically diverse images in 36 languages",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "5-2022",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2205.12522",
+    "website_link": "",
+    "github_link": "https://google.github.io/crossmodal-3600/",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "FactualityPrompt",
+    "description": "A benchmark to measure factuality in language models.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "6-2022",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2206.04624",
+    "website_link": "",
+    "github_link": "https://github.com/nayeon7lee/FactualityPrompt",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "nayeon7lee_logo.png"
+  },
+  {
+    "name": "From text to talk",
+    "description": "Harnessing conversational corpora for humane and diversity-aware language technology. They show how interactional data from 63 languages (26 families) harbours insights about turn-taking, timing, sequential structure and social action.",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "5-2022",
+    "primary_link": "Paper",
+    "paper_link": "https://aclanthology.org/2022.acl-long.385/ ",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Hallucinations",
+    "description": "Public LLM leaderboard computed using Vectara's Hallucination Evaluation Model. This evaluates how often an LLM introduces hallucinations when summarizing a document. ",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "10-2023",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "https://github.com/vectara/hallucination-leaderboard",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/vectara/hallucination_evaluation_model",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "HolisticBias",
+    "description": "A bias and toxicity benchmark using templated sentences, covering nearly 600 descriptor terms across 13 different demographic axes, for a total of 450k examples",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "10-2022",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2205.09209",
+    "website_link": "https://ai.meta.com/research/publications/im-sorry-to-hear-that-finding-new-biases-in-language-models-with-a-holistic-descriptor-dataset/",
+    "github_link": "https://github.com/facebookresearch/ResponsibleNLP/tree/main/holistic_bias",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "facebookresearch_logo.png"
+  },
+  {
+    "name": "Purple Llama CyberSecEval",
+    "description": "A benchmark for coding assistants, measuring their propensity to generate insecure code and level of compliance when asked to assist in cyberattacks.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "12-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://ai.meta.com/research/publications/purple-llama-cyberseceval-a-benchmark-for-evaluating-the-cybersecurity-risks-of-large-language-models/",
+    "github_link": "https://github.com/facebookresearch/PurpleLlama/tree/main/CybersecurityBenchmarks",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "facebookresearch_logo.png"
+  },
+  {
+    "name": "Purple Llama Guard",
+    "description": "A tool to identify and protect against malicious inputs to LLMs.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "12-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2312.06674",
+    "website_link": "https://ai.meta.com/research/publications/llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations/",
+    "github_link": "https://github.com/facebookresearch/PurpleLlama/tree/main/Llama-Guard",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "facebookresearch_logo.png"
+  },
+  {
+    "name": "Racial disparities in automated speech recognition",
+    "description": "A discussion of racial disparities and inclusiveness in automated speech recognition.",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "3-2020",
+    "primary_link": "Paper",
+    "paper_link": "",
+    "website_link": "https://www.pnas.org/doi/10.1073/pnas.1915768117",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "RealToxicityPrompts",
+    "description": "A dataset of 100k sentence snippets from the web for researchers to further address the risk of neural toxic degeneration in models.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "9-2020",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2009.11462",
+    "website_link": "https://toxicdegeneration.allenai.org/",
+    "github_link": "https://github.com/allenai/real-toxicity-prompts",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "allenai_logo.png"
+  },
+  {
+    "name": "Red Teaming LMs with LMs",
+    "description": "A method for using one language model to automatically find cases where a target LM behaves in a harmful way, by generating test cases (\"red teaming\")",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "2-2022",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2202.03286",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Safety evaluation repository",
+    "description": "A repository of safety evaluations, across all modalities and harms, as of late 2023. Useful for delving deeper if the following evaluations don't meet your needs.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "10-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://dpmd.ai/46CPd58",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "SimpleSafetyTests",
+    "description": "Small probe set (100 English text prompts) covering severe harms: child abuse, suicide, self-harm and eating disorders, scams and fraud, illegal items, and physical harm",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "11-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2311.08370",
+    "website_link": "",
+    "github_link": "https://github.com/bertiev/SimpleSafetyTests",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "bertiev_logo.png"
+  },
+  {
+    "name": "SneakyPrompt",
+    "description": "Automated jailbreaking method to generate NSFW content even with models that have filters applied",
+    "modalities": [
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "5-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2305.12082",
+    "website_link": "",
+    "github_link": "https://github.com/Yuchen413/text2image_safety",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "Yuchen413_logo.png"
+  },
+  {
+    "name": "StableBias",
+    "description": "Bias testing benchmark for Image to Text models, based on gender-occupation associations.",
+    "modalities": [
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "3-2023",
+    "primary_link": "Hugging Face object",
+    "paper_link": "",
+    "website_link": "https://arxiv.org/abs/2303.11408",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/spaces/society-ethics/StableBias",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Cerebras Model Lab",
+    "description": "A calculator to apply compute-optimal scaling laws for a given budget, including factoring expected total inference usage.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Efficiency & Resource Allocation"
+    ],
+    "date": "5-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://www.cerebras.net/model-lab/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "QLoRa",
+    "description": "An efficient finetuning approach that reduces memory usage while training.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Efficiency & Resource Allocation"
+    ],
+    "date": "5-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2305.14314",
+    "website_link": "",
+    "github_link": "https://github.com/artidoro/qlora",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "artidoro_logo.png"
+  },
+  {
+    "name": "Scaling Data-Constrained Language Models",
+    "description": "Demonstrates an optimal allocation of compute when dataset size is bounded",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Efficiency & Resource Allocation"
+    ],
+    "date": "5-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2305.16264",
+    "website_link": "",
+    "github_link": "https://github.com/huggingface/datablations",
+    "huggingface_link": "https://huggingface.co/datablations",
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
+  },
+  {
+    "name": "Training Compute-Optimal Language Models",
+    "description": "Proposes an optimal allocation of computational budget between model and dataset size, and shows experimental design for fitting scaling laws for compute allocation in a new setting.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Efficiency & Resource Allocation"
+    ],
+    "date": "3-2022",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2203.15556",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "AI Incident Database",
+    "description": "A database of harmful incidents tied to AI systems where developers or users can submit incident reports",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Usage Monitoring"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://incidentdatabase.ai/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "BigScience Ethical Charter",
+    "description": "Outlines BigScience's core values and how they promote them, which in turn guides use restrictions and communicates acceptable usage to users",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Usage Monitoring"
+    ],
+    "date": "6-2022",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://bigscience.huggingface.co/blog/bigscience-ethical-charter",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Llama 2 Responsible Use Guide",
+    "description": "Guidance for downstream developers on how to responsibly build with Llama 2. Includes details on how to report issues and instructions related to red-teaming and RLHF",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Usage Monitoring"
+    ],
+    "date": "12-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://ai.meta.com/llama/responsible-use-guide/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Model Gating from Hugging Face",
+    "description": "A resource describing how to require user credentials for model access, which may be appropriate for models trained for topics such as hate speech",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Usage Monitoring"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://huggingface.co/docs/hub/models-gated",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Model Monitoring in Practice Tutorial",
+    "description": "A tutorial given at FAccT and other venues describing how and why to monitor ML models. Includes a presentation on using transformer models to monitor for error detection",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Usage Monitoring"
+    ],
+    "date": "6-2022",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://sites.google.com/view/model-monitoring-tutorial",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Robust Invisible Video Watermarking with Attention",
+    "description": "A widely used watermark for video models ",
+    "modalities": [
+      "Vision"
+    ],
+    "categories": [
+      "Usage Monitoring"
+    ],
+    "date": "9-2029",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/1909.01285",
+    "website_link": "",
+    "github_link": "https://github.com/DAI-Lab/RivaGAN",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "DAI-Lab_logo.png"
+  },
+  {
+    "name": "Robust Distortion-free Watermarks for Language Models",
+    "description": "A watermark for autoregressive language models",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Usage Monitoring"
+    ],
+    "date": "7-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2307.15593",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "A Holistic Approach to Undesired Content Detection in the Real World",
+    "description": "Description of five primary categories (Sexual, Hateful, Violent, Self-harm, Harassment) with sub-categories (e.g. Sexual / sexual content involving minors). Also describes a moderation filter (the OpenAI moderation endpoint), and releases a dataset labelled for the categories.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "2-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2208.03274.pdf",
+    "website_link": "",
+    "github_link": "https://github.com/openai/moderation-api-release",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "openai_logo.png"
+  },
+  {
+    "name": "Perspective API",
+    "description": "Perspective API for content moderation. It has three classes of categories, each with 6+ attributes. (1) Production (Toxicity, Severe Toxicity, Identity Attack, Insult, Profanity, and Threats), (2) Experimental (Toxicity, Severe Toxicity, Identity Attack, Insult, Profanity, Threat, Sexually Explicit, and Flirtation), (3) NY Times (Attack on author, Attack on commenter, Incoherent, Inflammatory, Likely to Reject, Obscene, Spam, Unsubstantial).",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "8-2022",
+    "primary_link": "Paper",
+    "paper_link": "https://dl.acm.org/doi/pdf/10.1145/3534678.3539147",
+    "website_link": "https://developers.perspectiveapi.com/s/about-the-api-attributes-and-languages?language=en_US",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Mistral in-context self-reflection safety prompt",
+    "description": "Self-reflection prompt for use as a content moderation filter. It returns a binary value (safe/not) with 13 subcategories: Illegal, Child abuse, Hate Violence Harassment, Malware, Physical Harm, Economic Harm, Fraud, Adult, Political campaigning or lobbying, Privacy invasion, Unqualified law advice, Unqualified financial advice, Unqualified health advice",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "10-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2310.06825.pdf",
+    "website_link": "https://www.promptingguide.ai/models/mistral-7b",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Google, Gemini API Safety Filters (via Vertex)",
+    "description": "Safety filter for Gemini models, available through Vertex. 4 safety attributes are described: Hate speech, Harassment, Sexually Explicit, and Dangerous Content. Probabilities are returned for each attribute (Negligible, Low, Medium, High). ",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "12-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://cloud.google.com/vertex-ai/docs/generative-ai/multimodal/configure-safety-attributes",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Google, PaLM API Safety Filters (via Vertex)",
+    "description": "Safety filter for PaLM models, available through Vertex. 16 safety attributes are described (some of which are 'topical' rather than purely safety risks): Derogatory, Toxic, Violent, Sexual, Insult, Profanity, Death Harm & Tragedy, Firearms & Weapons, Public safety, Health, Religion & belief, Illicit drugs, War & conflict, Politics, Finance, Legal.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "3-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://cloud.google.com/vertex-ai/docs/generative-ai/configure-safety-attributes-palm",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "ActiveFence's LLM Safety Review: Benchmarks and Analysis",
+    "description": "Description of 4 risk categories, as part of a benchmark review of LLM safety: (1) Hate, (2) Misinformation, (3) Self-harm & Suicide, (4) Child abuse & exploitation.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "07-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://www.activefence.com/LLMSafety",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Anthropic content moderation prompt",
+    "description": "In-context prompt for assessing whether messages and responses contain inappropriate content: \"violent, illegal or pornographic activities\"",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "12-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://docs.anthropic.com/claude/docs/content-moderation",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned",
+    "description": "Description of 20 risk areas, as part of red teaming Anthropics' models. Two of the tags are not interpretable (\"Other\" and \"N/A - Invalid attempt\"): Discrimination & justice, Hate speech & offensive language, Violence & incitement, Non-violent unethical behaviour (e.g. lying, cheating), Bullying & harassment, Other, Theft, N/A - Invalid attempt, Soliciting personally identifiable information, Conspiracy theories & misinformation, Substance abuse & banned substances, Fraud & deception, Weapons, Adult content, Property crime & vandalism, Animal abuse, Terrorism & organized crime, Sexual exploitation & human trafficking, Self-harm, Child abuse.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "10-2022",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2209.07858.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "BEAVERTAILS: Towards Improved Safety Alignment of LLM via a Human-Preference Dataset",
+    "description": "Description of 14 risk areas, as part of a QA dataset for aligning models and evaluating their safety: Hate Speech, Offensive Language, Discrimination, Stereotype, Injustice, Violence, Aiding and Abetting, Incitement, Financial Crime, Property Crime, Theft, Privacy Violation, Drug Abuse, Weapons, Banned Substance, Non-Violent Unethical Behavior, Sexually Explicit, Adult Content, Controversial Topics, Politics, Misinformation Re. ethics, laws and safety, Terrorism, Organized Crime, Self-Harm, Animal Abuse, Child Abuse",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "10-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2307.04657.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Safety Assessment of Chinese Large Language Models",
+    "description": "Description of 8 risk areas (called \"safety scenarios)\": Insult, Unfairness and Discrimination, Crimes and Illegal Activities, Sensitive Topics, Physical Harm, Mental health, Privacy and Property, Ethics and Morality. Six \"instruction attacks\" are also described: Goal hijacking, Prompt leaking, RolePlay Instruction, Unsafe Instruction Topic, Inquiry with Unsafe Opinion, Reverse Exposure.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "4-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2304.10436.pdf",
+    "website_link": "",
+    "github_link": "https://github.com/thu-coai/Safety-Prompts",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "thu-coai_logo.png"
+  },
+  {
+    "name": "DECODINGTRUST: A Comprehensive Assessment of Trustworthiness in GPT Models",
+    "description": "Description of 8 evaluation areas: toxicity, stereotypes bias, adversarial robustness, out-of-distribution robustness, robustness against adversarial demonstrations, privacy, machine ethics, fairness.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "1-2024",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2306.11698.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "A Unified Typology of Harmful Content",
+    "description": "Taxonomy of harmful online content. There are 4 primary categories, which each have subcategories: (1) Hate and harassment (Doxxing, Identity attack, Identity misrepresentation, Insult, Sexual aggression, Threat of violence; (2) Self-inflicted harm (Eating disorder promotion, self-harm), (3) Ideological harm (Extremism Terrorism & Organized crime, Misinformation), (4) Exploitation (Adult sexual services, Child sexual abuse material, Scams).",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "Taxonomy of harmful online content. There are 4 primary categories, which each have subcategories: (1) Hate and harassment (Doxxing, Identity attack, Identity misrepresentation, Insult, Sexual aggression, Threat of violence; (2) Self-inflicted harm (Eating disorder promotion, self-harm), (3) Ideological harm (Extremism Terrorism & Organized crime, Misinformation), (4) Exploitation (Adult sexual services, Child sexual abuse material, Scams).",
+    "primary_link": "Paper",
+    "paper_link": "https://aclanthology.org/2020.alw-1.16.pdf",
+    "website_link": "https://docs.cohere.com/docs/content-moderation-with-classify",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Towards Safer Generative Language Models: A Survey on Safety Risks, Evaluations, and Improvements",
+    "description": "Description of 7 risk areas, as part of a survey on LLM risks: Toxicity and Abusive Content, Unfairness and Discrimination, Ethics and Morality Issues, Controversial Opinions, Misleading Information, Privacy and Data Leakage, Malicious Use and Unleashing AI Agents.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "11-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2302.09270.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+    "description": "Description of 3 risk areas, as part of the safety checks for releasing Llama2: (1) illicit and criminal activities (terrorism, theft, huam trafficking), (2) hateful and harmful activities (defamation, self-harm, eating disorders, discrimination), and (3) unqualified advice (medical, financial and legal advice). Other risk categories are described as part of red teaming and soliciting feedback.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "7-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2307.09288.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Ethical and social risks of harm from Language Models",
+    "description": "Two-tier taxonomy of risks, comprising both classification groups (of which there are 6) and associated harms (3 or 4 for each classification group). The classification groups are: (1) Discrimination, Exclusion and Toxicity, (2) Information Hazards, (3) Misinformation Harms, (4) Malicious Uses, (5) Human-Computer Interaction Harms, and (6) Automation, access, and environmental harms.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "12-2021",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2112.04359.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Sociotechnical Safety Evaluation of Generative AI Systems",
+    "description": "Two-tier taxonomy of risks, comprising both classification groups (of which there are 6) and associated harms (3 or 4 for each classification group). The classification groups are: (1) Representation and Toxicity Harms, (2) Misinformation Harms, (3) Information & Society Harms, (4) Malicious Use, (5) Human Autonomy & Integrity Harms, and (6) Socioeconomic & Environmental Harms.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "10-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2310.11986.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Trustworthy LLMs: a Survey and Guideline for Evaluating Large Language Models' Alignment",
+    "description": "Two-tier taxonomy of risks, with seven major categories of LLM trustworthiness, each of which has several associated sub-categories: (1) Reliability, (2) Safety, (3) Fairness, (4) Resistance to Misuse, (5) Explainability and Reasoning, (6) Social Norms, and (7) Robustness.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "8-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2308.05374.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Process for Adapting Language Models to Society (PALMS) with Values-Targeted Datasets",
+    "description": "Description of 8 risk areas, as part of describing methods for aligning models: (1) Abuse, Violence and Threat (inclusive of self-harm), (2) Health (phyiscal and mental), (3) Human characteristics and behaviour, (4) Injustice and inequality (incl, discrimination, harmful stereotypes), (5) Political opinion and destabilization, (6) Relationships (romantic, familial friendships), (7) Sexual activity (inclusive of pornography), (8) Terrorism (inclusive of white supremacy).",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "6-2021",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2106.10328.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Sociotechnical Harms of Algorithmic Systems: Scoping a Taxonomy for Harm Reduction",
+    "description": "Description of 5 categories of harm, with detailed subcategories: (1) Representational harms, (2) Allocative harms, (3) Quality of Service harms, (4) Interpersonal harms, and (5) Social system harms. ",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "7-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2210.05791.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Deepfakes, Phrenology, Surveillance, and More! A Taxonomy of AI Privacy Risks",
+    "description": "Taxonomy of 12 privacy risks, based on reviewing 321 privacy-related incidents, filtered from the AI, Algorithmic and Automation Incident and Controversy Repository (AIAAIC) Database. Risks are split into those that are created by AI (Identification, Distortion, Exposure, Aggregation, Phrenology/Physiognomy) and those that are exacerbated by AI (Intrusion, Surveillance, Exclusion, Secondary Use, Insecurity, Increased Accessibility).",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "10-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2310.07879.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "The Ethical Implications of Generative Audio Models: A Systematic Literature Review",
+    "description": "Taxonomy of 12 \"negative broader impacts\" from generative models involving speech and music.",
+    "modalities": [
+      "Speech"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "7-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2307.05527.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "An Overview of Catastrophic AI Risks",
+    "description": "Taxonomy of 4 catastrophic AI risks, with subcategories: (1) Malicious use (Bioterrrorism, Uncontrolled AI agents, AI capabilities for propaganda, Censorship and surveillance), (2) AI race (Autonomous weapons,  Cyberwarfare, Automated human labour [mass unemployment and dependence on AI systems], (3) Organizational risks (AI accidentally leaked/stolen), (4) Rogue AIs (Proxy gaming, Goal drift, Power-seeking, Deception).",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "9-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2306.12001.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "The Malicious Use of Artificial Intelligence: Forecasting, Prevention, and Mitigation",
+    "description": "Taxonomy of 3 AI security risks, with subcategories: (1) Digital Security, Physical Security, Political Security.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "2-2018",
+    "primary_link": "Paper",
+    "paper_link": "https://img1.wsimg.com/blobby/go/3d82daa4-97fe-4096-9c6b-376b92c619de/downloads/MaliciousUseofAI.pdf?ver=1553030594217",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Open-sourcing highly capable foundation models",
+    "description": "Description of risks from malicious use of AI: Influence operations, Surveillance and population control, Scamming and spear phishing, Cyber attacks, Biological and chemical weapons development. Some \"extreme risks\" are also described in the paper (e.g. disruption to key societal functions).",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "9-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://cdn.governance.ai/Open-Sourcing_Highly_Capable_Foundation_Models_2023_GovAI.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "How Does Access Impact Risk? Assessing AI Foundation Model Risk Along a Gradient of Access ",
+    "description": "Description of risks from open-sourcing models, including five instances of malicious use: (1) Fraud and other crime schemes, (2) Undermining of social cohesion and democratic processes, (3) Human rights abuses, (4) Disruption of critical infrastructure, and (5) State conflict. ",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "12-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://securityandtechnology.org/wp-content/uploads/2023/12/How-Does-Access-Impact-Risk-Assessing-AI-Foundation-Model-Risk-Along-A-Gradient-of-Access-Dec-2023.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "OpenAI Preparedness Framework (Beta)",
+    "description": "Description of 4 catastrophic AI risks: (1) Cybersecurity, (2) Chemical, Biological, Nuclear and Radiological (CBRN) threats, (3) Persuasion, and (4) Model autonomy. The paper also highlights the risk of \"unknown unknowns\".",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "12-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://cdn.openai.com/openai-preparedness-framework-beta.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Anthropic's Responsible Scaling Policy",
+    "description": "Framework with four tiers of model capability, ffrom ASL-1 (smaller models) to ASL-4 (speculative), with increasing risk as models' capability increases. It also describes 4 catastrophic AI risks: (1) Misuse risks, (2) CBRN risks, (3) Cyber risks, and (4) Autonomy and replication risks.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "9-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://www-files.anthropic.com/production/files/responsible-scaling-policy-1.0.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Model evaluation for extreme risks",
+    "description": "Framework of 9 dangerous capabilities of AI models: (1) Cyber-offense, (2) Deception, (3) Persuasion & manipulation, (4) Politial strategy, (5) Weapons acquisition, (6) Long-horizon planning, (7) AI development, (8) Situational awareness, (9) Self-proliferation.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "9-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2305.15324.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Frontier AI Regulation: Managing Emerging Risks to Public Safety",
+    "description": "Description of \"sufficiently dangerous capabilities\" of AI models to cause serious harm and disruption on a global scale, such as synthesing new biological or chemical weapons and evading human control through means of deception and obfuscation.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "11-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2307.03718.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "The Fallacy of AI Functionality",
+    "description": "Taxonomy of four AI failure points: (1) Impossible tasks (either Conceptually impossible or Practically impossible), (2) Engineering failures (Design failures, Implementation failures, Missing Safety Features), (3) Post-Deployment Failures (Robustness Issues, Failure under Adversarial Attacks, Unanticipated Intractions, (4) Communication Failures (Falsified or Overstated Capabilities, Misrepresented Capabilities).",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "7-2022",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2206.09511.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "TASRA: a Taxonomy and Analysis of Societal-Scale Risks from AI",
+    "description": "Framework of 3 potential harms from AI: (1) Harm to people (individual harm, Group/community harm, Societal harm), (2) Harm to an Organisation or Enterprise, (3) Harm to a system. ",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Taxonomies"
+    ],
+    "date": "6-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2306.06924.pdf",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Cohere in-context content moderation prompt",
+    "description": "Few-shot prompt for classifying whether text is toxic or not.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "12-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://docs.cohere.com/reference/toxicity-detection",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "NVidia NeMo Guardrails",
+    "description": "Open-source tooling to create guardrails for LLM applications.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "4-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2310.10501.pdf",
+    "website_link": "https://blogs.nvidia.com/blog/ai-chatbot-guardrails-nemo/",
+    "github_link": "https://github.com/NVIDIA/NeMo-Guardrails",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "NVIDIA_logo.png"
+  },
+  {
+    "name": "SafetyPrompts",
+    "description": "Open repository of datasets for LLM safety",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "1-2024",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://safetyprompts.com/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Model Risk Cards",
+    "description": "A framework for structured assessment and documentation of risks associated with an application of language models. Each RiskCard makes clear the routes for the risk to manifest harm, their placement in harm taxonomies, and example prompt-output pairs. The paper also describes 70+ risks identified from a literature survey.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Risks & Harms Evaluation"
+    ],
+    "date": "3-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2303.18190.pdf",
+    "website_link": "",
+    "github_link": "https://github.com/leondz/lm_risk_cards",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "leondz_logo.png"
+  },
+  {
+    "name": "Aya Dataset",
+    "description": "A permissively licensed multilingual instruction finetuning dataset curated by the Aya Annotation Platform from Cohere For AI. The dataset contains a total of 204k human-annotated prompt-completion pairs along with the demographics data of the annotators, spanning 65 languages.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs"
+    ],
+    "date": "2-2024",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2402.06619",
+    "website_link": "https://cohere.com/research/aya",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/datasets/CohereForAI/aya_dataset",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "HuggingFace Provenance, Watermarking & Deepfake Detection Collection",
+    "description": "A collection of resources on provenance, watermarking & deepfake detection tools, that are used to assess the outputs of foundation models.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Usage Monitoring"
+    ],
+    "date": "2-2024",
+    "primary_link": "Hugging Face object",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/collections/society-ethics/provenance-watermarking-and-deepfake-detection-65c6792b0831983147bb7578",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "SIB-200",
+    "description": "A large-scale open-sourced benchmark dataset for topic classification in 200 languages and dialects.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "9-2023",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2309.07445",
+    "website_link": "",
+    "github_link": "https://github.com/dadelani/sib-200",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "dadelani_logo.png"
+  },
+  {
+    "name": "French-PD-Newpapers",
+    "description": "Nearly three million unique newspaper and periodical editions (70B words) from the French National Library.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "1-2024",
+    "primary_link": "Hugging Face object",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/datasets/PleIAs/French-PD-Newspapers",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "Datatrove",
+    "description": "A library to process, filter and deduplicate text data at a very large scale",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Cleaning"
+    ],
+    "date": "12-2023",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/huggingface/datatrove",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
+  },
+  {
+    "name": "Nomic",
+    "description": "A proprietary service to explore data with embedding maps.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Exploration"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://home.nomic.ai/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  },
+  {
+    "name": "AI Vulnerability Database",
+    "description": "An open-source, extensible knowledge base of AI failures.",
+    "modalities": [
+      "Text",
+      "Speech",
+      "Vision"
+    ],
+    "categories": [
+      "Usage Monitoring"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://avidml.org/",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Original Authors"
+  }
+]

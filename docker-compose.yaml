@@ -7,6 +7,9 @@ services:
             - proxy
     app:
         build: ./app
+        platform: linux/amd64
+        ports:
+            - 8000:8000
         volumes:
             - ./app:/app
         environment:

@@ -1,0 +1,8 @@
+{{ $jsonFileContent := readFile (.Get "jsonPath") }}
+{{ $jsonData := $jsonFileContent | transform.Unmarshal }}
+<div class="faq">
+  {{ range $jsonData.mainEntity }}
+    <h3 class="faq__question">{{ .name }}</h3>
+    <div class="faq__answer">{{ .acceptedAnswer.text | markdownify }}</div>
+  {{ end }}
+</div>

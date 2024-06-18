@@ -1,0 +1,41 @@
+{{ $sections := getJSON "assets/sections.json" }}
+{{ range $sections.sections | last 4 }}
+  <div class="bg-theme-light bg-green-400 rounded p-8 mb-4"> <!-- Move the background block here -->
+    <h2 class="mb-2 px-0 py-0 pr-1 font-normal">{{ .name }}</h2>
+    <ul class="space-y-4">
+      {{ $section := . }}
+      <!-- Collect matching pages into a slice -->
+      {{ $matchingPages := slice  }}
+      {{ range where $.Site.RegularPages "Section" "foundation-model-resources"  }}
+        {{ $sectionID := .Params.section_id | int }}
+        {{ $sectionNumber := $section.number | int }}
+        {{ if eq $sectionID $sectionNumber }}
+          {{ $matchingPages = $matchingPages | append . }}
+        {{ end }}
+      {{ end }}
+      <!-- Sort the slice by section_id -->
+      {{ $sortedPages := sort $matchingPages "Params.section_id" "asc" }}
+      {{ range $sortedPages }}
+        <!-- Display content for matching pages -->
+        <li class="flex items-center justify-between align-text-top">
+          <a class="hover:text-primary dark:hover:text-darkmode-primary flex items-center ml-4" href="{{ .Permalink }}" style="min-width: 150px;">
+            {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Size" "110x62" "Command" "Resize" "Class" "m-0 p-0 align-top") }}
+            <div class="flex flex-col ml-4"> <!-- Remove justify-center -->
+              <div class="flex items-center"> <!-- New div for top row -->
+                <h3 class="font-normal">{{ .Params.short_name }}</h3>
+                {{ $data := getJSON "assets/resources.json" }}
+                {{ $filteredData := where $data "categories" "intersect" (.Params.short_name | slice) }}
+                {{ $entryCount := len $filteredData }}
+                <span class="dark:bg-slate-700 dark:text-white bg-gray-300 font-bold text-center text-black px-2 py-1 rounded-lg ml-2 ml-auto"> <!-- Add ml-auto for right alignment -->
+                  {{ $entryCount }}
+                </span>
+              </div>
+              <p>{{ .Description }}</p> <!-- Description on a new line -->
+            </div>
+          </a>
+        </li>
+        <!-- Add more content display as needed -->
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

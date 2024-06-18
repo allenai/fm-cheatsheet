@@ -1,24 +1,63 @@
-FROM python:3.8.18
+# Stage 1: Build stage
+FROM node:20.12.2 as builder
 
-# Uncomment the following lines to make PyTorch available to your application.
-# See https://skiff.allenai.org/gpu.html for more details.
-#
-# ENV LD_LIBRARY_PATH /usr/local/nvidia/lib:/usr/local/nvidia/lib64
-# ENV NVIDIA_VISIBLE_DEVICES all
-# ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
-# RUN pip install torch==1.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+# Set environment variables
+ENV HUGO_ENV production
+ENV HUGO_VERSION 0.115.4
+ENV GO_VERSION 1.22.2
 
+ENV BASE_URL http://localhost
+ENV BASE_PORT 8000
+
+# Install Hugo
+RUN apt-get update && apt-get install -y curl \
+    && curl -LO "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz" \
+    && tar -xvf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz \
+    && mv hugo /usr/local/bin/ \
+    && rm hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz \
+    && echo "Hugo ${HUGO_VERSION} installed"
+
+# Install Go
+RUN curl -LO "https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz" \
+    && tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz \
+    && rm go${GO_VERSION}.linux-amd64.tar.gz \
+    && echo "export PATH=$PATH:/usr/local/go/bin" >> /etc/profile \
+    && . /etc/profile \
+    && echo "Go ${GO_VERSION} installed"
+
+# Export the PATH variable
+RUN export PATH=$PATH:/usr/local/go/bin
+
+# Set working directory
 WORKDIR /app
 
-# Install Python dependencies
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+# Copy package.json and package-lock.json
+COPY package*.json ./
 
-# Copy over the source code
-COPY . ./
+# Install project dependencies
+RUN npm install
 
-ENV PYTHONPATH=$PYTHONPATH':app/'
+# Copy project files
+COPY . .
 
-# Kick things off
-ENTRYPOINT [ "streamlit" ]
-CMD [ "run", "./app.py" ]
+# Run project setup and build
+RUN PATH=$PATH:/usr/local/go/bin hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic -e production --minify
+
+# --baseURL=$BASE_URL:$BASE_PORT
+
+
+# Stage 2: Serve stage
+FROM nginx:alpine
+# FROM tiangolo/uwsgi-nginx-flask:python3.11
+
+# Copy built site from builder stage
+COPY --from=builder /app/public /usr/share/nginx/html
+COPY --from=builder /app/nginx.conf /etc/nginx/conf.d/default.conf
+
+# Expose port 80
+EXPOSE 8000
+
+# Command to start nginx
+CMD ["nginx", "-g", "daemon off;"]
+
+# CMD ["python3", "-m", "http.server", "-d", "/usr/share/nginx/html", "8000"]

@@ -1,0 +1,127 @@
+{{ $data := getJSON "assets/resources.json" }}
+{{ $jsonData := where $data "categories" "intersect" (.Params.short_name | slice) }}
+<ul class="list-none p-0">
+  {{ range $index, $entry := $jsonData }}
+    <li class="flex items-start mb-0 mt-2 bg-white dark:bg-slate-900 p-4 pt-2 pb-2 rounded">
+      {{ if $entry.logo }}
+        {{ $path := printf "images/cached-icons/%s" $entry.logo }}
+        {{ partial "image.html" (dict "Src" $path "Size" "64x64" "Command" "Resize"
+          "Class" "bg-white mr-5 ml-2 mt-4 w-16 h-16 rounded-full" "Context" .) }}
+      {{ else }}
+        {{ if eq $entry.primary_link "GitHub" }}
+          <img src="/images/resource-icons/github-light.png" alt="{{ $entry.name }}"
+               class="mr-5 ml-2 mt-4 w-16 h-16 dark:invert rounded-full">
+        {{ else if eq $entry.primary_link "Paper" }}
+          <img src="/images/resource-icons/paper-light.png" alt="{{ $entry.name }}"
+               class="mr-5 ml-2 mt-4 w-16 h-16 dark:invert rounded-full">
+        {{ else if eq $entry.primary_link "Webpage" }}
+          <img src="/images/resource-icons/web-light.png" alt="{{ $entry.name }}"
+               class="dark:invert mr-5 ml-2 mt-4 w-16 h-16 rounded-full">
+        {{ else if eq $entry.primary_link "Hugging Face object" }}
+          <img src="/images/resource-icons/huggingface-light.png" alt="{{ $entry.name }}"
+               class="dark:inverse mr-5 ml-2 mt-4 w-16 h-16 rounded-full">
+        {{ end }}
+      {{ end }}
+
+      <div style="width: 100%">
+        <h3 class="flex items-center text-lg font-semibold">
+          {{ if eq $entry.primary_link "GitHub" }}
+            <a class="font-extrabold" href="{{ $entry.github_link }}" target="_blank">{{ $entry.name }}</a>
+          {{ else if eq $entry.primary_link "Paper" }}
+            <a class="font-extrabold" href="{{ $entry.paper_link }}" target="_blank">{{ $entry.name }}</a>
+          {{ else if eq $entry.primary_link "Webpage" }}
+            <a class="font-extrabold" href="{{ $entry.website_link }}" target="_blank">{{ $entry.name }}</a>
+          {{ else if eq $entry.primary_link "Hugging Face object" }}
+            <a class="font-extrabold" href="{{ $entry.huggingface_link }}" target="_blank">{{ $entry.name }}</a>
+          {{ end }}
+        </h3>
+
+        <p class="mb-1 mr-2">{{ $entry.description | markdownify }}</p>
+
+        {{ with $entry.license }}
+          <p>License: {{ . }}</p>
+        {{ end }}
+
+        <div class="md:flex md:justify-between pt-2 pb-2">
+          <ul class="social-icons p-0 m-0  mr-0">
+            {{ with $entry.paper_link }}
+              <li>
+                <a class="mt-0 pt-0" href="{{ . }}" target="_blank" rel="nofollow noopener noreferrer">
+                  <span class="sr-only">Download Paper</span>
+                  <i class="fas fa-file-alt icon"></i>
+                </a>
+              </li>
+            {{ end }}
+
+            {{ with $entry.huggingface_link }}
+              <li style="vertical-align: bottom">
+                <a href="{{ . }}" target="_blank" rel="nofollow noopener noreferrer">
+                  <span class="sr-only">Hugging Face</span>
+                  <img src="/images/resource-icons/huggingface.png" height="24px" width="26px" alt="Hugging Face Logo"
+                       style="width:26px; padding:0; margin:0;">
+                </a>
+              </li>
+            {{ end }}
+
+            {{ with $entry.github_link }}
+              <li>
+                <a href="{{ . }}" target="_blank" rel="nofollow noopener noreferrer">
+                  <span class="sr-only">GitHub</span>
+                  <i class="fab fa-github icon"></i>
+                </a>
+              </li>
+            {{ end }}
+
+            {{ with $entry.website_link }}
+              <li>
+                <a href="{{ . }}" target="_blank" rel="noopener">
+                  <span class="sr-only">Website</span>
+                  <i class="fas fa-globe icon"></i>
+                </a>
+              </li>
+            {{ end }}
+            <li class="">
+              {{ with $entry.github_link }}
+              {{ $githubUrlParts := split . "/" }}
+              {{ $githubUrlLen := len $githubUrlParts }}
+              {{ if and (eq $githubUrlLen 5) (eq (index $githubUrlParts 0) "https:") (eq (index $githubUrlParts 1) "") (eq
+                (index $githubUrlParts 2) "github.com") }}
+                {{ $username := index $githubUrlParts 3 }}
+                {{ $repository := index $githubUrlParts 4 }}
+                <img class="m-0"
+                     src="https://img.shields.io/github/stars/{{ index $githubUrlParts 3 }}/{{ index $githubUrlParts 4 }}.svg?style=social"
+                     style="display: inline; margin-bottom: 0 !important; text-align: left;vertical-align: bottom; height: 36px"
+                     height="36px" class="m-0"
+                     alt="Github Stars">
+              {{ end }}
+            </li>
+            {{ end }}
+          </ul>
+
+          <div class="modalities text-right mb-0"
+               style="margin-bottom: 0; display: flex; justify-content: flex-end; align-items: flex-end;">
+            {{ range $modality := $entry.modalities }}
+              <span class="inline-grid sm:pt-3">
+    {{ if eq $modality "Text" }}
+      <span class="mr-3 text-green-700 dark:bg-green-900 rounded px-3">
+      <i class="fas fa-file-alt fa-lg"></i> Text
+    </span>
+    {{ else if eq $modality "Vision" }}
+      <span class="mr-3 text-yellow-800 dark:bg-yellow-900 rounded px-2">
+      <i class="fas fa-eye fa-lg"></i> Vision
+    </span>
+    {{ else if eq $modality "Speech" }}
+      <span class="mr-3 text-fuchsia-800 dark:bg-fuchsia-900 rounded px-2">
+      <i class="fas fa-microphone fa-lg"></i> Speech
+    </span>
+    {{ end }}
+  </span>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+
+
+    </li>
+  {{ end }}
+</ul>

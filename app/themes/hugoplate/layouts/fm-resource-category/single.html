@@ -1,0 +1,62 @@
+{{ define "main" }}
+
+  {{ $data := getJSON "assets/resources.json" }}
+  {{ $filteredData := where $data "categories" "intersect" (.Params.short_name | slice) }}
+  {{ $filteredDataVision := where $filteredData "modalities" "intersect" (slice "Vision") }}
+  {{ $filteredDataText := where $filteredData "modalities" "intersect" (slice "Text") }}
+  {{ $filteredDataSpeech := where $filteredData "modalities" "intersect" (slice "Speech") }}
+  {{ $entryCount := len $filteredData }}
+  {{ $filteredDataVision := len $filteredDataVision }}
+  {{ $filteredDataText := len $filteredDataText }}
+  {{ $filteredDataSpeech := len $filteredDataSpeech }}
+  {{ partial "page-header" . }}
+  <section class="section pt-7 pb-2">
+    <div class="container">
+      <div class="row justify-center">
+        <article class="lg:col-12">
+          <div class="row">
+            <div class="content lg:col-7 text-xl">
+              <p>{{ .Params.Details }}</p>
+            </div>
+            <div class="lg:col-5 pb-4">
+              {{ if .Params.image }}
+                {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "w-full rounded-xl sm:hidden lg:block"
+                  "Size" "736x" "Command" "Resize") }}
+              {{ end }}
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section pt-2">
+    <div class="container">
+      <div class="row justify-center">
+        <article class="xl:col-12">
+          <div class="content mb-10">
+            <div class="flex justify-between items-center">
+              <h2 class="pb-0 font-normal mb-0 mt-0 align-middle">{{ .Params.short_name }} </h2>
+              <div class="pb-0">
+                <a class="btn-primary btn btn-sm" href="/contribute/">
+                  <i class="fas pb-1 fa-circle-plus text-3xl pr-2" style="vertical-align: middle;"></i> Add Resource</a>
+              </div>
+            </div>
+            <div class="flex justify-center mt-5">
+            <span class="mr-3 text-green-700 bg-white dark:bg-green-900 rounded px-2 py-1">
+              <i class="fas fa-file-alt fa-lg pr-2"></i> Text {{ $filteredDataText }}
+            </span>
+              <span class="mr-3 text-fuchsia-800 bg-white  dark:bg-fuchsia-900 rounded px-2 py-1 text-center">
+              <i class="fas fa-microphone fa-lg pr-2"></i> Speech {{ $filteredDataSpeech }}
+            </span>
+              <span class="mr-3 text-yellow-800 bg-white dark:bg-yellow-900 rounded px-2 py-1">
+              <i class="fas fa-eye fa-lg pr-2"></i> Vision {{ $filteredDataVision }}
+            </span>
+            </div>
+            {{ partial "components/tool-list" . }}
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+{{ end }}
+
