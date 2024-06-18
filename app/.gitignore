@@ -1,10 +1,3 @@
-# Python cache files
-__pycache__
-**/*.pyc
-
-.skiff/webapp.yaml
-*.code-workspace
-
 # build artifacts
 
 .eggs/
@@ -23,6 +16,8 @@ pip-wheel-metadata/
 .venv/
 .vscode/
 /*.iml
+pyrightconfig.json
+.ruff.toml
 
 
 # jupyter notebooks
@@ -60,22 +55,4 @@ site/
 /runs/
 /wandb/
 /scratch/
-
-# compiled rust extension
-target/
-*.so
-
-# macOS metadata
-.DS_Store
-
-# ignoring test output
-/tests/work/
-/python/dolma/core/warc
-
-# ignore vscode directory
-.vscode
-
-# ignore temporary directories
-/tmp/
-/temp/
-
+core

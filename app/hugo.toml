@@ -1,6 +1,7 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "https://fmcheatsheet.org/"
+# baseURL = "https://fmcheatsheet.org/"
+relativeURLs = true
 # Title of your website (required).
 title = "Foundation Model Cheatsheet"
 # Your theme name

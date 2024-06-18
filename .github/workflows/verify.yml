@@ -1,0 +1,10 @@
+# This tells GitHub to run our integration tests everytime we push changes.
+name: verify
+on: push
+jobs:
+    it:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: verify
+              run: ./bin/verify
