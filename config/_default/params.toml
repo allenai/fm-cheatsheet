@@ -44,7 +44,7 @@ link = "foundation-model-development-cheatsheet.pdf"
 
 # search
 [search]
-enable = true
+enable = false
 primary_color = "#121212"
 include_sections = ["foundation-model-resources"]
 show_image = true
