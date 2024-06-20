@@ -7,7 +7,7 @@ ENV HUGO_VERSION 0.115.4
 ENV GO_VERSION 1.22.2
 
 ENV BASE_URL http://localhost
-ENV BASE_PORT 8080
+ENV BASE_PORT 8000
 
 # Install Hugo
 RUN apt-get update && apt-get install -y curl \
@@ -41,17 +41,23 @@ RUN npm install
 COPY . .
 
 # Run project setup and build
-RUN PATH=$PATH:/usr/local/go/bin hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic --baseURL=$BASE_URL:$BASE_PORT -e production --minify
+RUN PATH=$PATH:/usr/local/go/bin hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic -e production --minify
+
+# --baseURL=$BASE_URL:$BASE_PORT
 
 
 # Stage 2: Serve stage
 FROM nginx:alpine
+# FROM tiangolo/uwsgi-nginx-flask:python3.11
 
 # Copy built site from builder stage
 COPY --from=builder /app/public /usr/share/nginx/html
+COPY --from=builder /app/nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose port 80
-EXPOSE 80
+EXPOSE 8000
 
 # Command to start nginx
 CMD ["nginx", "-g", "daemon off;"]
+
+# CMD ["python3", "-m", "http.server", "-d", "/usr/share/nginx/html", "8000"]

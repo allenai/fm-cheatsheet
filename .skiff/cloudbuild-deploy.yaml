@@ -1,0 +1,88 @@
+# This file tells Google Cloud Build how to deploy the application.
+# It can be attached to a variety of triggers, the default being whenever
+# someone merges changes to the `main` branch.
+steps:
+- id: 'app.build'
+  name: 'gcr.io/cloud-builders/docker'
+  args: [
+    'build',
+    '-t', 'gcr.io/$PROJECT_ID/$REPO_NAME-app:latest',
+    '-t', 'gcr.io/$PROJECT_ID/$REPO_NAME-app:$COMMIT_SHA',
+    '--cache-from', 'gcr.io/$PROJECT_ID/$REPO_NAME-app:latest',
+    '--build-arg', 'BUILDKIT_INLINE_CACHE=1',
+    '.'
+  ]
+  waitFor: [ '-' ]
+  dir: 'app'
+- id: 'app.push'
+  name: 'gcr.io/cloud-builders/docker'
+  args: [
+    'push',
+    'gcr.io/$PROJECT_ID/$REPO_NAME-app:$COMMIT_SHA',
+  ]
+  waitFor: [ 'app.build' ]
+- id: 'proxy.build'
+  name: 'gcr.io/cloud-builders/docker'
+  args: [
+    'build',
+    '-t', 'gcr.io/$PROJECT_ID/$REPO_NAME-proxy:latest',
+    '-t', 'gcr.io/$PROJECT_ID/$REPO_NAME-proxy:$COMMIT_SHA',
+    '--cache-from', 'gcr.io/$PROJECT_ID/$REPO_NAME-proxy:latest',
+    '--build-arg', 'CONF_FILE=prod.conf',
+    '--build-arg', 'BUILDKIT_INLINE_CACHE=1',
+    '.'
+  ]
+  waitFor: [ '-' ]
+  dir: 'proxy'
+- id: 'proxy.push'
+  name: 'gcr.io/cloud-builders/docker'
+  args: [
+    'push',
+    'gcr.io/$PROJECT_ID/$REPO_NAME-proxy:$COMMIT_SHA'
+  ]
+  waitFor: [ 'proxy.build' ]
+# Generate our Kubernetes configuration
+- id: 'config'
+  name: 'gcr.io/ai2-reviz/jsonnet'
+  args: [
+    'eval',
+    '-y',
+    '--output-file', './webapp.yaml',
+    '--tla-str', 'env=$_ENV',
+    '--tla-str', 'appImage=gcr.io/$PROJECT_ID/$REPO_NAME-app:$COMMIT_SHA',
+    '--tla-str', 'proxyImage=gcr.io/$PROJECT_ID/$REPO_NAME-proxy:$COMMIT_SHA',
+    '--tla-str', 'sha=$COMMIT_SHA',
+    '--tla-str', 'cause="Automated Skiff Deploy SHA:$COMMIT_SHA BUILD:$BUILD_ID"',
+    '--tla-str', 'branch=$BRANCH_NAME',
+    '--tla-str', 'repo=$REPO_NAME',
+    '--tla-str', 'buildId=$BUILD_ID',
+    './webapp.jsonnet'
+  ]
+  dir: '.skiff'
+  waitFor: [ '-' ]
+# Deploy the image to Kubernetes
+- id: 'deploy'
+  name: 'gcr.io/ai2-reviz/rudder'
+  args: [
+    'deploy',
+    '-f',
+    'webapp.yaml'
+  ]
+  dir: '.skiff'
+  waitFor: [ 'app.push', 'proxy.push', 'config' ]
+substitutions:
+  _ENV: prod
+images: [
+  'gcr.io/$PROJECT_ID/$REPO_NAME-app:$COMMIT_SHA',
+  'gcr.io/$PROJECT_ID/$REPO_NAME-app:latest',
+  'gcr.io/$PROJECT_ID/$REPO_NAME-proxy:$COMMIT_SHA',
+  'gcr.io/$PROJECT_ID/$REPO_NAME-proxy:latest'
+]
+artifacts:
+  objects:
+    location: 'gs://skiff-archive/$REPO_NAME/$_ENV/$BUILD_ID/$COMMIT_SHA'
+    paths: ['.skiff/webapp.yaml']
+options:
+  env:
+    - "DOCKER_BUILDKIT=1"
+timeout: 20m

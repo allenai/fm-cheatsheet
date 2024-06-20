@@ -1,0 +1,44 @@
+{
+  "name": "it",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Integration Tests",
+  "license": "UNLICENSED",
+  "scripts": {
+    "check:ready": "node is_ready.js",
+    "lint": "eslint '**/*.{js,ts,tsx,json}' && echo '💫  Lint complete.'",
+    "lint:fix": "eslint '**/*.{js,ts,tsx,json}' --fix && sort-package-json && echo '🛠  Lint --fix complete.'",
+    "test": "yarn test:build && yarn test:run",
+    "test:build": "tsc",
+    "test:run": "mocha 'dist/**/*.test.js'"
+  },
+  "resolutions": {
+    "ansi-regex": "^5.0.1",
+    "trim": "^1.0.1",
+    "nanoid": "^3.1.31"
+  },
+  "dependencies": {
+    "axios": "^0.21.2",
+    "mocha": "^9.0.2"
+  },
+  "devDependencies": {
+    "@allenai/eslint-config-varnish": "^1.0.7-alpha.0",
+    "@types/mocha": "^8.2.3",
+    "@types/node": "^12.12.6",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-mdx": "^1.14.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "prettier": "^2.3.2",
+    "sort-package-json": "^1.50.0",
+    "typescript": "^4.1.6"
+  }
+}

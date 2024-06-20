@@ -1,0 +1,7 @@
+{
+    "appName": "openfm",
+    "contact": "lucas",
+    "team": "s2research",
+    "replicas": { "prod": 1 },
+    "customDomains": ["fmcheatsheet.org"]
+}
