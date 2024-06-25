@@ -5,15 +5,6 @@
       <!-- navbar brand/logo -->
       <a class="navbar-brand block" href="{{ site.BaseURL | relLangURL }}">
                 {{ partial "logo" }}
-
-{{/*        {{ partial "image.html" (dict "Src" "images/fmcheatsheet-logo.png"*/}}
-{{/*          "Size" "371x25" "Command" "Resize" "Context" . "Class" "img logo-light"*/}}
-{{/*          "Alt" "Foundation Models Cheatsheet") }}*/}}
-
-{{/*        <img fetchpriority="high" decoding="async" class="img logo-light" width="371" height="25"*/}}
-{{/*             src="/images/fmcheatsheet-logo-large_hucf0986b6a5a6ead8b09aad93595315ca_8372_742x0_resize_q90_h2_lanczos_3.webp"*/}}
-{{/*             alt="Foundation Model Cheatsheet"*/}}
-{{/*             onerror="this.onerror=null;this.src='\/images\/fmcheatsheet-logo-large_hucf0986b6a5a6ead8b09aad93595315ca_8372_742x0_resize_lanczos_3.png';">*/}}
       </a>
     </div>
     <input id="nav-toggle" type="checkbox" class="hidden" />
@@ -124,8 +115,9 @@
       {{ partial "components/theme-switcher" (dict "Class" "mr-5") }}
       {{ if site.Params.navigation_button.enable }}
         <a
+          target="_blank"
           href="{{ site.Params.navigation_button.link | relLangURL }}"
-          class="btn btn-primary btn-sm hidden lg:inline-block" style="text-transform: none">
+          class="btn btn-primary btn-sm hidden lg:inline-block noicon" style="text-transform: none">
           {{ site.Params.navigation_button.label }}
         </a>
       {{ end }}

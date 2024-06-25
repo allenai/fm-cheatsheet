@@ -40,7 +40,7 @@ preloader = "" # use jpg, png, svg or gif format.
 [navigation_button]
 enable = true
 label = "Download Cheatsheet (.pdf)"
-link = "foundation-model-development-cheatsheet.pdf"
+link = "https://arxiv.org/pdf/2406.16746"
 
 # search
 [search]
