@@ -27,7 +27,7 @@ google_adsense = "" # ca-pub-7563926680228471"     # example: ca-pub-xxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-copyright = 'Website hosted by the <a href="https://allenai.org" target="_blank" rel="noopener noreferrer"> Allen Institute for AI</a> | Design by <a href="https://aimodels.org" target="_blank" rel="noopener noreferrer">AI Models for Open Source AI</a> | Copyright &copy; 2024'
+copyright = 'Website hosted by the <a href="https://allenai.org" target="_blank" rel="noopener noreferrer"> Allen Institute for AI</a> | Copyright &copy; 2025'
 
 
 
