@@ -29,7 +29,7 @@ and in future work.
 
 * Option 1: Use this [upload form](https://forms.gle/aAa2dismSzCpae4p6) to contribute a resource.
 
-* Option 2: Bulk upload resources by creating a pull request in this repository, extending `app/resources/resources.jsonl`.
+* Option 2: Bulk upload resources by creating a pull request in this repository, extending `app/content/english/foundation-model-resources/`.
 
 In both cases, it is essential that the requested documentation on each resource is accurate and complete.
 

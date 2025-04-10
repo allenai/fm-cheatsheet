@@ -4819,5 +4819,345 @@
     "github_link": "",
     "huggingface_link": "",
     "added_by": "Original Authors"
+  },
+  {
+    "name": "OpenWebText",
+    "description": "An open-source replication of the WebText dataset from OpenAI, that was used to train GPT-2.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Pretraining Data Sources"
+    ],
+    "date": "5-2019",
+    "primary_link": "Hugging Face object",
+    "paper_link": "",
+    "website_link": "https://skylion007.github.io/OpenWebTextCorpus/",
+    "github_link": "",
+    "huggingface_link": "https://huggingface.co/datasets/Skylion007/openwebtext",
+    "added_by": "Name",
+    "logo": ""
+  },
+  {
+    "name": "LLaMA Factory",
+    "description": "LLaMA Factory streamlines the fine-tuning of popular LLMs (e.g. LLaMA, Mixtral, Gemma, Qwen, Phi) on both industrial and consumer GPUs, equipped with FlashAttention and Unsloth for 2x faster SFT/DPO training.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Model Training: Finetuning Repositories"
+    ],
+    "date": "6-2023",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/hiyouga/LLaMA-Factory",
+    "huggingface_link": "",
+    "added_by": "Yaowei Zheng",
+    "logo": ""
+  },
+  {
+    "name": "ML.ENERGY Leaderboard",
+    "description": "The ML.ENERGY Leaderboard is the first open-source energy leaderboard to benchmark the system performance, response quality, and energy consumption of modern ML models. The goal of the leaderboard is to help ML developers and system builders to better understand the energy consumption of inference and enhance energy-efficiency.",
+    "modalities": [
+      "Any kind of modality"
+    ],
+    "categories": [
+      "Model Training: Efficiency & Resource Allocation",
+      "Environmental Impact"
+    ],
+    "date": "7-2023",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://ml.energy/leaderboard",
+    "github_link": "https://github.com/ml-energy/leaderboard",
+    "huggingface_link": "",
+    "added_by": "Jae-Won Chung",
+    "logo": ""
+  },
+  {
+    "name": "BigBench Hard",
+    "description": "A challenging subset of 23 BigBench tasks where at time of release models did not outperform annotator performance.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "10-2022",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2210.09261",
+    "website_link": "",
+    "github_link": "https://github.com/suzgunmirac/BIG-Bench-Hard",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "suzgunmirac_logo.png"
+  },
+  {
+    "name": "BigCode Evaluation Harness",
+    "description": "A framework for the evaluation of code generation models, compiling many evaluation sets.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/bigcode-project/bigcode-evaluation-harness/tree/main",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "bigcode-project_logo.png"
+  },
+  {
+    "name": "CLIP benchmark",
+    "description": "Image classification, retrieval and captioning",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "categories": [
+      "Capabilities"
+    ],
+    "date": "4-2022",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "",
+    "github_link": "https://github.com/LAION-AI/CLIP_benchmark",
+    "huggingface_link": "",
+    "added_by": "Original Authors",
+    "logo": "LAION-AI_logo.png"
+  },
+  {
+    "name": "SlimPajama",
+    "description": "We made several improvements to existing solutions to produce an infrastructure that can perform MinHashLSH deduplication on trillion token datasets in a distributed, multi-threaded, and memory efficient fashion",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Data Deduplication"
+    ],
+    "date": "7-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://arxiv.org/abs/2309.10818",
+    "website_link": "https://www.cerebras.net/blog/slimpajama-a-627b-token-cleaned-and-deduplicated-version-of-redpajama",
+    "github_link": "https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/data_processing/slimpajama",
+    "huggingface_link": "https://huggingface.co/datasets/cerebras/SlimPajama-627B",
+    "added_by": "Yinhe Zheng",
+    "logo": ""
+  },
+  {
+    "name": "FinetuneDB",
+    "description": "FinetuneDB is an LLM Ops platform for customizing AI models to deliver personalized experiences at scale. We do that by helping you automate the creation of fine-tuning datasets on a per-user basis, by transforming any provided data into the right format. With our monitoring and evaluation suite, we ensure that each personalized model is aligned to your goals.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Finetuning Data Catalogs",
+      "Data Cleaning, Filtering, & Mixing",
+      "Data Auditing",
+      "Model Training: Finetuning Repositories",
+      "Model Evaluation: Capabilities",
+      "Model Evaluation: Risks & Harms Taxonomies",
+      "Model Evaluation: Risks & Harms",
+      "Usage Monitoring"
+    ],
+    "date": "1-2024",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://www.finetunedb.com",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "Farouq Aldori",
+    "logo": ""
+  },
+  {
+    "name": "AI Verify",
+    "description": "An AI governance testing framework and software toolkit that help industries be more transparent about their AI to build trust. Foundation is fostering a community to contribute to the use and development of AI testing frameworks, code base, standards, and best practices.",
+    "modalities": [
+      "Text",
+      "Vision",
+      "Speech"
+    ],
+    "categories": [
+      "Data Governance"
+    ],
+    "date": "6-2023",
+    "primary_link": "GitHub",
+    "paper_link": "",
+    "website_link": "https://aiverifyfoundation.sg/",
+    "github_link": "https://github.com/IMDA-BTG/aiverify",
+    "huggingface_link": "",
+    "added_by": "Apache 2",
+    "logo": ""
+  },
+  {
+    "name": "HarmBench",
+    "description": "HarmBench is a standardized evaluation framework for automated redteaming of LLMs in English. It covers 18 widely used red teaming methods, such as Persona, stochastic-few shot, PEZ and GBDA. The benchmark has been designed with both seven semantic categories (e.g. Cybercrime, Misinformation and Bioweapons) and four \"functional categories\" (e.g. Standard behaviours). In the paper, 33 LLMs are tested against HarmBench.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Model Evaluation: Risks & Harms Taxonomies"
+    ],
+    "date": "2-2024",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/pdf/2402.04249.pdf",
+    "website_link": "",
+    "github_link": "https://github.com/centerforaisafety/HarmBench",
+    "huggingface_link": "",
+    "added_by": "Bertie Vidgen",
+    "logo": ""
+  },
+  {
+    "name": "TrustLLM",
+    "description": "TrustLLM is a benchmark that covers six dimensions in English, including truthfulness, safety, fairness, robustness, privacy, and machine ethics. The benchmark comprises over 30 datasets from existing research. In the paper, they test 16 open-source and proprietary models, and identify critical safety weaknesses.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Model Evaluation: Risks & Harms Taxonomies"
+    ],
+    "date": "3-2024",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2401.05561",
+    "website_link": "https://trustllmbenchmark.github.io/TrustLLM-Website/",
+    "github_link": "https://github.com/HowieHwong/TrustLLM",
+    "huggingface_link": "",
+    "added_by": "Bertie Vidgen",
+    "logo": ""
+  },
+  {
+    "name": "SafetyBench",
+    "description": "SafetyBench is a benchmark that covers eight categories of safety, in both English and Chinese. Categories include Offensiveness; Unfairness and Bias; Physical Health; Mental Health; Illegal Activities; Ethics and Morality; and Privacy and Property. Unlike most safety evaluation datasets, SafetyBench comprises multiple choice questions which makes automated evaluation of models far easier. In the paper, they test 25 models and find that GPT-4 consistently performs best.",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Model Evaluation: Risks & Harms Taxonomies"
+    ],
+    "date": "9-2023",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2309.07045",
+    "website_link": "https://llmbench.ai/safety",
+    "github_link": "https://github.com/thu-coai/SafetyBench",
+    "huggingface_link": "https://huggingface.co/datasets/thu-coai/SafetyBench",
+    "added_by": "Bertie Vidgen",
+    "logo": ""
+  },
+  {
+    "name": "Acceptable Use Policies for Foundation Models",
+    "description": "A summary of 30 developers' acceptable use policies. Relevant for organization seeking to see how other organizations taxonomize the risks stemming from their foundation models or looking to impose use restrictions.",
+    "modalities": [
+      "Text",
+      "Vision",
+      "Speech"
+    ],
+    "categories": [
+      "Model Evaluation: Risks & Harms Taxonomies",
+      "License Selection"
+    ],
+    "date": "4-2024",
+    "primary_link": "Webpage",
+    "paper_link": "",
+    "website_link": "https://crfm.stanford.edu/2024/04/08/aups.html",
+    "github_link": "https://github.com/kklyman/aupsforfms",
+    "huggingface_link": "",
+    "added_by": "Kevin Klyman",
+    "logo": ""
+  },
+  {
+    "name": "ML.ENERGY Leaderboard",
+    "description": "Zeus is a framework for deep learning energy measurement and optimization. It automatically finds optimal job and GPU-level configurations for recurring DNN training jobs. The ML.ENERGY Leaderboard measures and returns GPU energy consumption",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Model Training: Efficiency & Resource Allocation",
+      "LLM GPU energy consumption"
+    ],
+    "date": "7-2023",
+    "primary_link": "Webpage",
+    "paper_link": "https://www.usenix.org/system/files/nsdi23-you.pdf",
+    "website_link": "https://ml.energy/leaderboard/",
+    "github_link": "https://github.com/ml-energy/leaderboard",
+    "huggingface_link": "https://huggingface.co/spaces/ml-energy/leaderboard",
+    "added_by": "Guangyu Song",
+    "logo": ""
+  },
+  {
+    "name": "A Collaborative, Human-Centred Taxonomy of AI, Algorithmic, and Automation Harms",
+    "description": "A human-centered taxonomy of AI, algorithmic and automation harms that builds on existing taxonomies and real-world incidents and issues documented in the AIAAIC Repository.",
+    "modalities": [
+      "Text",
+      "Vision",
+      "Speech"
+    ],
+    "categories": [
+      "Environmental Impact",
+      "Model Evaluation: Risks & Harms Taxonomies",
+      "Model Evaluation: Risks & Harms"
+    ],
+    "date": "7-2024",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2407.01294",
+    "website_link": "https://www.aiaaic.org/projects/ai-algorithmic-risks-harms-taxonomy",
+    "github_link": "",
+    "huggingface_link": "",
+    "added_by": "",
+    "logo": ""
+  },
+  {
+    "name": "Acceptable Use Policies for Foundation Models",
+    "description": "A risk taxonomy drawing on the acceptable use policies of 30 foundation model developers. The taxonomy includes 129 risks, and includes those related to text, image, and audio models.",
+    "modalities": [
+      "Text",
+      "Vision",
+      "Speech"
+    ],
+    "categories": [
+      "Model Evaluation: Risks & Harms Taxonomies"
+    ],
+    "date": "4-2024",
+    "primary_link": "Paper",
+    "paper_link": "https://arxiv.org/abs/2409.09041",
+    "website_link": "",
+    "github_link": "https://github.com/kklyman/aupsforfms",
+    "huggingface_link": "https://huggingface.co/datasets/kklyman/acceptableusepoliciesforfoundationmodels",
+    "added_by": "Kevin Klyman",
+    "logo": ""
+  },
+  {
+    "name": "Croissant",
+    "description": "Croissant is an open-source metadata format developed by MLCommons to standardise the description of machine learning (ML) datasets, enhancing their discoverability, portability, and interoperability across various tools and platforms. It builds upon the schema.org vocabulary, extending it to encapsulate ML-specific attributes, including dataset structure, resources, and semantics. Croissant is particularly relevant in scenarios requiring consistent dataset documentation to facilitate seamless integration into ML workflows.",
+    "modalities": [
+      "Text",
+      "Vision",
+      "Speech",
+      "Video",
+      "Tabular"
+    ],
+    "categories": [
+      "Pretraining Data Sources",
+      "Finetuning Data Catalogs",
+      "Data Search, Analysis, & Exploration",
+      "Data Cleaning, Filtering, & Mixing",
+      "Data Deduplication",
+      "Data Decontamination",
+      "Data Auditing",
+      "Data Documentation",
+      "Data Governance",
+      "Reproducibility"
+    ],
+    "date": "3-2024",
+    "primary_link": "Metadata standard for ML datasets",
+    "paper_link": "https://arxiv.org/abs/2403.19546",
+    "website_link": "https://docs.mlcommons.org/croissant/docs/croissant-spec.html",
+    "github_link": "https://github.com/mlcommons/croissant",
+    "huggingface_link": "https://huggingface.co/docs/dataset-viewer/en/croissant",
+    "added_by": "",
+    "logo": ""
   }
 ]
