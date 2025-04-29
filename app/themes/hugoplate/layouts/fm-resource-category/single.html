@@ -1,14 +1,19 @@
 {{ define "main" }}
 
+
   {{ $data := getJSON "assets/resources.json" }}
   {{ $filteredData := where $data "categories" "intersect" (.Params.short_name | slice) }}
   {{ $filteredDataVision := where $filteredData "modalities" "intersect" (slice "Vision") }}
   {{ $filteredDataText := where $filteredData "modalities" "intersect" (slice "Text") }}
   {{ $filteredDataSpeech := where $filteredData "modalities" "intersect" (slice "Speech") }}
+  {{ $filteredDataVideo := where $filteredData "modalities" "intersect" (slice "Video") }}    {{/* <-- ADDED */}}
+  {{ $filteredDataTabular := where $filteredData "modalities" "intersect" (slice "Tabular") }} {{/* <-- ADDED */}}
   {{ $entryCount := len $filteredData }}
   {{ $filteredDataVision := len $filteredDataVision }}
   {{ $filteredDataText := len $filteredDataText }}
   {{ $filteredDataSpeech := len $filteredDataSpeech }}
+  {{ $filteredDataVideo := len $filteredDataVideo }}    {{/* <-- ADDED */}}
+  {{ $filteredDataTabular := len $filteredDataTabular }} {{/* <-- ADDED */}}
   {{ partial "page-header" . }}
   <section class="section pt-7 pb-2">
     <div class="container">
@@ -42,17 +47,43 @@
               </div>
             </div>
             <div class="flex justify-center mt-5">
-            <span class="mr-3 text-green-700 bg-white dark:bg-green-900 rounded px-2 py-1">
-              <i class="fas fa-file-alt fa-lg pr-2"></i> Text {{ $filteredDataText }}
-            </span>
+              {{/* Only show Text span if count > 0 */}}
+              {{ if gt $filteredDataText 0 }}
+              <span class="mr-3 text-green-700 bg-white dark:bg-green-900 rounded px-2 py-1">
+               <i class="fas fa-file-alt fa-lg pr-2"></i> Text {{ $filteredDataText }}
+             </span>
+              {{ end }}
+
+              {{/* Only show Speech span if count > 0 */}}
+              {{ if gt $filteredDataSpeech 0 }}
               <span class="mr-3 text-fuchsia-800 bg-white  dark:bg-fuchsia-900 rounded px-2 py-1 text-center">
-              <i class="fas fa-microphone fa-lg pr-2"></i> Speech {{ $filteredDataSpeech }}
-            </span>
+               <i class="fas fa-microphone fa-lg pr-2"></i> Speech {{ $filteredDataSpeech }}
+             </span>
+              {{ end }}
+
+              {{/* Only show Vision span if count > 0 */}}
+              {{ if gt $filteredDataVision 0 }}
               <span class="mr-3 text-yellow-800 bg-white dark:bg-yellow-900 rounded px-2 py-1">
-              <i class="fas fa-eye fa-lg pr-2"></i> Vision {{ $filteredDataVision }}
-            </span>
-            </div>
-            {{ partial "components/tool-list" . }}
+               <i class="fas fa-eye fa-lg pr-2"></i> Vision {{ $filteredDataVision }}
+             </span>
+              {{ end }}
+
+              {{/* --- ADDED VIDEO & TABULAR COUNTS (with conditional display) --- */}}
+              {{/* Only show Video span if count > 0 */}}
+              {{ if gt $filteredDataVideo 0 }}
+              <span class="mr-3 text-blue-700 bg-white dark:bg-blue-900 rounded px-2 py-1">
+               <i class="fas fa-video fa-lg pr-2"></i> Video {{ $filteredDataVideo }}
+             </span>
+              {{ end }}
+
+              {{/* Only show Tabular span if count > 0 */}}
+              {{ if gt $filteredDataTabular 0 }}
+              <span class="mr-3 text-purple-700 bg-white dark:bg-purple-900 rounded px-2 py-1">
+               <i class="fas fa-table fa-lg pr-2"></i> Tabular {{ $filteredDataTabular }}
+             </span>
+              {{ end }}
+
+            </div>            {{ partial "components/tool-list" . }}
           </div>
         </article>
       </div>

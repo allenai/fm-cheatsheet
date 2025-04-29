@@ -161,16 +161,27 @@
           <span class="inline-grid sm:pt-3">
                 {{ if eq $modality "Text" }}
                   <span class="mr-3 text-green-700 dark:bg-green-900 rounded px-3">
-                  <i class="fas fa-file-alt fa-lg"></i> Text
-                </span>
+                    <i class="fas fa-file-alt fa-lg"></i> Text
+                  </span>
                 {{ else if eq $modality "Vision" }}
                   <span class="mr-3 text-yellow-800 dark:bg-yellow-900 rounded px-2">
-                  <i class="fas fa-eye fa-lg"></i> Vision
-                </span>
+                    <i class="fas fa-eye fa-lg"></i> Vision
+                  </span>
                 {{ else if eq $modality "Speech" }}
                   <span class="mr-3 text-fuchsia-800 dark:bg-fuchsia-900 rounded px-2">
-                  <i class="fas fa-microphone fa-lg"></i> Speech
-                </span>
+                    <i class="fas fa-microphone fa-lg"></i> Speech
+                  </span>
+                {{/* --- ADDED VIDEO TAG --- */}}
+                {{ else if eq $modality "Video" }}
+                  <span class="mr-3 text-blue-700 dark:bg-blue-900 rounded px-2"> {{/* Using blue */}}
+                    <i class="fas fa-video fa-lg"></i> Video
+                  </span>
+                {{/* --- ADDED TABULAR TAG --- */}}
+                {{ else if eq $modality "Tabular" }}
+                  <span class="mr-3 text-purple-700 dark:bg-purple-900 rounded px-2"> {{/* Using purple */}}
+                    <i class="fas fa-table fa-lg"></i> Tabular
+                  </span>
+                {{/* --- FALLBACK REMAINS --- */}}
                 {{ else }}
                   <span class="mr-3 text-gray-700 dark:bg-gray-900 rounded px-2">
                     <i class="fas fa-question-circle fa-lg"></i> {{ $modality }}
