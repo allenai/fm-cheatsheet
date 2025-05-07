@@ -1,0 +1,176 @@
+<!-- base url -->
+{{ if or (eq site.BaseURL "/") (eq site.BaseURL "http://localhost:1313/") }}
+{{ else }}
+<base href="{{ .Permalink }}" />
+{{ end }}
+
+
+<!-- title -->
+{{ $title := site.Title }}
+<!-- checking page meta title -->
+{{ if .Params.meta_title }}
+{{ $title = .Params.meta_title }}
+<!-- checking page title -->
+{{ else if .Params.title }}
+{{ $title = .Params.title }}
+{{ end }}
+
+<title>{{ $title }}</title>
+
+<!-- meta noindex -->
+{{ if .Params.noindex }}
+<meta name="robots" content="noindex,nofollow" />
+{{ end }}
+
+
+<!-- meta canonical -->
+{{ with .Params.canonical }}
+<link rel="canonical" href="{{ . }}" itemprop="url" />
+{{ end }}
+
+
+<!-- multilingual SEO optimizations -->
+{{ if .IsTranslated }}
+{{ range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+{{ end }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+{{ end }}
+
+
+<!-- meta keywords -->
+{{ if .Params.keywords }}
+<meta name="keywords" content="{{ delimit .Params.keywords `, ` }}" />
+{{ else if site.Params.metadata.keywords }}
+<meta
+  name="keywords"
+  content="{{ delimit site.Params.metadata.keywords `, ` }}" />
+{{ end }}
+
+
+<!-- meta description -->
+<meta
+  name="description"
+  content="{{ .Params.description | default site.Params.metadata.description }}" />
+
+<!-- meta author -->
+{{ with site.Params.metadata.author }}
+<meta name="author" content="{{ . }}" />
+{{ end }}
+
+
+<!-- checking og description -->
+{{ $description := .Summary }}
+{{ if .Params.meta_description }}
+{{ $description = .Params.meta_description }}
+<!-- checking page description -->
+{{ else if .Params.description }}
+{{ $description = .Params.description }}
+<!-- checking page description -->
+{{ else if site.Params.metadata.description }}
+{{ $description = site.Params.metadata.description }}
+{{ end }}
+
+
+<!-- checking og image -->
+{{ $imagePath := site.Params.metadata.image }}
+{{ if .Params.meta_image }}
+{{ $imagePath = .Params.meta_image }}
+<!-- checking multiple images -->
+{{ else if .Params.images }}
+{{ range first 1 .Params.images }}
+{{ $imagePath = . }}
+{{ end }}
+<!-- checking single images -->
+{{ else if .Params.image }}
+{{ $imagePath = .Params.image }}
+{{ end }}
+
+<!-- ######### Opengraph and Twitter image meta ############## -->
+
+{{/* Determine the image path using existing logic */}}
+{{ $imagePath := site.Params.metadata.image }}
+{{ if .Params.meta_image }}
+{{ $imagePath = .Params.meta_image }}
+{{ else if .Params.images }}
+{{ range first 1 .Params.images }}
+{{ $imagePath = . }}
+{{ end }}
+{{ else if .Params.image }}
+{{ $imagePath = .Params.image }}
+{{ end }}
+
+{{/* Now, process the determined $imagePath */}}
+{{ $imageResource := "" }}
+{{ $imageURL := "" }}
+
+{{ if $imagePath }} {{/* Only proceed if an image path was determined */}}
+{{/* Check if it's an external URL first */}}
+{{ if hasPrefix $imagePath "http" }}
+{{ $imageURL = $imagePath }} {{/* Use the external URL directly */}}
+{{/* We can't get width/height easily for external URLs, so just set the image */}}
+<meta property="og:image" content="{{ $imageURL }}" />
+<meta name="twitter:image" content="{{ $imageURL }}" />
+<meta name="twitter:card" content="summary_large_image" />
+{{ $.Scratch.Set "seoImageFound" true }}
+{{ else }}
+{{/* Assume it's an internal path relative to assets/images/ */}}
+{{ $assetPath := printf "images/%s" $imagePath }}
+{{ with resources.Get $assetPath }}
+{{ $imageResource = . }}
+{{ $imageURL = .Permalink }} {{/* Get the absolute URL */}}
+
+{{/* Generate OG meta tags */}}
+<meta property="og:image" content="{{ $imageURL }}" />
+{{ $ogImage := .Resize "1200x630" }} {{/* Resize for OG standard */}}
+<meta property="og:image:width" content="{{ $ogImage.Width }}" />
+<meta property="og:image:height" content="{{ $ogImage.Height }}" />
+{{ $imageExt := path.Ext .Name }}
+<meta
+  property="og:image:type"
+  content="image/{{- if eq $imageExt `.svg` -}}svg+xml{{- else -}}{{- replaceRE `^\\.` "" $imageExt -}}{{- end -}}" />
+
+
+{{/* Generate Twitter meta tags */}}
+<meta name="twitter:image" content="{{ $imageURL }}" />
+{{/* Determine card type based on aspect ratio */}}
+{{ if and (gt .Width 300) (gt .Height 157) (ne .Width .Height) }}
+<meta name="twitter:card" content="summary_large_image" />
+{{ else }}
+<meta name="twitter:card" content="summary" />
+{{ end }}
+
+{{ $.Scratch.Set "seoImageFound" true }}
+{{ else }}
+{{ warnf "[SEO Image] Image specified but not found in assets: '%s' (Full path checked: '%s') on page: %s" $imagePath $assetPath $.RelPermalink }}
+{{ $.Scratch.Set "seoImageFound" false }}
+{{ end }}
+{{ end }}
+{{ else }}
+{{ $.Scratch.Set "seoImageFound" false }}
+{{ end }}
+
+{{/* Fallback Twitter card if no image was found */}}
+{{ if not ($.Scratch.Get "seoImageFound") }}
+<meta name="twitter:card" content="summary" />
+{{/* Optional: Add a warning if you expect images on most pages */}}
+{{/* {{ warnf "[SEO Image] No image path determined for OG/Twitter on page: %s" $.RelPermalink }} */}}
+{{ end }}
+<!-- ######### /Opengraph and Twitter image meta ############## -->
+
+<!-- ######### opengraph others meta ############## -->
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $description }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Permalink }}" />
+
+<!-- ########## twitter others meta ############### -->
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $description }}" />
+
+{{ with site.Params.metadata.twitter }}
+<meta name="twitter:site" content="@{{ . }}" />
+{{ end }}
+{{ with site.Params.metadata.author }} {{/* Using site author as twitter:creator */}}
+<meta name="twitter:creator" content="@{{ . }}" />
+{{ end }}

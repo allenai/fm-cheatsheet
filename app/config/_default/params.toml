@@ -57,7 +57,7 @@ show_categories = false
 [metadata]
 keywords = ["Foundation Models", "Open Source AI", "Artificial Intelligence"]
 description = "Foundation Model Cheatsheet is a collection of resources for the AI community to learn about the latest advancements in AI and to contribute to the open source AI ecosystem."
-image = "images/fmcheatsheet.png"
+image = "fmcheatsheet.png"
 
 
 # site verifications
